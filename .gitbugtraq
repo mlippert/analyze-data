@@ -1,0 +1,5 @@
+[bugtraq]
+	url = https://github.com/rifflearning/analyze-data/issues/%BUGID%
+	logfilterregex = "[Ii]ssues?:?((?:\\s*(?:,|and)?\\s*#\\d+)+)"
+	loglinkregex = "(#\\d+)"
+	logregex = "(\\d+)"
