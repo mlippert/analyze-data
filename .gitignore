@@ -1,71 +1,110 @@
-# Files we don't want in *this* repository #
-############################################
+# Initial version of this gitignore copied from: https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+#
 
-# created distribution files (e.g. compiled typescript) #
-#########################################################
-dist/
+# activate symbolic link to the python virtual env activate script
+activate
 
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
 *.so
 
-# Installed node packages #
-###########################
-node_modules/
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# Backup files #
-################
-*.bak
-*~
-*.swp
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Logs and databases #
-######################
-logs/
+# lint reports
+*.lint
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
 *.log
-*.log.xml
-*.sql
-*.sqlite
+local_settings.py
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-.directory
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
+# Flask stuff:
+instance/
+.webassets-cache
 
-# Windows shortcut files #
-##########################
-*.lnk
+# Scrapy stuff:
+.scrapy
 
-# IDE #
-##########
-.idea
+# Sphinx documentation
+docs/_build/
 
-# Cached #
-##########
-.sonar
+# PyBuilder
+target/
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
