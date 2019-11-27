@@ -1,0 +1,347 @@
+---
+plugins:
+  - header
+  - import
+  - promise
+  - react
+env:
+  browser: true
+  es6: true
+extends:
+  - eslint:recommended
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:promise/recommended
+parser: babel-eslint
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+    impliedStrict: true
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
+  import/extensions:
+    - .js
+    - .jsx
+  react:
+    pragma: React
+    version: detect
+rules:
+  array-bracket-spacing:
+    - error
+    - always
+    -
+      objectsInArrays: false
+  arrow-parens:
+    - error
+    - as-needed
+    -
+      requireForBlockBody: true
+  arrow-spacing: error
+  block-spacing: error
+  brace-style:
+    - error
+    - stroustrup
+    -
+      allowSingleLine: true
+  camelcase:
+    - error
+    -
+      properties: never
+  comma-dangle:
+    - error
+    - always-multiline
+  comma-spacing: error
+  comma-style: error
+  computed-property-spacing: error
+  consistent-return: error
+  consistent-this: error
+  curly:
+    - error
+    - multi-line
+    - consistent
+  dot-location:
+    - error
+    - property
+  eqeqeq: error
+  func-call-spacing: error
+  generator-star-spacing:
+    - error
+    -
+      before: false
+      after: true
+  global-require: error
+  # The Riff Learning header is 2 block comments, this just checks that the 1st one matches.
+  header/header:
+    - error
+    - block
+    -
+      pattern: " \\*{78}\n \\* [^ ]+ +\\*\n \\* \\*{72}"
+  import/no-unresolved: error
+  import/order:
+    - error
+    -
+      newlines-between: always-and-inside-groups
+      groups:
+        - builtin
+        - external
+        -
+          - internal
+          - parent
+        - sibling
+        - index
+  indent:
+    - error
+    - 4
+    -
+      SwitchCase: 1
+      FunctionDeclaration:
+        parameters: first
+        body: 1
+      FunctionExpression:
+        parameters: first
+        body: 1
+      MemberExpression: off
+      CallExpression:
+        arguments: first
+      ArrayExpression: first
+      ObjectExpression: first
+      ImportDeclaration: first
+  key-spacing:
+    - error
+    -
+      beforeColon: false
+      afterColon: true
+      mode: minimum
+  keyword-spacing: error
+  linebreak-style:
+    - error
+    - unix
+  max-len:
+    - warn
+    -
+      code: 120
+      ignoreStrings: false
+      ignoreTemplateLiterals: false
+      ignoreRegExpLiterals: false
+      ignoreTrailingComments: true
+      ignoreUrls: true
+  newline-per-chained-call:
+    - error
+    -
+      ignoreChainWithDepth: 3
+  no-console: warn
+  no-else-return: error
+  no-eq-null: error
+  no-extend-native: error
+  no-extra-parens:
+    - warn
+    - all
+    -
+      nestedBinaryExpressions: false
+      ignoreJSX: all
+      enforceForArrowConditionals: false
+  no-fallthrough: error
+  no-global-assign: error
+  no-magic-numbers: off
+  no-multi-assign: error
+  no-multi-spaces:
+    - error
+    -
+      ignoreEOLComments: true
+      exceptions:
+        Property: true
+  no-new: error
+  no-octal-escape: error
+  no-param-reassign: error
+  no-shadow: error
+  no-shadow-restricted-names: error
+  no-trailing-spaces: error
+  no-undef-init: error
+  no-undefined: off
+  no-underscore-dangle: off
+  no-unused-vars: warn
+  no-use-before-define:
+    - error
+    -
+      functions: false
+      classes: false
+      variables: false
+  no-useless-call: error
+  no-useless-constructor: error
+  no-useless-return: error
+  no-var: error
+  no-whitespace-before-property: error
+  object-curly-newline: off
+  object-curly-spacing:
+    - error
+    - always
+  object-property-newline:
+    - error
+    -
+      allowAllPropertiesOnSameLine: true
+  one-var:
+    - error
+    - never
+  one-var-declaration-per-line:
+    - error
+    - always
+  operator-linebreak: off
+  prefer-const: error
+  prefer-rest-params: error
+  prefer-spread: error
+  quote-props:
+    - error
+    - as-needed
+    -
+      keywords: true
+  quotes:
+    - error
+    - single
+    -
+      avoidEscape: true
+      allowTemplateLiterals: true
+  react/display-name:
+    - off
+    -
+      ignoreTranspilerName: false
+  react/forbid-component-props: off
+  react/forbid-elements:
+    - error
+    -
+      forbid:
+        - embed
+  react/jsx-boolean-value:
+    - error
+    - always
+  react/jsx-closing-bracket-location:
+    - error
+    -
+      location: tag-aligned
+  react/jsx-curly-spacing:
+    - error
+    - never
+  react/jsx-equals-spacing:
+    - error
+    - never
+  react/jsx-filename-extension: error
+  react/jsx-first-prop-new-line:
+    - error
+    - multiline
+  react/jsx-handler-names: off
+  react/jsx-indent:
+    - error
+    - 4
+  react/jsx-indent-props:
+    - error
+    - 4
+  react/jsx-key: error
+  react/jsx-max-props-per-line:
+    - error
+    -
+      maximum: 1
+      when: multiline
+  react/jsx-no-bind: off
+  react/jsx-no-comment-textnodes: error
+  react/jsx-no-duplicate-props:
+    - error
+    -
+      ignoreCase: false
+  react/jsx-no-literals: error
+  react/jsx-no-target-blank: error
+  react/jsx-no-undef: error
+  react/jsx-pascal-case: error
+  react/jsx-tag-spacing:
+    - error
+    -
+      closingSlash: never
+      beforeSelfClosing: never
+      afterOpening: never
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react/jsx-wrap-multilines: error
+  react/no-array-index-key: warn
+  react/no-children-prop: error
+  react/no-danger: off
+  react/no-danger-with-children: error
+  react/no-deprecated: warn
+  react/no-did-mount-set-state: error
+  react/no-did-update-set-state: error
+  react/no-direct-mutation-state: error
+  react/no-find-dom-node: warn
+  react/no-is-mounted: error
+  react/no-multi-comp:
+    - error
+    -
+      ignoreStateless: true
+  react/no-render-return-value: error
+  react/no-set-state: off
+  react/no-string-refs: off
+  react/no-unescaped-entities: error
+  react/no-unknown-property: error
+  react/no-unused-prop-types:
+    - warn
+    -
+      skipShapeProps: true
+  react/prefer-es6-class: error
+  react/prefer-stateless-function: off
+  react/prop-types:
+    - error
+    -
+      ignore:
+        - location
+        - history
+        - component
+  react/require-default-props: off
+  react/require-optimization: off
+  react/require-render-return: error
+  react/self-closing-comp: error
+  react/sort-comp: off
+  react/style-prop-object: error
+  rest-spread-spacing: error
+  semi:
+    - error
+    - always
+  semi-spacing: error
+  sort-imports:
+    - error
+    -
+      ignoreDeclarationSort: true
+  space-before-blocks: error
+  space-before-function-paren:
+    - error
+    -
+      anonymous: always
+      named: never
+      asyncArrow: ignore
+  space-in-parens: error
+  space-infix-ops: error
+  space-unary-ops:
+    - error
+    -
+      words: true
+      nonwords: false
+  spaced-comment:
+    - warn
+    - always
+    -
+      line:
+        markers:
+          - /
+      block:
+        markers:
+          - ','                     # want to allow commenting out unused parameters e.g. /*, next*/
+        exceptions:
+          - '*'
+        balanced: false
+  symbol-description: error
+  template-curly-spacing:
+    - error
+    - never
+  valid-jsdoc: off
+  yoda: error

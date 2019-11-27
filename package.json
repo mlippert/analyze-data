@@ -1,0 +1,36 @@
+{
+  "name": "analyze-data",
+  "description": "Ad-hoc analysis of riffdata",
+  "version": "0.1.0-dev.0",
+  "license": "MIT",
+  "keywords": [
+    "riff",
+    "analytics",
+    "mongodb"
+  ],
+  "homepage": "https://github.com/rifflearning/analyze-data#readme",
+  "author": "Michael Jay Lippert <mike@rifflearning.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifflearning/analyze-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rifflearning/analyze-data/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.1",
+    "eslint-plugin-header": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-promise": "^4.2.1"
+  }
+}

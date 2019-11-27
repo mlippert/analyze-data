@@ -1,8 +1,36 @@
+# Files we don't want in *this* repository #
+############################################
+package-lock.json
+
+# Installed node packages #
+###########################
+node_modules/
+
+# Windows shortcut files #
+##########################
+*.lnk
+
+# Logs and databases #
+######################
+*.log
+*.log.xml
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.directory
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
 # Initial version of this gitignore copied from: https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
 #
-
-# activate symbolic link to the python virtual env activate script
-activate
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -91,7 +119,9 @@ celerybeat-schedule
 # dotenv
 .env
 
-# virtualenv
+# Python virtualenv #
+#####################
+activate
 .venv
 venv/
 ENV/

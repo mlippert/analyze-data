@@ -15,9 +15,15 @@ GIT_TAG_VERSION = $(shell git describe)
 
 PYLINT := pylint
 PYSTYLE := pycodestyle
+BABEL = ./node_modules/.bin/babel
+ESLINT = ./node_modules/.bin/eslint
 
 LINT_LOG := logs/lint.log
 TEST_LOG := logs/test.log
+
+# Add --quiet to only report on errors, not warnings
+ESLINT_OPTIONS = --ext .js --ext .jsx
+ESLINT_FORMAT = stylish
 
 PYSOURCES = \
 	pysrc/main.py
@@ -50,6 +56,13 @@ build : lint ## build the analyze-data
 	@echo "No building is currently needed to run analyze-data"
 
 lint : clean-lintlog $(patsubst %.py,%.lint,$(PYSOURCES)) ## run lint over all python source updating the .lint files
+
+lint-log : ESLINT_OPTIONS += --output-file $(LINT_LOG) ## run eslint concise diffable output to $(LINT_LOG)
+lint-log : ESLINT_FORMAT = unix
+vim-lint : ESLINT_FORMAT = unix ## run eslint in format consumable by vim quickfix
+eslint : ## run lint over the sources & tests; display results to stdout
+eslint vim-lint lint-log :
+	$(ESLINT) $(ESLINT_OPTIONS) --format $(ESLINT_FORMAT) src
 
 test : ## (Not implemented) run the unit tests
 	@echo test would run "$(MOCHA) --reporter spec test | tee $(TEST_LOG)"
