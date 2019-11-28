@@ -43,7 +43,7 @@ BASE_IMAGES := \
 	mongo:latest
 
 PYSOURCES = \
-	pysrc/main.py
+	pysrc/riffdata/riffdata.py
 
 # Pattern rules
 # lint a python source
