@@ -12,8 +12,8 @@
 #
 #################################################################################
 
-from pymongo import MongoClient
 import pprint
+from pymongo import MongoClient
 
 dbDomain = 'localhost'
 dbPort = 27017
@@ -25,23 +25,23 @@ dbName = 'riff-test'
 client = MongoClient(dbDomain, dbPort)
 db = client[dbName]
 
-participantsCursor = db.participants.find()
+participants_cursor = db.participants.find()
 
-for participant in participantsCursor:
+for participant in participants_cursor:
     pprint.pprint(participant)
 
 
 # get all the meeting ids from the utterances (ie we don't want to depend on the
 # meeting collection)
 
-meetingIds = db.utterances.distinct('meeting')
+meeting_ids = db.utterances.distinct('meeting')
 
-for meetingId in meetingIds:
-    pprint.pprint(meetingId)
+for meeting_id in meeting_ids:
+    pprint.pprint(meeting_id)
 
 # aggregate pipelines are probably going to be needed for something else
 # pipeline = [
 #     {"$group": {"_id": "$tags", "count": {"$sum": 1}}},
 #     {"$sort": SON([("count", -1), ("_id", -1)])}
 # ]
-# meetingIdsCursor = db.utternances.aggregate(pipeline)
+# meeting_ids_cursor = db.utternances.aggregate(pipeline)
