@@ -25,6 +25,23 @@ TEST_LOG := logs/test.log
 ESLINT_OPTIONS = --ext .js --ext .jsx
 ESLINT_FORMAT = stylish
 
+# The order to combine the compose/stack config files for spinning up
+# the riff services using either docker-compose or docker stack
+# for development, production or deployment in a docker swarm
+CONF_BASE   := docker-compose.yml
+CONF_DEV    := $(CONF_BASE)
+CONF_PROD   := $(CONF_BASE)
+CONF_DEPLOY := $(CONF_PROD) docker-stack.yml
+
+COMPOSE_CONF_DEV := $(patsubst %,-f %,$(CONF_DEV))
+COMPOSE_CONF_PROD := $(patsubst %,-f %,$(CONF_PROD))
+STACK_CONF_DEPLOY := $(patsubst %,-c %,$(CONF_DEPLOY))
+
+# The pull-images target is a helper to update the base docker images used
+# by the edu stack services. This is a list of those base images.
+BASE_IMAGES := \
+	mongo:latest
+
 PYSOURCES = \
 	pysrc/main.py
 
@@ -86,6 +103,33 @@ upgrade-deps : ## upgrade to the latest versions of required python packages
 upgrade-pip : ## upgrade pip and setuptools
 	$(call ndef,VIRTUAL_ENV)
 	pip install --upgrade pip setuptools
+
+up : up-dev ## run docker-compose up (w/ dev config)
+
+up-dev :
+	docker-compose $(COMPOSE_CONF_DEV) up --detach $(MAKE_UP_OPTS) $(OPTS)
+
+up-prod : ## run docker-compose up (w/ prod config)
+	docker-compose $(COMPOSE_CONF_PROD) up --detach $(OPTS)
+
+down : ## run docker-compose down
+	docker-compose down
+
+stop : ## run docker-compose stop
+	docker-compose stop
+
+logs : ## run docker-compose logs
+	docker-compose logs $(OPTS) $(SERVICE_NAME)
+
+pull-images : ## Update base docker images
+	echo $(BASE_IMAGES) | xargs -n 1 docker pull
+	docker images
+
+clean-dev-images : down ## remove dev docker images
+	docker rmi 127.0.0.1:5000/rifflearning/{pfm-riffrtc:dev,pfm-riffdata:dev,pfm-signalmaster:dev,pfm-web:dev}
+
+show-ps : ## Show all docker containers w/ limited fields
+	docker ps -a --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}'
 
 ## Help documentation à la https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 ## if you want the help sorted rather than in the order of occurrence, pipe the grep to sort and pipe that to awk

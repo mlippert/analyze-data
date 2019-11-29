@@ -1,0 +1,16 @@
+---
+# Configuration to start up a mongodb container containing the riffdata to be analyzed
+
+version: '3.7'
+services:
+  anl-riffdata-db:
+    image: mongo:${MONGO_VER-latest}
+    ports:
+      - '27017:27017'
+    volumes:
+      - anl-riffdata-db-data:/data/db
+      - anl-riffdata-db-configdb:/data/configdb
+
+volumes:
+  anl-riffdata-db-data:
+  anl-riffdata-db-configdb:
