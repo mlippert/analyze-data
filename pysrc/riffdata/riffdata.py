@@ -166,55 +166,31 @@ def _test():
 
     print(f'shortest utterance was {durations[0]}ms and longest was {durations[-1]}ms')
 
-    buckets = {'=0ms': 0,
-               '2ms': 0,
-               '5ms': 0,
-               '10ms': 0,
-               '100ms': 0,
-               '500ms': 0,
-               '2s': 0,
-               '4s': 0,
-               '6s': 0,
-               '8s': 0,
-               '10s': 0,
-               '30s': 0,
-               '1m': 0,
-               '2m': 0,
-               '>=2m': 0,
-               }
-    for duration in durations:
-        if duration == 0:
-            buckets['=0ms'] += 1
-        elif duration < 2:
-            buckets['2ms'] += 1
-        elif duration < 5:
-            buckets['5ms'] += 1
-        elif duration < 10:
-            buckets['10ms'] += 1
-        elif duration < 100:
-            buckets['100ms'] += 1
-        elif duration < 500:
-            buckets['500ms'] += 1
-        elif duration < 2000:
-            buckets['2s'] += 1
-        elif duration < 4000:
-            buckets['4s'] += 1
-        elif duration < 6000:
-            buckets['6s'] += 1
-        elif duration < 8000:
-            buckets['8s'] += 1
-        elif duration < 10000:
-            buckets['10s'] += 1
-        elif duration < 30000:
-            buckets['30s'] += 1
-        elif duration < 60000:
-            buckets['1m'] += 1
-        elif duration < 120000:
-            buckets['2m'] += 1
-        else:
-            buckets['>=2m'] += 1
+    buckets = [0, 2, 5,
+               *range(10, 100, 10),
+               *range(100, 1000, 50),
+               *range(1000, 8001, 500),
+               *range(10000, 60001, 10000),
+              ]
 
-    pprint.pprint(buckets)
+    bucket_cnt = [0]
+    bucket_ndx = 0
+    for duration in durations:
+        if bucket_ndx >= len(buckets) or duration <= buckets[bucket_ndx]:
+            bucket_cnt[bucket_ndx] += 1
+            continue
+
+        bucket_ndx += 1
+        while bucket_ndx < len(buckets) and duration > buckets[bucket_ndx]:
+            bucket_cnt.append(0)
+            bucket_ndx += 1
+
+        bucket_cnt.append(1)
+
+    for i in range(0, len(bucket_cnt) - 1):
+        print(f'{timedelta(milliseconds=buckets[i])}: {bucket_cnt[i]}')
+
+    print(f'>: {bucket_cnt[len(bucket_cnt) - 1]}')
 
 
 if __name__ == '__main__':
