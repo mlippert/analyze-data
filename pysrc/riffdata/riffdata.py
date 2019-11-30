@@ -15,6 +15,8 @@
 import pprint
 from datetime import timedelta
 from pymongo import MongoClient
+import matplotlib.pyplot as plt
+import numpy as np
 
 dbDomain = 'localhost'
 dbPort = 27017
@@ -147,6 +149,33 @@ def get_utterance_durations(meetings):
     return durations
 
 
+def my_plotter(ax, data1, data2, param_dict):
+    """
+    A helper function to make a graph
+
+    Parameters
+    ----------
+    ax : Axes
+        The axes to draw to
+
+    data1 : array
+       The x data
+
+    data2 : array
+       The y data
+
+    param_dict : dict
+       Dictionary of kwargs to pass to ax.plot
+
+    Returns
+    -------
+    out : list
+        list of artists added
+    """
+    out = ax.plot(data1, data2, **param_dict)
+    return out
+
+
 def _test():
     meetings = get_meetings_with_participant_utterances()
 
@@ -191,6 +220,20 @@ def _test():
         print(f'{timedelta(milliseconds=buckets[i])}: {bucket_cnt[i]}')
 
     print(f'>: {bucket_cnt[len(bucket_cnt) - 1]}')
+
+    x = [np.array(buckets[1:13]),
+         np.array(buckets[13:31]),
+         np.array(buckets[31:46]),
+        ]
+    y = [np.array(bucket_cnt[1:13]),
+         np.array(bucket_cnt[13:31]),
+         np.array(bucket_cnt[31:46]),
+        ]
+    fig, ax = plt.subplots(3, 1)
+    my_plotter(ax[0], x[0], y[0], {'marker': 'x'})
+    my_plotter(ax[1], x[1], y[1], {'marker': 'x'})
+    my_plotter(ax[2], x[2], y[2], {'marker': 'x'})
+    fig.savefig('plot.png')
 
 
 if __name__ == '__main__':
