@@ -1,0 +1,10 @@
+# This file is in the ./riffdata directory, It is used as a staging area
+# for database backups that are restored by bin/mongo-restore.sh
+# We never want any of those database backups to be commited in the repository,
+# but we want this directory to exist, therefore this .gitignore is commited
+# in this directory.
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
