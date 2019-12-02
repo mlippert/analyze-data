@@ -195,11 +195,11 @@ def _test():
 
     print(f'shortest utterance was {durations[0]}ms and longest was {durations[-1]}ms')
 
-    buckets = [0, 2, 5,
-               *range(10, 100, 10),
-               *range(100, 1000, 50),
-               *range(1000, 8001, 500),
-               *range(10000, 60001, 10000),
+    buckets = [0, 2, 5,                         #   0 -   2
+               *range(10, 300, 10),             #   3 -  32
+               *range(300, 3500, 50),           #  33 -  96
+               *range(3500, 8001, 500),         #  97 - 106
+               *range(10000, 60001, 10000),     # 107 - 113
               ]
 
     bucket_cnt = [0]
@@ -221,18 +221,26 @@ def _test():
 
     print(f'>: {bucket_cnt[len(bucket_cnt) - 1]}')
 
-    x = [np.array(buckets[1:13]),
-         np.array(buckets[13:31]),
-         np.array(buckets[31:46]),
-        ]
-    y = [np.array(bucket_cnt[1:13]),
-         np.array(bucket_cnt[13:31]),
-         np.array(bucket_cnt[31:46]),
-        ]
-    fig, ax = plt.subplots(3, 1)
-    my_plotter(ax[0], x[0], y[0], {'marker': 'x'})
-    my_plotter(ax[1], x[1], y[1], {'marker': 'x'})
-    my_plotter(ax[2], x[2], y[2], {'marker': 'x'})
+    graph_ranges = [1, 33, 97, 107]
+
+    def _make_xy_sets_to_plot(x_src, y_src, ranges):
+        # must have at least 2 indices in ranges, not checking for that yet
+        x = []
+        y = []
+        start = ranges[0]
+        for end in ranges[1:]:
+            x.append(np.array(x_src[start:end]))
+            y.append(np.array(y_src[start:end]))
+            start = end
+
+        return x, y
+
+    x, y = _make_xy_sets_to_plot(x_src=buckets, y_src=bucket_cnt, ranges=graph_ranges)
+
+    fig, ax = plt.subplots(len(x), 1)
+    for plot in range(0, len(x)):
+        my_plotter(ax[plot], x[plot], y[plot], {'marker': 'x'})
+
     fig.savefig('plot.png')
 
 
