@@ -45,16 +45,38 @@ def get_participants():
     return participants
 
 
-def get_meetings():
+def get_meetings(pre_query=None, post_query=None):
     """
+    Get all of the meetings from the riffdata mongodb in the meetings collection.
+
+    Adds some calculated fields to the fields of the meeting document and removes
+    some irrelevant fields.
+
+    The returned list may be filtered by specifying a pre and/or post query using
+    MongoDb `query syntax <https://docs.mongodb.com/manual/reference/operator/query/>`_.
+
+    :param pre_query: A mongo query for the meetings collection that can use any
+                      of the fields in the meeting document. This query filters
+                      out meetings before the pipeline adds calculated fields
+    :type pre_query: dict
+
+    :param post_query: A mongo query for the meetings collection that can use any
+                       of the fields in the meeting document AND any of the added
+                       calculated fields. This query filters out meetings after
+                       the pipeline adds calculated fields
+    :type post_query: dict
+
+    :return: A list of all matching meetings where a meeting is a dict with the
+             following keys:
+             - '_id': str - the unique meeting id
+             - 'startTime': datetime - time the meeting started
+             - 'endTime': datetime - time the meeting ended
+             - 'room': str - name of the room used for the meeting
+             - 'meetingLengthMin': float - calculated length of the meeting in minutes
+             - 'participants': list of participant ids (strs) who attended the meeting
     """
     meetings = []
-    qry = {'startTime': {'$gte': datetime(2019, 9, 11),
-                         '$lt': datetime(2019, 12, 4),
-                        }
-          }
     pipeline = [
-        {'$match': qry},
         {'$addFields': {'meetingLengthMin': {'$divide': [{'$subtract': ['$endTime', '$startTime']}, 60000]}
                        }
         },
@@ -66,7 +88,7 @@ def get_meetings():
         },
         {'$addFields': {'participants': {'$setUnion': {'$reduce': {'input': '$participantevents.participants',
                                                                    'initialValue': [],
-                                                                   'in': {'$concatArrays': \
+                                                                   'in': {'$concatArrays':
                                                                             ['$$value', '$$this']
                                                                          }
                                                                   }
@@ -82,8 +104,17 @@ def get_meetings():
                      }
         },
     ]
+
+    if pre_query is not None:
+        # Add query as an initial match stage to the aggregate pipeline
+        pipeline[0:0] = [{'$match': pre_query}]
+
+    if post_query is not None:
+        # Add query as a final match stage to the aggregate pipeline
+        pipeline.append({'$match': post_query})
+
     meetings_cursor = db.meetings.aggregate(pipeline, allowDiskUse=True)
-    #meetings_cursor = db.meetings.find(qry)
+    # meetings_cursor = db.meetings.find(pre_query)
     for meeting in meetings_cursor:
         meetings.append(meeting)
     return meetings
@@ -184,7 +215,12 @@ def get_meetings_with_participant_utterances():
 
 def _test():
     pass
-    meetings = get_meetings()
+
+    qry = {'startTime': {'$gte': datetime(2019, 9, 11),
+                         '$lt': datetime(2019, 12, 4),
+                        }
+          }
+    meetings = get_meetings(qry)
     print(f'Ttoal number of meetings was {len(meetings)}\n')
     # pprint.pprint(meetings[0])
 
