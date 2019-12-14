@@ -17,7 +17,8 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 
 # Standard library imports
 import pprint
-from datetime import timedelta
+from datetime import timedelta, datetime
+from functools import reduce
 
 # Third party imports
 from pymongo import MongoClient
@@ -42,6 +43,50 @@ def get_participants():
         participants += participant
         pprint.pprint(participant)
     return participants
+
+
+def get_meetings():
+    """
+    """
+    meetings = []
+    qry = {'startTime': {'$gte': datetime(2019, 9, 11),
+                         '$lt': datetime(2019, 12, 4),
+                        }
+          }
+    pipeline = [
+        {'$match': qry},
+        {'$addFields': {'meetingLengthMin': {'$divide': [{'$subtract': ['$endTime', '$startTime']}, 60000]}
+                       }
+        },
+        {'$lookup': {'from': 'participantevents',
+                     'localField': '_id',
+                     'foreignField': 'meeting',
+                     'as': 'participantevents'
+                    }
+        },
+        {'$addFields': {'participants': {'$setUnion': {'$reduce': {'input': '$participantevents.participants',
+                                                                   'initialValue': [],
+                                                                   'in': {'$concatArrays': \
+                                                                            ['$$value', '$$this']
+                                                                         }
+                                                                  }
+                                                      }
+                                        }
+                       }
+        },
+        {'$project': {'startTime': True,
+                      'endTime': True,
+                      'meetingLengthMin': True,
+                      'participants': True,
+                      'room': True,
+                     }
+        },
+    ]
+    meetings_cursor = db.meetings.aggregate(pipeline, allowDiskUse=True)
+    #meetings_cursor = db.meetings.find(qry)
+    for meeting in meetings_cursor:
+        meetings.append(meeting)
+    return meetings
 
 
 def get_all_meetings_from_utterances():
@@ -139,6 +184,55 @@ def get_meetings_with_participant_utterances():
 
 def _test():
     pass
+    meetings = get_meetings()
+    print(f'Ttoal number of meetings was {len(meetings)}\n')
+    # pprint.pprint(meetings[0])
+
+    def inc_cnt(d, key):
+        if key in d:
+            d[key] += 1
+        else:
+            d[key] = 1
+        return d
+
+    meetings_w_num_participants = reduce(inc_cnt, [len(meeting['participants']) for meeting in meetings], {})
+    print('Number of meetings grouped by number of participants:')
+    pprint.pprint(meetings_w_num_participants)
+
+    meetings = [meeting for meeting in meetings if len(meeting['participants']) > 1]
+    print(f'Number of meetings with more than 1 participant was {len(meetings)}\n')
+
+    meeting_duration_distribution = [
+        [5, 0],
+        [10, 0],
+        [20, 0],
+        [40, 0],
+        [60, 0],
+        [120, 0],
+        [180, 0],
+        [720, 0],
+    ]
+
+    def inc_bucket(buckets, v):
+        for b in buckets:
+            if b[0] > v:
+                b[1] += 1
+                break
+        return buckets
+
+    meeting_durations = [meeting['meetingLengthMin'] for meeting in meetings]
+    reduce(inc_bucket, meeting_durations, meeting_duration_distribution)
+    pprint.pprint(meeting_duration_distribution)
+
+    longest_meeting = max(meetings, key=lambda m: m['meetingLengthMin'])
+    pprint.pprint(longest_meeting)
+
+    avg_meeting_duration = sum(meeting_durations) / len(meeting_durations)
+    print(f'Average length of a meeting was {(avg_meeting_duration + 0.5)//1} minutes\n')
+
+    # find the set of unique participants in these meeting
+    all_meeting_participants = set().union(*[meeting['participants'] for meeting in meetings])
+    print(f'Total number of participants in these meetings was {len(all_meeting_participants)}\n')
 
 
 if __name__ == '__main__':
