@@ -12,9 +12,8 @@ SHELL := /bin/bash
 ndef = $(if $(value $(1)),,$(error $(1) not set))
 
 GIT_TAG_VERSION = $(shell git describe)
+export GIT_TAG_VERSION
 
-PYLINT := pylint
-PYSTYLE := pycodestyle
 BABEL = ./node_modules/.bin/babel
 ESLINT = ./node_modules/.bin/eslint
 
@@ -42,22 +41,14 @@ STACK_CONF_DEPLOY := $(patsubst %,-c %,$(CONF_DEPLOY))
 BASE_IMAGES := \
 	mongo:latest
 
-PYSOURCES = \
-	pysrc/main.py
-
-# Pattern rules
-# lint a python source
-# a lint error shouldn't stop the build
-%.lint : %.py
-	$(call ndef,VIRTUAL_ENV)
-	-$(PYLINT) $< | tee $@
-	-$(PYSTYLE) $< | tee --append $@
-	-@cat $@ >> $(LINT_LOG)
-
 
 .DEFAULT_GOAL := help
 .DELETE_ON_ERROR :
 .PHONY : all init install build lint-log vim-lint lint test clean clean-build help
+
+run : ## run the main python script
+	$(call ndef,VIRTUAL_ENV)
+	python pysrc/main.py
 
 init : install build ## run install, build; intended for initializing a fresh repo clone
 
@@ -72,7 +63,8 @@ install : ## create python3 virtual env, install requirements (define VER for ot
 build : lint ## build the analyze-data
 	@echo "No building is currently needed to run analyze-data"
 
-lint : clean-lintlog $(patsubst %.py,%.lint,$(PYSOURCES)) ## run lint over all python source updating the .lint files
+lint : ## run lint over all python source updating the .lint files
+	@$(MAKE) -C pysrc lint
 
 lint-log : ESLINT_OPTIONS += --output-file $(LINT_LOG) ## run eslint concise diffable output to $(LINT_LOG)
 lint-log : ESLINT_FORMAT = unix
@@ -87,7 +79,7 @@ test : ## (Not implemented) run the unit tests
 clean : clean-build ## remove ALL created artifacts
 
 clean-build : ## remove all artifacts created by the build target
-	find . -name \*.lint -type f -print -delete
+	@$(MAKE) -C pysrc clean-build
 
 clean-lintlog :
 	@rm $(LINT_LOG) 2> /dev/null || true
