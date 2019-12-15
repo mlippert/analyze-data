@@ -19,6 +19,7 @@ TEST_LOG := ../logs/test.log
 
 PYSOURCES = \
 	riffdata/riffdata.py              \
+	visualize/meetings.py             \
 	visualize/utterance_duration.py   \
 	main.py
 

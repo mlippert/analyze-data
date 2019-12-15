@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Local application imports
-from riffdata.riffdata import get_meetings_with_participant_utterances
+from riffdata.riffdata import Riffdata
 
 
 def get_utterance_durations(meetings):
@@ -139,7 +139,8 @@ def _distribute_durations(durations):
 
 
 def do_analysis():
-    meetings = get_meetings_with_participant_utterances()
+    riffdata = Riffdata()
+    meetings = riffdata.get_meetings_with_participant_utterances()
 
     print(f'Found utterances from {len(meetings)} meetings')
     meeting_ids = list(meetings)

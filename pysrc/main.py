@@ -20,11 +20,13 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 # Third party imports
 
 # Local application imports
-from visualize.utterance_duration import do_analysis
+from visualize.utterance_duration import do_analysis as do_utterance_duration_analysis
+from visualize.meetings import do_analysis as do_meetings_analysis
 
 
 def _test():
-    do_analysis()
+    # do_meetings_analysis()
+    do_utterance_duration_analysis()
 
 
 if __name__ == '__main__':
