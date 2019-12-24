@@ -18,9 +18,10 @@ LINT_LOG := ../logs/lint.log
 TEST_LOG := ../logs/test.log
 
 PYSOURCES = \
-	riffdata/riffdata.py              \
-	visualize/meetings.py             \
-	visualize/utterance_duration.py   \
+	riffdata/riffdata.py                \
+	visualize/meetings.py               \
+	visualize/utterance_duration.py     \
+	visualize/zero_duration_distrib.py  \
 	main.py
 
 # Pattern rules

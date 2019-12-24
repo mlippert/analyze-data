@@ -19,12 +19,13 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 import pprint
 from datetime import datetime
 from functools import reduce
+from typing import MutableMapping, Sequence, Iterable, Any
 
 # Local application imports
 from riffdata.riffdata import Riffdata
 
 
-def inc_cnt(d, key):
+def inc_cnt(d: MutableMapping[Any, int], key) -> MutableMapping[Any, int]:
     """
     reduce predicate that increments d[key], creating that key and
     setting it to 1 if it doesn't exist.
@@ -62,7 +63,7 @@ def inc_bucket(buckets, v):
     return buckets
 
 
-def print_buckets(buckets):
+def print_buckets(buckets: Iterable[Sequence[Any]]):
     prev_b = None
     for b in buckets:
         if prev_b is None:
