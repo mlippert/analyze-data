@@ -21,6 +21,7 @@ PYSOURCES = \
 	riffdata/riffdata.py                \
 	visualize/meetings.py               \
 	visualize/utterance_duration.py     \
+	visualize/utterance_gap_len.py      \
 	visualize/zero_duration_distrib.py  \
 	main.py
 
