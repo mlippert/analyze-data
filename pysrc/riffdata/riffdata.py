@@ -215,10 +215,22 @@ class Riffdata:
         Print the meeting.
         """
         print(Riffdata.meeting_fmt.format(**meeting, participant_cnt=len(meeting['participants'])))
+
         i = 0
-        for p in meeting['participants']:
-            i += 1
-            print(f'  {i:2}) {p}')
+        if 'participant_uts' in meeting:
+            participant_uts = meeting['participant_uts']
+            participants = {p: 0 for p in meeting['participants']}
+            for p in participant_uts:
+                participants[p] = len(participant_uts[p])
+
+            for p in participants:
+                i += 1
+                print(f'  {i:2}) {p} made {participants[p]} utterances')
+        else:
+            for p in meeting['participants']:
+                i += 1
+                print(f'  {i:2}) {p}')
+
 
     # ## Methods under construction/consideration ##
 
