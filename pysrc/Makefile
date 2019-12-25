@@ -23,6 +23,7 @@ PYSOURCES = \
 	visualize/utterance_duration.py     \
 	visualize/utterance_gap_len.py      \
 	visualize/zero_duration_distrib.py  \
+	visualize/meeting_timeline.py       \
 	main.py
 
 # Pattern rules

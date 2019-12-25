@@ -146,7 +146,13 @@ class Riffdata:
         qry = {'_id': meeting_id}
         meetings = self.get_meetings(qry)
         # TODO how to handle meeting not found?!
-        return meetings[0]
+        meeting = meetings[0]
+
+        qry = {'meeting': meeting_id}
+        utterance_cursor = self.db.utterances.find(qry)
+        meeting['participant_uts'] = Riffdata._group_utterances(utterance_cursor)[meeting_id]
+
+        return meeting
 
     def get_participants(self):
         """
@@ -167,8 +173,18 @@ class Riffdata:
         the participant in the meeting.
         { <meeting_id>: {<participant_id>: [{start: Date, end: Date, duration: integer}], ...}, ...}
         """
-        meetings = {}
         utterance_cursor = self.db.utterances.find()
+        meetings = Riffdata._group_utterances(utterance_cursor)
+
+        return meetings
+
+    @staticmethod
+    def _group_utterances(utterance_cursor):
+        """
+        Group all the utterances from the cursor by meeting id and then by
+        participant id
+        """
+        meetings = {}
         for u in utterance_cursor:
             # I think this is a bug, but there are utterances w/o a meeting field, we will
             # just skip them
