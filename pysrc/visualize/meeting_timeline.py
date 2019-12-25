@@ -72,9 +72,10 @@ def print_participant_utterance_counts(participant_uts):
 def do_analysis():
     # get a meeting
     riffdata = Riffdata()
-    meeting = riffdata.get_meeting('plg-147-l2t0dt-1')
+    test_meetings = ['plg-147-l2t0dt-1', 'plg-206-uzw00g-3']
+    meeting = riffdata.get_meeting(test_meetings[1])
     participant_uts = meeting['participant_uts']
-    print_participant_utterance_counts(participant_uts)
+    Riffdata.print_meeting(meeting)
 
     verts, colors = get_utterances_as_polycollection(participant_uts)
     bars = PolyCollection(verts, facecolors=colors)
