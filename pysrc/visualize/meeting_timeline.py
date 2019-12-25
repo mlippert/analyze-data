@@ -18,7 +18,7 @@ Copyright       (c) 2019 Michael Jay Lippert,
 """
 
 # Standard library imports
-from datetime import datetime
+from datetime import datetime, timedelta
 import pprint
 
 # Third party imports
@@ -44,8 +44,8 @@ def get_utterances_as_polycollection(participant_uts):
 
         # use the part_ndx as the vertical (y) center position of the polygons for
         # participant's utterances
-        top = part_num + .4
-        bottom = part_num - .4
+        top = part_num + .5
+        bottom = part_num - .5
 
         for ut in uts:
             left = mdates.date2num(ut['start'])
@@ -69,13 +69,42 @@ def print_participant_utterance_counts(participant_uts):
         print(f'{participant_id} had {len(participant_uts[participant_id])} utterances')
 
 
+def process_utterances(meeting):
+    """
+    """
+    # remove 0 len utterances
+    participant_uts = meeting['participant_uts']
+    for participant_id in participant_uts:
+        uts = participant_uts[participant_id]
+        uts = [ut for ut in uts if ut['duration'] > 0]
+        uts = join_utterances(uts, timedelta(seconds=1))
+        participant_uts[participant_id] = uts
+
+
+def join_utterances(uts, min_gap):
+    uts.sort(key=lambda ut: ut['start'])
+    processed_uts = []
+    cur_ut = uts[0]
+    for ut in uts[1:]:
+        if ut['start'] - cur_ut['end'] < min_gap:
+            cur_ut['end'] = ut['end']
+        else:
+            processed_uts.append(cur_ut)
+            cur_ut = ut
+
+    return processed_uts
+
+
 def do_analysis():
     # get a meeting
     riffdata = Riffdata()
     test_meetings = ['plg-147-l2t0dt-1', 'plg-206-uzw00g-3']
-    meeting = riffdata.get_meeting(test_meetings[1])
-    participant_uts = meeting['participant_uts']
+    meeting = riffdata.get_meeting(test_meetings[0])
     Riffdata.print_meeting(meeting)
+
+    process_utterances(meeting)
+    participant_uts = meeting['participant_uts']
+    print_participant_utterance_counts(participant_uts)
 
     verts, colors = get_utterances_as_polycollection(participant_uts)
     bars = PolyCollection(verts, facecolors=colors)
@@ -90,7 +119,7 @@ def do_analysis():
     ax.set_yticks([*range(1, len(participant_uts) + 1)])
     ax.set_yticklabels(list(participant_uts))
 
-    fig.savefig('meeting_timeline.png')
+    fig.savefig('meeting_timeline.png', dpi=288)
 
 
 if __name__ == '__main__':
