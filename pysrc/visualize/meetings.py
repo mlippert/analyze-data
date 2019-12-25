@@ -17,7 +17,6 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 
 # Standard library imports
 import pprint
-from datetime import datetime
 from functools import reduce
 from typing import MutableMapping, Sequence, Iterable, Any
 
@@ -73,15 +72,36 @@ def print_buckets(buckets: Iterable[Sequence[Any]]):
         prev_b = b
 
 
-def do_analysis():
+def do_analysis(meeting_date_range=(None, None)):
     riffdata = Riffdata()
-    meeting_date_range = (datetime(2019, 9, 11), datetime(2019, 12, 4))
-    qry = {'startTime': {'$gte': meeting_date_range[0],
-                         '$lt': meeting_date_range[1],
-                        }
-          }
+
+    # display strings for the start and end of the date range
+    from_constraint = ''
+    to_constraint = ''
+    # constraints for the query to implement the date range
+    startTimeConstraints = {}
+    if meeting_date_range[0] is not None:
+        startTimeConstraints['$gte'] = meeting_date_range[0]
+        from_constraint = f'from {meeting_date_range[0]:%b %d %Y}'
+    if meeting_date_range[1] is not None:
+        startTimeConstraints['$lt'] = meeting_date_range[1]
+        to_constraint = f'through {meeting_date_range[1]:%b %d %Y}'
+
+    qry = None
+    if len(startTimeConstraints) > 0:
+        qry = {'startTime': startTimeConstraints}
+
     meetings = riffdata.get_meetings(qry)
-    print(f'There were {len(meetings)} meetings from {meeting_date_range[0]:%b %d %Y} through {meeting_date_range[1]:%b %d %Y}\n')
+
+    if len(meetings) == 0:
+        print('There were no meetings found')
+        return
+
+    first_meeting_start = min(meetings, key=lambda m: m['startTime'])['startTime']
+    last_meeting_start = max(meetings, key=lambda m: m['startTime'])['startTime']
+    print(f'There were {len(meetings)} meetings {from_constraint} {to_constraint}\n'
+          f'  first meeting on: {first_meeting_start:%b %d %Y}\n'
+          f'  last meeting on:  {last_meeting_start:%b %d %Y}\n')
 
     meetings_w_num_participants = reduce(inc_cnt, [len(meeting['participants']) for meeting in meetings], {})
     print('Number of meetings grouped by number of participants:')
