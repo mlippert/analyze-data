@@ -154,16 +154,50 @@ class Riffdata:
 
         return meeting
 
-    def get_participants(self):
+    def get_raw_meetings(self, query=None):
+        """
+        Get all matching meeting documents from the riffdata mongodb meetings collection.
+        """
+        meetings = []
+        meetings_cursor = self.db.meetings.find(query)
+        for meeting in meetings_cursor:
+            meetings.append(meeting)
+            # pprint.pprint(meeting)
+        return meetings
+
+    def get_raw_meetingevents(self, query=None):
+        """
+        Get all of the meetingevent documents from the riffdata mongodb meetingevents
+        collection.
+        """
+        meetingevents_cursor = self.db.meetingevents.find(query)
+        return Riffdata.get_raw_documents(meetingevents_cursor)
+
+    def get_raw_participants(self, query=None):
         """
         Get all of the participants from the riffdata mongodb participants collection.
         """
         participants = []
-        participants_cursor = self.db.participants.find()
+        participants_cursor = self.db.participants.find(query)
         for participant in participants_cursor:
-            participants += participant
-            pprint.pprint(participant)
+            participants.append(participant)
+            # pprint.pprint(participant)
         return participants
+
+    def get_raw_participantevents(self, query=None):
+        """
+        Get all of the participantevent documents from the riffdata mongodb participantevents
+        collection.
+        """
+        participantevents_cursor = self.db.participantevents.find(query)
+        return Riffdata.get_raw_documents(participantevents_cursor)
+
+    def get_raw_utterances(self, query=None):
+        """
+        Get all matching utterance documents from the riffdata mongodb utterances collection.
+        """
+        utterances_cursor = self.db.utterances.find(query)
+        return Riffdata.get_raw_documents(utterances_cursor)
 
     def get_meetings_with_participant_utterances(self):
         """
@@ -177,6 +211,72 @@ class Riffdata:
         meetings = Riffdata._group_utterances(utterance_cursor)
 
         return meetings
+
+    def create_single_participant_db(self, participant_id, new_db_name):
+        """
+        Copy all data for the specified participant to a new database.
+            - Their participant record
+            - All data for all meetings they attended (perhaps remove lonely meetings)
+                - All of those meeting documents
+                - All participantevents documents for those meetings (perhaps remove null participant ids)
+                - All utterances documents for those meetings (perhaps remove zero len utterances)
+                - All participant documents of attendees of those meetings
+                    - remove any meetings not copied
+        """
+        post_qry = {
+            'participants.2': {'$exists': True}, # More than 2 participants
+            'participants': participant_id,
+        }
+        meetings = self.get_meetings(post_query=post_qry)
+        print(f'found {len(meetings)} meetings involving participant {participant_id}')
+
+        meeting_participant_ids = {p_id for m in meetings for p_id in m['participants']}
+        print(f'found {len(meeting_participant_ids)} participants in those meetings')
+
+        # get all the participant documents involved in those meetings
+        qry = {'_id': {'$in': list(meeting_participant_ids)}}
+        participants = self.get_raw_participants(query=qry)
+        print(f'found {len(participants)} participants records by id')
+
+        meeting_ids = {m['_id'] for m in meetings}
+
+        # since only these meetings are being copied remove references to other meetings
+        # from the participants meetings list
+        for p in participants:
+            if p['_id'] == participant_id:
+                p['meetings'] = list(meeting_ids)
+            else:
+                p_meeting_ids = set(p['meetings'])
+                p['meetings'] = list(p_meeting_ids & meeting_ids)
+
+        qry = {'_id': {'$in': list(meeting_ids)}}
+        raw_meetings = self.get_raw_meetings(query=qry)
+
+        qry = {'meeting': {'$in': list(meeting_ids)}}
+        participantevents = self.get_raw_participantevents(query=qry)
+        print(f'found {len(participantevents)} participantevents for those meetings')
+        meetingevents = self.get_raw_meetingevents(query=qry)
+        print(f'found {len(meetingevents)} meetingevents for those meetings')
+        qry['$expr'] = {'$gt': ['$endTime', '$startTime']}
+        raw_utterances = self.get_raw_utterances(query=qry)
+        print(f'found {len(raw_utterances)} utterances for those meetings')
+
+        new_db = self.client[new_db_name]
+        result = new_db.participants.insert_many(participants)
+        result = new_db.meetings.insert_many(raw_meetings)
+        result = new_db.participantevents.insert_many(participantevents)
+        result = new_db.meetingevents.insert_many(meetingevents)
+        result = new_db.utterances.insert_many(raw_utterances)
+
+    @staticmethod
+    def get_raw_documents(cursor):
+        """
+        Get all of the documents from the given mongodb cursor
+        """
+        docs = []
+        for doc in cursor:
+            docs.append(doc)
+        return docs
 
     @staticmethod
     def _group_utterances(utterance_cursor):
@@ -290,6 +390,10 @@ class Riffdata:
 
         print(f'Most utterances in a meeting was {max_utterances}\n')
 
+
+def do_extract_participant(participantId, new_db_name):
+    riffdata = Riffdata()
+    riffdata.create_single_participant_db(participantId, new_db_name)
 
 def _test():
     pass
