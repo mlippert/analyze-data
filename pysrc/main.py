@@ -26,6 +26,7 @@ from visualize.utterance_duration import do_analysis as do_utterance_duration_an
 from visualize.zero_duration_distrib import do_analysis as do_zero_duration_analysis
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
 from visualize.meetings import do_analysis as do_meetings_analysis
+from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
 
 
 @click.command()
@@ -68,6 +69,15 @@ def meetings(start_date, end_date):
     do_meetings_analysis((start_date, end_date))
 
 
+@click.command()
+@click.option('--meeting-id', '-m', type=str, default=None, required=False, help='Id of the meeting to chart')
+def meeting_timeline(meeting_id):
+    """
+    Produce a timeline chart of the utterances by all participants in a meeting
+    """
+    do_meeting_timeline_analysis()
+
+
 @click.group()
 def cli():
     """Run the various riffdata analyses
@@ -82,6 +92,7 @@ cli.add_command(utterance_gaps)
 cli.add_command(utterance_duration)
 cli.add_command(zero_len_utterance_distribution)
 cli.add_command(meetings)
+cli.add_command(meeting_timeline)
 
 
 if __name__ == '__main__':
