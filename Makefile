@@ -1,5 +1,5 @@
 #
-# Makefile to build and test the next-analytics
+# Makefile to build and test analyze-data
 #
 
 # force the shell used to be bash in case for some commands we want to use
@@ -127,7 +127,7 @@ show-ps : ## Show all docker containers w/ limited fields
 ## if you want the help sorted rather than in the order of occurrence, pipe the grep to sort and pipe that to awk
 help :
 	@echo ""                                                                   ; \
-	echo "Useful targets in this next-analytics Makefile:"                     ; \
+	echo "Useful targets in this analyze-data Makefile:"                       ; \
 	(grep -E '^[a-zA-Z_-]+ ?:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = " ?:.*?## "}; {printf "\033[36m%-20s\033[0m : %s\n", $$1, $$2}') ; \
 	echo ""                                                                    ; \
 	echo "If VIRTUAL_ENV needs to be set for a target, run '. activate' first" ; \
