@@ -91,6 +91,7 @@ def join_utterances(uts, min_gap):
         else:
             processed_uts.append(cur_ut)
             cur_ut = ut
+    processed_uts.append(cur_ut)
 
     return processed_uts
 
