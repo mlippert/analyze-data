@@ -27,6 +27,7 @@ from visualize.zero_duration_distrib import do_analysis as do_zero_duration_anal
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
 from visualize.meetings import do_analysis as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
+from riffdata.riffdata import do_extract_participant
 
 
 @click.command()
@@ -78,6 +79,38 @@ def meeting_timeline(meeting_id):
     do_meeting_timeline_analysis()
 
 
+@click.command()
+@click.option('--participant-id', '-p', type=str, default=None, required=True, help='Id of the participant to extract')
+def extract_participant(participant_id):
+    """
+    Copy all data for the specified participant to the new database named 'riff_one_part'.
+    That database should not exist when this is executed.
+
+    \b
+      - Their participant record
+      - All data for all meetings they attended (perhaps remove lonely meetings)
+        - All of those meeting documents
+        - All participantevents documents for those meetings (perhaps remove null participant ids)
+        - All utterances documents for those meetings (perhaps remove zero len utterances)
+        - All participant documents of attendees of those meetings
+          - remove any meetings not copied
+
+    sample participant id's from staging.riffplatform.com (snapshot 2019-12-27-13:08:05)
+
+    \b
+       name (meeting count) : participant id
+
+    \b
+      - Amy D         (447) : jMZgnpJrX1QwAN0oUkYNme9kD4b2
+      - Beth          (280) : GcOHEObyGzTShEOpSzma6VpzT2Q2
+      - Mike          (253:127 w/ > 2 people) : V4Kc1uN0pgP7oVhaDjcmp6swV2F3
+      - John Doucette (148) : FJwf8UtoqvRJ4jnAaqzV5hcfxAG3
+      - Brec Hanson   (122) : i6T3a2s5WpPo1dxZaRmIJlkFn4m1
+      - Jordan        (107) : SDzkCh0CetQsNw2gUZS5HPX2FCe2
+    """
+    do_extract_participant(participant_id, 'riff_one_part')
+
+
 @click.group()
 def cli():
     """Run the various riffdata analyses
@@ -93,6 +126,7 @@ cli.add_command(utterance_duration)
 cli.add_command(zero_len_utterance_distribution)
 cli.add_command(meetings)
 cli.add_command(meeting_timeline)
+cli.add_command(extract_participant)
 
 
 if __name__ == '__main__':
