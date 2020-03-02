@@ -63,7 +63,7 @@ def zero_len_utterance_distribution():
 @click.command()
 @click.option('--from', '-s', 'start_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date of the earliest meetings to include, defaults to include earliest meeting')
 @click.option('--to', '-e', 'end_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date following the last meetings to include, defaults to include last meeting')
-@click.option('--room-detail', '-R', type=click.Choice(['none', 'count', 'summary', 'all-meetings']), default='none', required=False, help='Room usage detail level for the selected meetings')
+@click.option('--room-detail', '-R', type=click.Choice(['none', 'count', 'summary', 'summary-attendees', 'all-meetings']), default='none', required=False, help='Room usage detail level for the selected meetings')
 def meetings(start_date, end_date, room_detail):
     """
     Display information about all the meetings in a given time period.

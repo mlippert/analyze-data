@@ -19,6 +19,7 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 import pprint
 from functools import reduce
 from typing import MutableMapping, Sequence, Iterable, Union, Any
+from numbers import Real
 from enum import Enum
 
 # Local application imports
@@ -53,7 +54,7 @@ def inc_cnt(d: MutableMapping[Any, int], key) -> MutableMapping[Any, int]:
     return d
 
 
-def inc_bucket(buckets, v):
+def inc_bucket(buckets: Iterable[Sequence[Real]], v: Real) -> Iterable[Sequence[Real]]:
     """
     Given a sorted list of bucket counts where a bucket's 1st element is the
     bucket max value and the 2nd element is the count for that bucket
@@ -111,9 +112,9 @@ def print_room_details(meetings, detail_level: RoomDetailLevel = RoomDetailLevel
     for meeting in meetings:
         room_name = meeting['room']
         if room_name in rooms:
-            rooms[room_name].append(meeting)
+            rooms[room_name]['meetings'].append(meeting)
         else:
-            rooms[room_name] = [meeting]
+            rooms[room_name] = {'meetings': [meeting]}
 
     # all detail levels except none show how many rooms were used by the meetings
     print(f'{len(rooms)} rooms used')
@@ -121,51 +122,63 @@ def print_room_details(meetings, detail_level: RoomDetailLevel = RoomDetailLevel
     if detail_level is RoomDetailLevel.COUNT:
         # print each room and a count of how many times it was used
         print('Count of the number of times a meeting room was used:')
-        for room_name, room_meetings in rooms.items():
-            print(f'{room_name}: {len(room_meetings)}')
-        return
-
-    if detail_level is RoomDetailLevel.SUMMARY:
-        # print summary information about the meetings in each room
-        for room_name, room_meetings in rooms.items():
-            meeting_minutes = [meeting['meetingLengthMin'] for meeting in room_meetings]
-            shortest_meeting = min(meeting_minutes)
-            longest_meeting = max(meeting_minutes)
-            avg_meeting = sum(meeting_minutes) / len(meeting_minutes)
-
-            participant_counts = [len(meeting['participants']) for meeting in room_meetings]
-            fewest_participants = min(participant_counts)
-            most_participants = max(participant_counts)
-
-            room_participants = reduce(inc_cnt, [p for meeting in room_meetings for p in meeting['participants']], {})
-
-            print(f'{room_name}: {len(room_meetings)} meetings')
-            if fewest_participants == most_participants:
-                print(f'\tattended by {fewest_participants} participants')
-            else:
-                print(f'\tattended by {fewest_participants} - {most_participants} participants')
-            if shortest_meeting == longest_meeting:
-                print(f'\tlasting {shortest_meeting:.1f} minutes')
-            else:
-                print(f'\tlasting from {shortest_meeting:.1f} to {longest_meeting:.1f} minutes (avg: {avg_meeting:.1f})')
-            print()
-        return
-
-    if detail_level is RoomDetailLevel.SUMMARY_ATTENDEES:
-        # print each room and a count of how many times it was used
-        print('SUMMARY_ATTENDEES room detail is not implemented')
-        # TODO: most of the summary info is the same as for SUMMARY, so we need to figure out how
-        # to not duplicate the calculations and output. The unused room_participants in SUMMARY is
-        # actually for use here!
+        for room_name, room in rooms.items():
+            print(f'{room_name}: {len(room["meetings"])}')
         return
 
     if detail_level is RoomDetailLevel.ALL_MEETINGS:
         # print each room and a count of how many times it was used
-        for room_name, room_meetings in rooms.items():
-            print(f'{room_name}: {len(room_meetings)}')
-            for meeting in room_meetings:
+        for room_name, room in rooms.items():
+            print(f'{room_name}: {len(room["meetings"])}')
+            for meeting in room['meetings']:
                 Riffdata.print_meeting(meeting)
                 print()
+        return
+
+    # compute room summary details
+    for room_name, room in rooms.items():
+        meeting_minutes = [meeting['meetingLengthMin'] for meeting in room['meetings']]
+        participant_counts = [len(meeting['participants']) for meeting in room['meetings']]
+        summary = {'shortest_meeting':    min(meeting_minutes),
+                   'longest_meeting':     max(meeting_minutes),
+                   'avg_meeting':         sum(meeting_minutes) / len(meeting_minutes),
+                   'fewest_participants': min(participant_counts),
+                   'most_participants':   max(participant_counts),
+                   'room_participants':   reduce(inc_cnt, [p for meeting in room['meetings']
+                                                           for p in meeting['participants']], {}),
+                  }
+        room['summary'] = summary
+
+    if detail_level is RoomDetailLevel.SUMMARY or detail_level is RoomDetailLevel.SUMMARY_ATTENDEES:
+        # print summary information about the meetings in each room
+        for room_name, room in rooms.items():
+            # shorter var names for summary info (I think we can do even better)
+            shortest_meeting = room['summary']['shortest_meeting']
+            longest_meeting = room['summary']['longest_meeting']
+            avg_meeting = room['summary']['avg_meeting']
+            fewest_participants = room['summary']['fewest_participants']
+            most_participants = room['summary']['most_participants']
+            room_participants = room['summary']['room_participants']
+
+            print(f'{room_name}: {len(room["meetings"])} meetings')
+
+            if fewest_participants == most_participants:
+                print(f'\tattended by {fewest_participants} participants')
+            else:
+                print(f'\tattended by {fewest_participants} - {most_participants} participants')
+
+            if shortest_meeting == longest_meeting:
+                print(f'\tlasting {shortest_meeting:.1f} minutes')
+            else:
+                print(f'\tlasting from {shortest_meeting:.1f} to {longest_meeting:.1f} minutes'
+                      f' (avg: {avg_meeting:.1f})')
+
+            if detail_level is RoomDetailLevel.SUMMARY_ATTENDEES:
+                print('\troom participants (# of meetings)')
+                for p, cnt in room_participants.items():
+                    print(f'\t\t{p} ({cnt})')
+
+            print()
         return
 
 
