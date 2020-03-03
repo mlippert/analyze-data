@@ -18,12 +18,16 @@ Copyright       (c) 2019-present Riff Learning Inc.,
 # Standard library imports
 import pprint
 from functools import reduce
-from typing import MutableMapping, Sequence, Iterable, Union, Any
+from typing import MutableMapping, MutableSequence, Sequence, Iterable, Union, Any, TypeVar, Set
 from numbers import Real
 from enum import Enum
 
 # Local application imports
 from riffdata.riffdata import Riffdata
+
+
+# Generic type variable for defining function parameters
+T = TypeVar('T')
 
 
 class RoomDetailLevel(Enum):
@@ -38,7 +42,7 @@ class RoomDetailLevel(Enum):
     ALL_MEETINGS = 'all-meetings'
 
 
-def inc_cnt(d: MutableMapping[Any, int], key) -> MutableMapping[Any, int]:
+def inc_cnt(d: MutableMapping[T, int], key: T) -> MutableMapping[T, int]:
     """
     reduce predicate that increments d[key], creating that key and
     setting it to 1 if it doesn't exist.
@@ -54,7 +58,7 @@ def inc_cnt(d: MutableMapping[Any, int], key) -> MutableMapping[Any, int]:
     return d
 
 
-def inc_bucket(buckets: Iterable[Sequence[Real]], v: Real) -> Iterable[Sequence[Real]]:
+def inc_bucket(buckets: Iterable[MutableSequence[Real]], v: Real) -> Iterable[MutableSequence[Real]]:
     """
     Given a sorted list of bucket counts where a bucket's 1st element is the
     bucket max value and the 2nd element is the count for that bucket
@@ -76,14 +80,33 @@ def inc_bucket(buckets: Iterable[Sequence[Real]], v: Real) -> Iterable[Sequence[
     return buckets
 
 
-def print_buckets(buckets: Iterable[Sequence[Any]]):
-    prev_b = None  # type: Union[Sequence[Any], None]
+def print_buckets(buckets: Iterable[Sequence[Any]]) -> None:
+    prev_b: Union[Sequence[Any], None] = None
     for b in buckets:
         if prev_b is None:
             print(f'  {"":4} < {b[0]:4}: {b[1]:4}')
         else:
             print(f'  {prev_b[0]:4} - {b[0]:4}: {b[1]:4}')
         prev_b = b
+
+
+def set_room_summary(room):
+    """
+    Set the summary key to contain the summary details of the meetings in the
+    given room.
+    """
+    meeting_minutes = [meeting['meetingLengthMin'] for meeting in room['meetings']]
+    participant_counts = [len(meeting['participants']) for meeting in room['meetings']]
+    init_part_cnt: MutableMapping[str, int] = {}  # this exists solely to define the type for reduce below
+    summary = {'shortest_meeting':    min(meeting_minutes),
+               'longest_meeting':     max(meeting_minutes),
+               'avg_meeting':         sum(meeting_minutes) / len(meeting_minutes),
+               'fewest_participants': min(participant_counts),
+               'most_participants':   max(participant_counts),
+               'room_participants':   reduce(inc_cnt, [p for meeting in room['meetings']
+                                                       for p in meeting['participants']], init_part_cnt),
+              }
+    room['summary'] = summary
 
 
 def print_room_details(meetings, detail_level: RoomDetailLevel = RoomDetailLevel.COUNT) -> None:
@@ -108,7 +131,8 @@ def print_room_details(meetings, detail_level: RoomDetailLevel = RoomDetailLevel
         return
 
     # reorganize the meetings by room
-    rooms = {}      # dict of room name to list of meetings in that room
+    # dict of room name to room dict containing summary values and list of meetings
+    rooms: MutableMapping[str, MutableMapping[str, Any]] = {}
     for meeting in meetings:
         room_name = meeting['room']
         if room_name in rooms:
@@ -136,18 +160,8 @@ def print_room_details(meetings, detail_level: RoomDetailLevel = RoomDetailLevel
         return
 
     # compute room summary details
-    for room_name, room in rooms.items():
-        meeting_minutes = [meeting['meetingLengthMin'] for meeting in room['meetings']]
-        participant_counts = [len(meeting['participants']) for meeting in room['meetings']]
-        summary = {'shortest_meeting':    min(meeting_minutes),
-                   'longest_meeting':     max(meeting_minutes),
-                   'avg_meeting':         sum(meeting_minutes) / len(meeting_minutes),
-                   'fewest_participants': min(participant_counts),
-                   'most_participants':   max(participant_counts),
-                   'room_participants':   reduce(inc_cnt, [p for meeting in room['meetings']
-                                                           for p in meeting['participants']], {}),
-                  }
-        room['summary'] = summary
+    for room in rooms.values():
+        set_room_summary(room)
 
     if detail_level is RoomDetailLevel.SUMMARY or detail_level is RoomDetailLevel.SUMMARY_ATTENDEES:
         # print summary information about the meetings in each room
@@ -213,7 +227,9 @@ def do_analysis(meeting_date_range=(None, None), room_detail: str = 'count'):
           f'  first meeting on: {first_meeting_start:%b %d %Y}\n'
           f'  last meeting on:  {last_meeting_start:%b %d %Y}\n')
 
-    meetings_w_num_participants = reduce(inc_cnt, [len(meeting['participants']) for meeting in meetings], {})
+    init_partcnt_cnt: MutableMapping[int, int] = {}  # this exists solely to define the type for reduce below
+    meetings_w_num_participants = reduce(inc_cnt, [len(meeting['participants'])
+                                                   for meeting in meetings], init_partcnt_cnt)
     print('Number of meetings grouped by number of participants:')
     pprint.pprint(meetings_w_num_participants)
     print()
@@ -248,7 +264,7 @@ def do_analysis(meeting_date_range=(None, None), room_detail: str = 'count'):
     print(f'Average length of a meeting was {avg_meeting_duration:.1f} minutes\n')
 
     # find the set of unique participants in these meetings
-    all_meeting_participants = set().union(*[meeting['participants'] for meeting in meetings])
+    all_meeting_participants: Set[str] = set().union(*[meeting['participants'] for meeting in meetings])
     print(f'Total number of participants in these meetings was {len(all_meeting_participants)}\n')
 
     # print the requested room details
