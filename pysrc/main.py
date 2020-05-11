@@ -27,7 +27,7 @@ from visualize.zero_duration_distrib import do_analysis as do_zero_duration_anal
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
 from visualize.meetings import do_analysis as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
-from riffdata.riffdata import do_extract_participant
+from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant
 
 
 @click.command()
@@ -61,13 +61,28 @@ def zero_len_utterance_distribution():
 
 
 @click.command()
+def drop_riffdata_db():
+    """
+    Drop the riffdata database, so that a backup can be restored cleanly.
+    """
+    do_drop_riffdata_db()
+
+
+@click.command()
 @click.option('--from', '-s', 'start_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date of the earliest meetings to include, defaults to include earliest meeting')
 @click.option('--to', '-e', 'end_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date following the last meetings to include, defaults to include last meeting')
-def meetings(start_date, end_date):
+@click.option('--room-detail', '-R', type=click.Choice(['none', 'count', 'summary', 'summary-attendees', 'all-meetings']), default='none', required=False, help='Room usage detail level for the selected meetings')
+def meetings(start_date, end_date, room_detail):
     """
     Display information about all the meetings in a given time period.
+
+    room details
+    none - no information about the rooms used for the selected meetings
+    count - every room listed with a count of the number of times it was used
+    summary - every room listed with the count, min # participants, max # participants, avg length of meetings in the room
+    all-meetings - every meeting in the room listed w/ its meeting info
     """
-    do_meetings_analysis((start_date, end_date))
+    do_meetings_analysis((start_date, end_date), room_detail)
 
 
 @click.command()
@@ -127,6 +142,7 @@ cli.add_command(zero_len_utterance_distribution)
 cli.add_command(meetings)
 cli.add_command(meeting_timeline)
 cli.add_command(extract_participant)
+cli.add_command(drop_riffdata_db)
 
 
 if __name__ == '__main__':
