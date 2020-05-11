@@ -234,8 +234,14 @@ def do_analysis(meeting_date_range=(None, None), room_detail: str = 'count'):
     pprint.pprint(meetings_w_num_participants)
     print()
 
+    # filter the meetings list to exclude meetings w/ only 1 participant
     meetings = [meeting for meeting in meetings if len(meeting['participants']) > 1]
-    print(f'Number of meetings with more than 1 participant was {len(meetings)}')
+
+    if len(meetings) == 0:
+        print('There were no meetings with more than 1 participant')
+        return
+    else:
+        print(f'Number of meetings with more than 1 participant was {len(meetings)}')
 
     meeting_duration_distribution = [
         [5, 0],
