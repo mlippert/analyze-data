@@ -68,6 +68,20 @@ class Riffdata:
         self.client = MongoClient(self._domain, self._port)
         self.db = self.client[self._db_name]
 
+
+    def drop_db(self):
+        """
+        Drop the Riff Database.
+
+        Obviously the database will need to be restored before any other operations
+        will succeed.
+        """
+        self.client.drop_database(self.db)
+
+        # I can't tell from the docs what the state of self.db will be after it is dropped
+        # we may want to set it to None at this time -mjl
+
+
     def get_meetings(self, pre_query=None, post_query=None):
         """
         Get all of the meetings from the riffdata mongodb meetings collection.
@@ -394,6 +408,12 @@ class Riffdata:
 def do_extract_participant(participantId, new_db_name):
     riffdata = Riffdata()
     riffdata.create_single_participant_db(participantId, new_db_name)
+
+
+def do_drop_db():
+    riffdata = Riffdata()
+    riffdata.drop_db()
+
 
 def _test():
     pass

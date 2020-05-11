@@ -27,7 +27,7 @@ from visualize.zero_duration_distrib import do_analysis as do_zero_duration_anal
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
 from visualize.meetings import do_analysis as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
-from riffdata.riffdata import do_extract_participant
+from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant
 
 
 @click.command()
@@ -58,6 +58,14 @@ def zero_len_utterance_distribution():
     see plot_0_distrib.png
     """
     do_zero_duration_analysis()
+
+
+@click.command()
+def drop_riffdata_db():
+    """
+    Drop the riffdata database, so that a backup can be restored cleanly.
+    """
+    do_drop_riffdata_db()
 
 
 @click.command()
@@ -134,6 +142,7 @@ cli.add_command(zero_len_utterance_distribution)
 cli.add_command(meetings)
 cli.add_command(meeting_timeline)
 cli.add_command(extract_participant)
+cli.add_command(drop_riffdata_db)
 
 
 if __name__ == '__main__':
