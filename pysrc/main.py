@@ -76,11 +76,15 @@ def meetings(start_date, end_date, room_detail):
     """
     Display information about all the meetings in a given time period.
 
-    room details
-    none - no information about the rooms used for the selected meetings
-    count - every room listed with a count of the number of times it was used
-    summary - every room listed with the count, min # participants, max # participants, avg length of meetings in the room
-    all-meetings - every meeting in the room listed w/ its meeting info
+    \b
+    room detail options:
+    none              - no information about the rooms used for the selected meetings
+    count             - every room listed with a count of the number of times it was used
+    summary           - every room listed with the count, min # participants, max # participants,
+                        avg length of meetings in the room
+    summary-attendees - summary information plus a list of all participants in that room w/ a
+                        count of the meetings that participant attended
+    all-meetings      - every meeting in the room listed w/ its meeting info
     """
     do_meetings_analysis((start_date, end_date), room_detail)
 
