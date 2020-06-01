@@ -211,9 +211,10 @@ def do_analysis(meeting_date_range=(None, None), room_detail: str = 'count'):
         startTimeConstraints['$lt'] = meeting_date_range[1]
         to_constraint = f'through {meeting_date_range[1]:%b %d %Y}'
 
-    qry = None
+    qry = {}
+    qry['endTime'] = {'$ne': None}  # skip meetings w/o an endTime ( s/b only active meetings)
     if len(startTimeConstraints) > 0:
-        qry = {'startTime': startTimeConstraints}
+        qry['startTime'] = startTimeConstraints
 
     meetings = riffdata.get_meetings(qry)
 
@@ -240,8 +241,8 @@ def do_analysis(meeting_date_range=(None, None), room_detail: str = 'count'):
     if len(meetings) == 0:
         print('There were no meetings with more than 1 participant')
         return
-    else:
-        print(f'Number of meetings with more than 1 participant was {len(meetings)}')
+
+    print(f'Number of meetings with more than 1 participant was {len(meetings)}')
 
     meeting_duration_distribution = [
         [5, 0],
