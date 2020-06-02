@@ -1,0 +1,47 @@
+#! /usr/bin/env bash
+# Tunnel to a riffremote site, make a backup of the riffdata mongo database, kill the tunnel
+
+MONGO_ARCHIVES=(
+                mongodb_riff-test.RR.clarovc.backup-20200602134852.gz
+                mongodb_riff-test.RR.digital-leaders.backup-20200602134921.gz
+                mongodb_riff-test.RR.disneyteam.backup-20200602134949.gz
+                mongodb_riff-test.RR.esme.backup-20200602135020.gz
+                mongodb_riff-test.RR.guo-ourteam.backup-20200602135048.gz
+                mongodb_riff-test.RR.kevin-riff.backup-20200602135128.gz
+                mongodb_riff-test.RR.leadershipteam.backup-20200602135603.gz
+                mongodb_riff-test.RR.learningseeds.backup-20200602135727.gz
+                mongodb_riff-test.RR.learnlaunch.backup-20200602140848.gz
+                mongodb_riff-test.RR.loughtec.backup-20200602143724.gz
+                mongodb_riff-test.RR.manpower.backup-20200602143738.gz
+                mongodb_riff-test.RR.mcc-cec-team.backup-20200602143800.gz
+                mongodb_riff-test.RR.meet.backup-20200602143816.gz
+                mongodb_riff-test.RR.mg.backup-20200602144005.gz
+                mongodb_riff-test.RR.mikecardus.backup-20200602144021.gz
+                mongodb_riff-test.RR.my.backup-20200602134815.gz
+                mongodb_riff-test.RR.olin.backup-20200602144035.gz
+                mongodb_riff-test.RR.opswat-emea.backup-20200602144049.gz
+                mongodb_riff-test.RR.ptizzza.backup-20200602144100.gz
+                mongodb_riff-test.RR.riffai.backup-20200602163400.gz
+                mongodb_riff-test.RR.sew.backup-20200602144111.gz
+                mongodb_riff-test.RR.strategyteam.backup-20200602144126.gz
+                mongodb_riff-test.RR.surfx.backup-20200602144149.gz
+                mongodb_riff-test.RR.swedishdoulas.backup-20200602144203.gz
+                mongodb_riff-test.RR.teamstratcap.backup-20200602144216.gz
+                mongodb_riff-test.RR.teamwoco.backup-20200602144230.gz
+               )
+
+for archive in ${MONGO_ARCHIVES[@]}
+do
+    echo "Analyzing meetings in riffdata archive '$archive'..."
+
+    SITE_NAME=${archive#mongodb_riff-test.RR.}
+    SITE_NAME=${SITE_NAME%%.backup-*}
+
+    ./analyze-data drop-riffdata-db
+    bin/mongo-restore.sh $archive
+    ./analyze-data meetings -R summary-attendees > reports/meetings-${SITE_NAME}_2020-06-02.rpt
+
+    echo "...Finished Analyzing meetings in riffdata archive '$archive'"
+    echo
+done
+
