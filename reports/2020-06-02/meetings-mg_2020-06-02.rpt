@@ -1,0 +1,39 @@
+There were 2 meetings  
+  first meeting on: Apr 16 2020
+  last meeting on:  Apr 16 2020
+
+Number of meetings grouped by number of participants:
+{1: 1, 3: 1}
+
+Number of meetings with more than 1 participant was 1
+The 1 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    1
+    20 -   40:    0
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (smoke-test-1) in room smoke-test
+2020 Apr 16 21:45 — 21:59 (14.3 minutes)
+3 participants:
+   1) G0DAHoX1U8hbz1IefV2Vq3TmOy72
+   2) SElRwoe5pGTs6GHbWm6bcGYZNmC3
+   3) V4Kc1uN0pgP7oVhaDjcmp6swV2F3
+
+Average length of a meeting was 14.3 minutes
+
+Total number of participants in these meetings was 3
+
+1 rooms used
+smoke-test: 1 meetings
+	attended by 3 participants
+	lasting 14.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		SElRwoe5pGTs6GHbWm6bcGYZNmC3 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+

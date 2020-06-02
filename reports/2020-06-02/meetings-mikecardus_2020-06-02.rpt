@@ -1,0 +1,38 @@
+There were 4 meetings  
+  first meeting on: Apr 17 2020
+  last meeting on:  Apr 30 2020
+
+Number of meetings grouped by number of participants:
+{1: 2, 2: 2}
+
+Number of meetings with more than 1 participant was 2
+The 2 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    1
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (meeting room 1-2) in room meeting room 1
+2020 Apr 23 13:33 — 14:22 (48.7 minutes)
+2 participants:
+   1) 9ERUtVyYied7DGrHxg1u0U6LoIa2
+   2) aANPANlfbUYrE5i4RI9y3fJPdqJ2
+
+Average length of a meeting was 42.7 minutes
+
+Total number of participants in these meetings was 3
+
+1 rooms used
+meeting room 1: 2 meetings
+	attended by 2 participants
+	lasting from 36.7 to 48.7 minutes (avg: 42.7)
+	room participants (# of meetings)
+		9ERUtVyYied7DGrHxg1u0U6LoIa2 (2)
+		aANPANlfbUYrE5i4RI9y3fJPdqJ2 (1)
+		foUo1XhocsVHw2HGTT6Ih91Xbop2 (1)
+
