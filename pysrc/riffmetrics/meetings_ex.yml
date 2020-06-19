@@ -1,0 +1,81 @@
+---
+meetings:
+  -
+    _id: b8d5baee-89d2-442e-a836-fd07705b5746
+    # domain where the meeting was run
+    site_id: riffai.riffremote.com
+    meeting_name: MikeBeth Weekly
+    meeting_type: One-on-One
+    room_name: aftreiz1ew
+    # meeting start timestamp is when the meeting is created and the 1st person joins
+    meeting_start_ts: 2020-05-20T16:31:19
+    # meeting officially starts at the first time there is more than one person in the meeting
+    meeting_start: 1344  # offset in ms from meeting_start_ts
+    # meeting ends at the last time there is more than one person in the meeting
+    meeting_end: 12312344  # offset in ms from meeting_start_ts
+    # all of the participants in the meeting. Index in this list identifies the participant elsewhere
+    participants:
+      -
+        participant_id: 6100c150-e48e-405a-bbb2-c9d171a8b44c
+        first_entered: 1000  # offset in ms from meeting_start_ts
+        last_left: 213000  # offset in ms from meeting_start_ts
+        time_in_meeting: 212000  # in ms may be less than last_left - first_entered, but not more, if they left and returned
+        speaking_time: 23000  # in ms
+        metrics:
+          # offset in ms of this participant's interruptions of each other participant in the meeting
+          interruptions:
+            - { part_ndx: 1, times: [ 2000, 3200, 12002 ] }  # 3 interruptions
+            - { part_ndx: 2, times: [] }  # 0 interruptions
+    # note that I'm not sure if the event_type should be more general w/ an addition field to specify
+    #   ie event_type: attend_meeting, action: join or leave
+    #   or event_type: audio, action: mute or unmute
+    #   or event_type: set_layout, layout: tiled or horizontal or vertical or speaker
+    #   etc.
+    events:
+      - event_type: meeting_join
+        part_ndx: 0  # index into the participants list of the participant involved in the event
+        time: 232300  # offset in ms from meeting_start_ts
+
+      - event_type: meeting_leave
+        part_ndx: 0
+        time: 232300
+
+      - event_type: share_screen_start
+        part_ndx: 0
+        time: 232300
+
+      - event_type: share_screen_stop
+        part_ndx: 0
+        time: 232300
+
+      - event_type: audio_enable
+        part_ndx: 0
+        time: 232300
+
+      - event_type: audio_disable
+        part_ndx: 0
+        time: 232300
+
+      - event_type: video_enable
+        part_ndx: 0
+        time: 232300
+
+      - event_type: video_disable
+        part_ndx: 0
+        time: 232300
+
+    utterances:
+      - { part_ndx: 1, start: 2000, end: 2100 }
+    expressions:
+      - { part_ndx: 1, time: 2000, emotion: happy, confidence: 89 }
+
+sites:
+  -
+    # The id is the domain since that should be unique (although I'm not sure what it means
+    # if a site is decommisioned and then resurrected, perhaps multiple times)
+    _id: riffai.riffremote.com
+    # Timestamp when the site went live
+    created: 2020-04-05T10:31:23
+    is_live: true
+    # The timestamp when the data from the site was last extracted from its riffdata and added here
+    last_update: 2020-05-20T16:31:19
