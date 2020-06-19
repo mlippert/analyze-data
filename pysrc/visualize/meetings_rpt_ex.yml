@@ -1,0 +1,59 @@
+---
+site: said-oxford.riffedu.com
+
+request_period:
+  start: 2020-02-01T00:00:00
+  end: 2020-03-01T00:00:00
+
+meetings_stats:
+  first_meeting: 2020-02-04T16:31:19
+  last_meeting: 2020-02-20T16:31:19
+  total_meetings: 53
+  real_meetings: 24  # Meetings w/ more than 1 participant
+  avg_meeting_length: 24.7  # in minutes
+  total_num_participants: 23  # unique participants in all real meetings
+  longest_meeting:
+    room: plg-315-xvzlw9
+    start: 2020-02-04T16:31:19
+    length: 143.8  # in minutes
+    num_participants: 2
+  count_by_participants:
+    - [1, 29]
+    - [2, 15]
+    - [3,  3]
+    - [4,  3]
+    - [5,  3]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,  4]
+    - [ 10,  3]
+    - [ 20,  7]
+    - [ 40,  7]
+    - [ 60,  0]
+    - [120,  2]
+    - [180,  1]
+    - [720,  0]
+
+rooms:
+  - room_name: Curriculum  # 6 meetings 2020 Feb 04 - 2020 Feb 24 (avg 32.9 minutes)
+    num_meetings: 6
+    first_meeting: 2020-02-04T16:31:19
+    last_meeting: 2020-02-24T16:31:19
+    num_participants: [2, 4]
+    meeting_length: [1.9, 97.0]
+    avg_length: 32.9
+    participants:  # participant id, num meetings attended
+      - ["3vtxNy6Vsabo1WYq1t634SzLyz33",  4]
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  3]
+      - ["nkEMsYQRUaOPj4gyW0Cx1IAQoQT2",  6]
+      - ["pbmK3XEVIveNuGuW6SrLmWEHDkF3",  6]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id: plg-318-wwsqlg-1  # 2020 Feb 04 16:43 — 17:02 (18.9 minutes)
+    room_name: plg-318-wwsqlg
+    meeting_start_ts: 2020-02-04T16:43:19
+    meeting_length: 18.9  # in minutes
+    participants:
+      - 6dgn41ig3pfhfrney1xmraoqoc
+      - tjd1y3mi3jftbe4fx39zwx1spr
+      - uwdmo4sqzbbqfe9qefe9848gbr
+      - zdwbsapao3n6uky6u7rf5fpxeo
