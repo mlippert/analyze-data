@@ -1,0 +1,38 @@
+There were 2 meetings  
+  first meeting on: May 01 2020
+  last meeting on:  May 01 2020
+
+Number of meetings grouped by number of participants:
+{2: 2}
+
+Number of meetings with more than 1 participant was 2
+The 2 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    1
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Noel and Sean-2) in room Noel and Sean
+2020 May 01 12:59 — 13:48 (49.9 minutes)
+2 participants:
+   1) QSZlK1Rd7xTWy6bqyYvSdRZ0W9a2
+   2) kq6vJxlzmigNClPzAfduU9IA4zG3
+
+Average length of a meeting was 43.9 minutes
+
+Total number of participants in these meetings was 3
+
+1 rooms used
+Noel and Sean: 2 meetings
+	attended by 2 participants
+	lasting from 37.9 to 49.9 minutes (avg: 43.9)
+	room participants (# of meetings)
+		HlZxaKjRSLagGxEx9PT39srjqPI2 (1)
+		kq6vJxlzmigNClPzAfduU9IA4zG3 (2)
+		QSZlK1Rd7xTWy6bqyYvSdRZ0W9a2 (1)
+

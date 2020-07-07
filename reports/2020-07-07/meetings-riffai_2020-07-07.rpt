@@ -1,0 +1,647 @@
+There were 320 meetings  
+  first meeting on: Apr 18 2020
+  last meeting on:  Jul 07 2020
+
+Number of meetings grouped by number of participants:
+{1: 114, 2: 147, 3: 30, 4: 13, 5: 8, 6: 4, 7: 3, 8: 1}
+
+Number of meetings with more than 1 participant was 206
+The 206 meetings grouped by meeting length in minutes:
+       <    5:   11
+     5 -   10:    9
+    10 -   20:   21
+    20 -   40:   99
+    40 -   60:   35
+    60 -  120:   31
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (boardmtg-1) in room boardmtg
+2020 Jun 19 17:59 — 19:54 (114.6 minutes)
+3 participants:
+   1) G0DAHoX1U8hbz1IefV2Vq3TmOy72
+   2) OJGA9uSqb4Rbo65YLY62WWQpk513
+   3) nkEMsYQRUaOPj4gyW0Cx1IAQoQT2
+
+Average length of a meeting was 35.8 minutes
+
+Total number of participants in these meetings was 116
+
+75 rooms used
+BU: 2 meetings
+	attended by 2 participants
+	lasting from 5.0 to 11.2 minutes (avg: 8.1)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (2)
+		v8qf4Ljn0Yad71azZJ5SlqaYb7Y2 (2)
+
+publishers: 1 meetings
+	attended by 2 participants
+	lasting 30.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		e5vi36sNEfWUSiMLJSLt2ArY9iF3 (1)
+
+research: 14 meetings
+	attended by 2 - 8 participants
+	lasting from 1.1 to 61.8 minutes (avg: 34.9)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (11)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (11)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (12)
+		mGZGS6HsATg0nwArrRoXF9yYiuF3 (11)
+		q94yeKPfA7Nf6kp8JQ69NFQ0rQw2 (13)
+		6lOVocg0h4gbF7ou2aEed7NR9R13 (6)
+		xKQAc5Tpy8TqmSs1eF7pqzuLzds1 (1)
+		uDpJiXwIRbO4U04F9pMpi8JcgSd2 (6)
+		IvNIIdX0DrYUWlGd8CWILNFJNcT2 (1)
+
+uprise: 49 meetings
+	attended by 2 - 6 participants
+	lasting from 3.8 to 58.4 minutes (avg: 24.9)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (16)
+		qRunqWUyBucyvFqtXqSeCHyzFgu2 (45)
+		pCX3p9l50lSu4tFTaIazReM0Z6I3 (32)
+		glHVE3ol2gfq9QYsm9drLl878742 (2)
+		9aPv9EEacqOBWmzivcGzL21Ocxw1 (4)
+		Q7PhVJsZluU5pBFJlMkQW7HiQVi1 (1)
+		qzCWngPGjgf9pZKXOT0RunVz3323 (5)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+
+uni-due: 3 meetings
+	attended by 2 - 4 participants
+	lasting from 34.8 to 85.3 minutes (avg: 61.8)
+	room participants (# of meetings)
+		AWXCKhOrV2hSgwig9Ya1UJrwhi42 (2)
+		IyCUfEIwAgRn4AzrBftFRJzwAw32 (3)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (2)
+		Ki1Ztk18C5WdY6wQmpF0vTNa9Mu2 (1)
+
+MikeBeth: 1 meetings
+	attended by 2 participants
+	lasting 66.5 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+
+legal: 1 meetings
+	attended by 2 participants
+	lasting 24.9 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		GDJZKkK2eigi5tK7ixRKeV3jxSl1 (1)
+
+GilliMike: 1 meetings
+	attended by 2 participants
+	lasting 38.2 minutes
+	room participants (# of meetings)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+		rl8seEIATLOt40yKY4sQMX903ot1 (1)
+
+Demo: 1 meetings
+	attended by 2 participants
+	lasting 36.3 minutes
+	room participants (# of meetings)
+		7wRvysxBMuOhVHjtqZdzLP3Dt592 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+cyberwarrior: 1 meetings
+	attended by 2 participants
+	lasting 30.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		NS2hXqMLHdbWXAnrTLbSEEOKLYP2 (1)
+
+Testing W/ Will: 1 meetings
+	attended by 3 participants
+	lasting 4.5 minutes
+	room participants (# of meetings)
+		1fYf6E7i0ucMPKMIcfYKl0UAGHK2 (1)
+		7wRvysxBMuOhVHjtqZdzLP3Dt592 (1)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+
+courbanize: 1 meetings
+	attended by 2 participants
+	lasting 35.8 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		fhjGAMMioHTZimghdkKDT8yqYYe2 (1)
+
+happyhour: 1 meetings
+	attended by 3 participants
+	lasting 63.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		ixUmH4MqOZQnTxS05d5ZiqTgS7F3 (1)
+		x8wJBDNzKXTQSodqZM2xYJtl53d2 (1)
+
+AWS: 1 meetings
+	attended by 2 participants
+	lasting 60.1 minutes
+	room participants (# of meetings)
+		5dhV9U6CoGYIPBQEdwXxvF8dLzu1 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+OMBA: 7 meetings
+	attended by 4 - 5 participants
+	lasting from 51.0 to 73.0 minutes (avg: 61.5)
+	room participants (# of meetings)
+		AVlaWsQE65YpaKYD9aAYc6thB4m1 (7)
+		BhLvNXUT4ZfcY42YfUsTdD6RAIh2 (6)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (7)
+		v8qf4Ljn0Yad71azZJ5SlqaYb7Y2 (7)
+		WGyWyCk5goRiIaVzdLPHc0zutbg2 (1)
+		XBxcmIDIcgf2582FLNQIUIIxvMY2 (3)
+
+qChange: 1 meetings
+	attended by 4 participants
+	lasting 54.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		Jgr97FuHekaqLhlXiF5YWlzNfts1 (1)
+		Nskxam2l9aaLozcV7kdZ2gglS1c2 (1)
+		l0dJLij4aHbYSS2viS40YjGZkpY2 (1)
+
+TalentEdge: 2 meetings
+	attended by 2 - 4 participants
+	lasting from 60.3 to 89.0 minutes (avg: 74.6)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		uWTvjMV25KT7AwJ0XpaLdm0CQNF2 (2)
+		3KgRl3L0pIP7oCDFOJNygEBhEt73 (1)
+		DYaW6SbPAVQiuBykRk0IHH29RrF3 (1)
+		KLzjgSeIjEgP50uboHgJEGIR1052 (1)
+
+manpower: 1 meetings
+	attended by 2 participants
+	lasting 8.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+
+Adit: 1 meetings
+	attended by 2 participants
+	lasting 43.0 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		TEZ8wcdfuqUKoUbdISucNHI0tFI3 (1)
+
+enterprises: 1 meetings
+	attended by 2 participants
+	lasting 42.1 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		snNdk9MASTPFrWliKb1beRGcwKm2 (1)
+
+python: 1 meetings
+	attended by 2 participants
+	lasting 23.3 minutes
+	room participants (# of meetings)
+		Bk0v4xZ3CAT94qQsX8Wt7IKpNVt2 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+SLEI: 1 meetings
+	attended by 3 participants
+	lasting 33.4 minutes
+	room participants (# of meetings)
+		5zL7B9uzoXSyE5OYn1tLKDtnqPk2 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		XaFdum6ItecqTfSu6GxQE5EXHgR2 (1)
+
+LearnLaunch: 1 meetings
+	attended by 2 participants
+	lasting 44.5 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		d02G965lYQTzh1gUyHAJevJSDqu1 (1)
+
+demo: 28 meetings
+	attended by 2 - 4 participants
+	lasting from 2.8 to 92.6 minutes (avg: 38.2)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (28)
+		LwOOB88QMHM5pDnAIccQ0fcv18K2 (1)
+		SS1BxXa3WZPR21FS1apacwHUbJe2 (1)
+		ubTN41N6YcM8RxdT3mvJAaiWAm92 (1)
+		urckulUQV7fJo22Ga1Fsfoh7Oqh1 (1)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (2)
+		bg5uSwQ2zbOQknBqnsAOBRSeAJW2 (1)
+		gpoTkfX65LZwNg5kceDjojDbkWp2 (1)
+		uDpJiXwIRbO4U04F9pMpi8JcgSd2 (1)
+		nH44njucaTfNKI9KiGwFTmOa5Gf2 (1)
+		O8aUrKMcTQZcQj4uJ3XbN9FbaL02 (1)
+		W6Of0DzKvMZANMUKGbepG0jBcS92 (1)
+		bqeaQFgXqdbSeREfdysuH4jSia43 (1)
+		uDwLRL9b0fcmEvcs8ZTzi2x2TpL2 (1)
+		SElRwoe5pGTs6GHbWm6bcGYZNmC3 (1)
+		lCwC7VbVoMPXQJPZhAM792aWv0H3 (1)
+		ZSB8Jr9zIpZNJ044uKfhNWbh3T23 (1)
+		t0j8RQaKQdfSG48xrbkHjKPmhbv2 (1)
+		MOVIog9IGYMSFnbQHlQnJPix58D2 (1)
+		BICzIvKBBVVCScCXSEUK4A5mADb2 (1)
+		rE2H3gLtPUPDSTzpM26FV00vlOv2 (1)
+		fSC0RkYQvNXOOQtguYZmlbimNTs1 (1)
+		ElFynopbRXOAYSa2AL4OFmHIOuH2 (1)
+		fBs9By3LbrfOoIMQCDQwXUnv4u53 (1)
+		BokPN9y3HwTkaMr4qSTMC8nHWXJ3 (1)
+		TtN2bxmplFMOFbUPgwqjimFnuEs2 (2)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+		uytYhvLgxTOSyrdRnT7z7EAAu3m2 (1)
+		SGJmyJ7JuwccqPtA6A53CFWFhOl2 (1)
+		N9ZhDiotBtTf10IxksXDS0dGVbr1 (1)
+		i04sExUAQXQrwvVQJHwSGHdCWZw2 (1)
+		6JhN9HOwVte51ISTWd6o9hR56SD3 (1)
+		tql4cNfWebYyqKfTidjkMx9CLgh2 (3)
+
+ExpertDojo: 1 meetings
+	attended by 3 participants
+	lasting 78.1 minutes
+	room participants (# of meetings)
+		Ak9TuBBNKDhhvOqooB8tpMkhH812 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		rS0kESZqFag0uif9HcPckMzMe7j2 (1)
+
+RobsonBeth: 2 meetings
+	attended by 2 participants
+	lasting from 30.6 to 39.8 minutes (avg: 35.2)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (2)
+		mfwx8UQvx2ea787m0eb2Hq0reP63 (2)
+
+clearstone: 1 meetings
+	attended by 3 participants
+	lasting 64.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		taDP2I8OZOa0K6bWnOA2yRNXXI72 (1)
+		uytYhvLgxTOSyrdRnT7z7EAAu3m2 (1)
+
+SEI: 1 meetings
+	attended by 2 participants
+	lasting 32.0 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		xH0oYLUqaPTdHt5MsotR2Qn0fah2 (1)
+
+CDL: 2 meetings
+	attended by 3 participants
+	lasting from 48.6 to 58.0 minutes (avg: 53.3)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (2)
+		SElRwoe5pGTs6GHbWm6bcGYZNmC3 (2)
+		y9hR6OSWOsf7XvBv2CIZupNXuns2 (2)
+
+ecom: 1 meetings
+	attended by 3 participants
+	lasting 100.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		SElRwoe5pGTs6GHbWm6bcGYZNmC3 (1)
+		W3sk9PnNpbV4tAZi0fvx4GEdcPI2 (1)
+
+jordantest: 1 meetings
+	attended by 2 participants
+	lasting 1.6 minutes
+	room participants (# of meetings)
+		IvNIIdX0DrYUWlGd8CWILNFJNcT2 (1)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+
+blueleaf: 2 meetings
+	attended by 2 - 6 participants
+	lasting from 5.3 to 9.8 minutes (avg: 7.5)
+	room participants (# of meetings)
+		3yW4E0UyDeWabBP7HpHJ4QdOGa13 (2)
+		xLdSisnTgZR8zDs0mPIkDGde11x1 (2)
+		IEDKa6AFXtO4wius43avmOttz0Q2 (1)
+		mDUOcCdwMagaM57wIPJEMgkd4Il2 (1)
+		mODpGXl9Z6dWLT4QdA6RMPxK1XP2 (1)
+		oqpk9nIwl3gY1beT0WjDgRAi9EB2 (1)
+
+DKim: 1 meetings
+	attended by 2 participants
+	lasting 40.6 minutes
+	room participants (# of meetings)
+		CZipISEK33YOUcLuN6MIr6aqWjE2 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+DaveBeth: 10 meetings
+	attended by 2 - 3 participants
+	lasting from 4.1 to 87.6 minutes (avg: 45.3)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (10)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (10)
+		3GsBy8bXUdYKz9UNdsneTf9Vgbg1 (1)
+
+WillBeth: 7 meetings
+	attended by 2 - 3 participants
+	lasting from 25.2 to 33.9 minutes (avg: 29.4)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (7)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (7)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+interview: 5 meetings
+	attended by 2 - 4 participants
+	lasting from 20.7 to 54.1 minutes (avg: 34.8)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (5)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+		W6Of0DzKvMZANMUKGbepG0jBcS92 (1)
+		IVj1GN0nOEUACxmM9ar23hzxokF2 (1)
+		nH44njucaTfNKI9KiGwFTmOa5Gf2 (2)
+		XS4dgljPuHSpRyggZRUaxkQTRw22 (1)
+		dTmRDDUpPAOYdpa4neabKgKlR8b2 (1)
+
+internship: 1 meetings
+	attended by 3 participants
+	lasting 35.1 minutes
+	room participants (# of meetings)
+		6lOVocg0h4gbF7ou2aEed7NR9R13 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		q94yeKPfA7Nf6kp8JQ69NFQ0rQw2 (1)
+
+ErinBeth: 1 meetings
+	attended by 2 participants
+	lasting 64.1 minutes
+	room participants (# of meetings)
+		Bw8174GZbJXj7RTziRGDqT6gFua2 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+ReehaBeth: 9 meetings
+	attended by 2 participants
+	lasting from 15.8 to 43.9 minutes (avg: 28.1)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (9)
+		uDpJiXwIRbO4U04F9pMpi8JcgSd2 (9)
+
+SteveBeth: 1 meetings
+	attended by 2 participants
+	lasting 49.1 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		QeqtcTXhTncjVOamlCXc40xuIy42 (1)
+
+Stephen - Beth - David: 1 meetings
+	attended by 3 participants
+	lasting 33.7 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		cLhZ4yM0Aia5gNYfjmik2ohRcJr1 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+JHU: 1 meetings
+	attended by 4 participants
+	lasting 39.1 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		GDlXHKfMC2TkEJi8gMsSdF64nSm2 (1)
+		YskmXZYf9KZIsvTkPUd6WX5lGlh1 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+Reeha-Andrew: 2 meetings
+	attended by 2 participants
+	lasting from 21.0 to 28.8 minutes (avg: 24.9)
+	room participants (# of meetings)
+		mGZGS6HsATg0nwArrRoXF9yYiuF3 (2)
+		uDpJiXwIRbO4U04F9pMpi8JcgSd2 (2)
+
+JasonBeth: 1 meetings
+	attended by 2 participants
+	lasting 30.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		bg5uSwQ2zbOQknBqnsAOBRSeAJW2 (1)
+
+weeklysync: 1 meetings
+	attended by 4 participants
+	lasting 35.5 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+		xKQAc5Tpy8TqmSs1eF7pqzuLzds1 (1)
+
+BD: 1 meetings
+	attended by 2 participants
+	lasting 94.9 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+facialmodeling: 1 meetings
+	attended by 4 participants
+	lasting 35.8 minutes
+	room participants (# of meetings)
+		6lOVocg0h4gbF7ou2aEed7NR9R13 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		q94yeKPfA7Nf6kp8JQ69NFQ0rQw2 (1)
+		xKQAc5Tpy8TqmSs1eF7pqzuLzds1 (1)
+
+Jim: 1 meetings
+	attended by 3 participants
+	lasting 60.7 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+		zUwWrDxOObeBRvzhOUl2MUai7ul2 (1)
+
+deck: 1 meetings
+	attended by 2 participants
+	lasting 54.6 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+MIT/Emeritus: 1 meetings
+	attended by 2 participants
+	lasting 27.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		UDGme19BA8TjogLkyfBHc9OklLX2 (1)
+
+radicalsocial: 1 meetings
+	attended by 3 participants
+	lasting 68.1 minutes
+	room participants (# of meetings)
+		1uwNrCoccXNwwMmrVrQ9f8Z5Ort1 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		wVT5wEYlEpYxwKrhCSD7nm32bms2 (1)
+
+faces: 1 meetings
+	attended by 2 participants
+	lasting 12.4 minutes
+	room participants (# of meetings)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		xKQAc5Tpy8TqmSs1eF7pqzuLzds1 (1)
+
+MIT-Emeritus: 1 meetings
+	attended by 3 participants
+	lasting 56.5 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		UDGme19BA8TjogLkyfBHc9OklLX2 (1)
+		f0WJgJPOQ3U5SWeqotxT93jcI6l1 (1)
+
+achtung: 1 meetings
+	attended by 2 participants
+	lasting 57.6 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		x612iHzxfdWSwviJURBIYzyapOG3 (1)
+
+turncalculation: 1 meetings
+	attended by 2 participants
+	lasting 20.4 minutes
+	room participants (# of meetings)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		uDpJiXwIRbO4U04F9pMpi8JcgSd2 (1)
+
+DanBeth: 1 meetings
+	attended by 2 participants
+	lasting 66.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		lRVjzZiEQxMUMlrE503W6PhUAi03 (1)
+
+emoji: 1 meetings
+	attended by 2 participants
+	lasting 27.3 minutes
+	room participants (# of meetings)
+		9aPv9EEacqOBWmzivcGzL21Ocxw1 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+interpersonal: 1 meetings
+	attended by 2 participants
+	lasting 24.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		TtN2bxmplFMOFbUPgwqjimFnuEs2 (1)
+
+boardmtg: 1 meetings
+	attended by 3 participants
+	lasting 114.6 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		OJGA9uSqb4Rbo65YLY62WWQpk513 (1)
+		nkEMsYQRUaOPj4gyW0Cx1IAQoQT2 (1)
+
+WillTami: 1 meetings
+	attended by 2 participants
+	lasting 3.8 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+
+WillDavid: 1 meetings
+	attended by 2 participants
+	lasting 42.2 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+
+WillDaveTami: 1 meetings
+	attended by 3 participants
+	lasting 42.8 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+
+JenniferBeth: 1 meetings
+	attended by 2 participants
+	lasting 73.9 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		JzdMn8YlOyMZSdm8J2gs8eAtk8J2 (1)
+
+metric algorithms: 2 meetings
+	attended by 2 participants
+	lasting from 14.6 to 29.5 minutes (avg: 22.0)
+	room participants (# of meetings)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (2)
+		mGZGS6HsATg0nwArrRoXF9yYiuF3 (2)
+
+UniDue: 1 meetings
+	attended by 2 participants
+	lasting 26.9 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		x612iHzxfdWSwviJURBIYzyapOG3 (1)
+
+GT: 1 meetings
+	attended by 2 participants
+	lasting 36.3 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		oi45UhHdf6aaqMyn8s9LKgymVFc2 (1)
+
+KhoaBeth: 1 meetings
+	attended by 2 participants
+	lasting 21.9 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		egfrjRUzVtcPsyNfqywv1SruEqs1 (1)
+
+coding: 2 meetings
+	attended by 2 participants
+	lasting from 2.4 to 28.6 minutes (avg: 15.5)
+	room participants (# of meetings)
+		Bk0v4xZ3CAT94qQsX8Wt7IKpNVt2 (2)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (2)
+
+Edge: 1 meetings
+	attended by 3 participants
+	lasting 42.6 minutes
+	room participants (# of meetings)
+		3vtxNy6Vsabo1WYq1t634SzLyz33 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		MfaFCl88Bgdb8in3WVqePiO30Mp1 (1)
+
+7/1 Meeting: 1 meetings
+	attended by 3 participants
+	lasting 36.8 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+
+BD Check-in: 1 meetings
+	attended by 3 participants
+	lasting 30.9 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		cdjTiW6POQeajeOBkE563cpRd2F3 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+
+ABC - RIFF interview: 1 meetings
+	attended by 2 participants
+	lasting 34.0 minutes
+	room participants (# of meetings)
+		0gWyAHTZ7cf1NmVCJ9HNSdZdVfv1 (1)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+
+huh: 1 meetings
+	attended by 2 participants
+	lasting 11.7 minutes
+	room participants (# of meetings)
+		JUQuvggv76ctK1nJNOWvkkf3McT2 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+
+BD Meeting: 1 meetings
+	attended by 2 participants
+	lasting 34.4 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+
+Private School BD: 1 meetings
+	attended by 2 participants
+	lasting 6.5 minutes
+	room participants (# of meetings)
+		Ll7SMRF0E0OHTfBQAE3ja6CfM8l2 (1)
+		e3mt0DxOWZgpTC6gzmvOUODY9gs1 (1)
+

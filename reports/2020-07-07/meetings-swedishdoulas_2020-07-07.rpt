@@ -1,0 +1,43 @@
+There were 33 meetings  
+  first meeting on: May 27 2020
+  last meeting on:  Jul 06 2020
+
+Number of meetings grouped by number of participants:
+{1: 15, 2: 5, 3: 10, 4: 2, 5: 1}
+
+Number of meetings with more than 1 participant was 18
+The 18 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    3
+    40 -   60:    4
+    60 -  120:    9
+   120 -  180:    1
+   180 -  720:    1
+
+The longest meeting was:
+meeting (SwedishDoulas-33) in room SwedishDoulas
+2020 Jul 06 20:01 — 23:04 (182.4 minutes)
+5 participants:
+   1) 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+   2) JKQ7DMVcsAW4Orob15tCcWtNyco2
+   3) O0QMFOLjkiYUW8uIvQdyHRyl2z32
+   4) picvHTqHuiRgFGDDqQJkzOs96Ou2
+   5) xXgfDffdbohtxTnlI6sDOhni2C03
+
+Average length of a meeting was 79.8 minutes
+
+Total number of participants in these meetings was 5
+
+1 rooms used
+SwedishDoulas: 18 meetings
+	attended by 2 - 5 participants
+	lasting from 29.1 to 182.4 minutes (avg: 79.8)
+	room participants (# of meetings)
+		2XhfX4Nw65YX8K9f8w9N5tCKcQD3 (12)
+		O0QMFOLjkiYUW8uIvQdyHRyl2z32 (9)
+		picvHTqHuiRgFGDDqQJkzOs96Ou2 (17)
+		xXgfDffdbohtxTnlI6sDOhni2C03 (14)
+		JKQ7DMVcsAW4Orob15tCcWtNyco2 (1)
+

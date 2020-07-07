@@ -1,0 +1,52 @@
+There were 6 meetings  
+  first meeting on: May 27 2020
+  last meeting on:  Jun 03 2020
+
+Number of meetings grouped by number of participants:
+{1: 4, 2: 1, 6: 1}
+
+Number of meetings with more than 1 participant was 2
+The 2 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    0
+    40 -   60:    1
+    60 -  120:    1
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (brain-1) in room brain
+2020 Jun 03 06:46 — 07:58 (72.3 minutes)
+6 participants:
+   1) 557PZ0yRqLQUXFKIlnOSyIMycJh2
+   2) 58z5CoaDMyWMwLrf8pxWa0ADKfC2
+   3) B7nnN0PY58QgYZLiokNDRj7kGH82
+   4) K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2
+   5) Pdurre2KQQcv4mYTI2JIQnL2U3C2
+   6) woeXCQGQVxdCW5lIswXB2gYTA3N2
+
+Average length of a meeting was 60.6 minutes
+
+Total number of participants in these meetings was 6
+
+2 rooms used
+test123: 1 meetings
+	attended by 2 participants
+	lasting 48.9 minutes
+	room participants (# of meetings)
+		K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2 (1)
+		woeXCQGQVxdCW5lIswXB2gYTA3N2 (1)
+
+brain: 1 meetings
+	attended by 6 participants
+	lasting 72.3 minutes
+	room participants (# of meetings)
+		557PZ0yRqLQUXFKIlnOSyIMycJh2 (1)
+		58z5CoaDMyWMwLrf8pxWa0ADKfC2 (1)
+		B7nnN0PY58QgYZLiokNDRj7kGH82 (1)
+		K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2 (1)
+		Pdurre2KQQcv4mYTI2JIQnL2U3C2 (1)
+		woeXCQGQVxdCW5lIswXB2gYTA3N2 (1)
+

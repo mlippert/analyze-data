@@ -1,0 +1,37 @@
+There were 2 meetings  
+  first meeting on: Apr 21 2020
+  last meeting on:  Apr 23 2020
+
+Number of meetings grouped by number of participants:
+{1: 1, 2: 1}
+
+Number of meetings with more than 1 participant was 1
+The 1 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    1
+    20 -   40:    0
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Kevin-riff-2) in room Kevin-riff
+2020 Apr 23 11:31 — 11:45 (14.3 minutes)
+2 participants:
+   1) St1wVf10ugNsbL7AwCYufG7YdxD2
+   2) rwYobtUv9NTy8yNfKbGbDXPuy5d2
+
+Average length of a meeting was 14.3 minutes
+
+Total number of participants in these meetings was 2
+
+1 rooms used
+Kevin-riff: 1 meetings
+	attended by 2 participants
+	lasting 14.3 minutes
+	room participants (# of meetings)
+		St1wVf10ugNsbL7AwCYufG7YdxD2 (1)
+		rwYobtUv9NTy8yNfKbGbDXPuy5d2 (1)
+
