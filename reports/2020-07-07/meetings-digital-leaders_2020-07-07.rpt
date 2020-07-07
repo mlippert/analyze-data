@@ -1,0 +1,39 @@
+There were 4 meetings  
+  first meeting on: May 08 2020
+  last meeting on:  May 13 2020
+
+Number of meetings grouped by number of participants:
+{1: 3, 3: 1}
+
+Number of meetings with more than 1 participant was 1
+The 1 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (digital-leaders-4) in room digital-leaders
+2020 May 13 08:30 — 09:08 (38.3 minutes)
+3 participants:
+   1) 80Nj2RGkyqcN9ueOSHhT4p6eY1b2
+   2) E6Yxg5ZcoGaFTKZbJyBVhoKaoLk1
+   3) alAQKyeGlFZSQ3y9B4ip1xfjrWx1
+
+Average length of a meeting was 38.3 minutes
+
+Total number of participants in these meetings was 3
+
+1 rooms used
+digital-leaders: 1 meetings
+	attended by 3 participants
+	lasting 38.3 minutes
+	room participants (# of meetings)
+		80Nj2RGkyqcN9ueOSHhT4p6eY1b2 (1)
+		E6Yxg5ZcoGaFTKZbJyBVhoKaoLk1 (1)
+		alAQKyeGlFZSQ3y9B4ip1xfjrWx1 (1)
+

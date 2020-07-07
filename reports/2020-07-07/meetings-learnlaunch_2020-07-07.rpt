@@ -1,0 +1,88 @@
+There were 25 meetings  
+  first meeting on: May 01 2020
+  last meeting on:  Jun 29 2020
+
+Number of meetings grouped by number of participants:
+{1: 7, 2: 9, 4: 2, 5: 5, 6: 2}
+
+Number of meetings with more than 1 participant was 18
+The 18 meetings grouped by meeting length in minutes:
+       <    5:    1
+     5 -   10:    1
+    10 -   20:    3
+    20 -   40:    6
+    40 -   60:    4
+    60 -  120:    3
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (venturepartner-8) in room venturepartner
+2020 Jun 12 11:59 — 13:09 (70.6 minutes)
+5 participants:
+   1) G0DAHoX1U8hbz1IefV2Vq3TmOy72
+   2) s3gTshv19PNr1Ca0Fim7UbedO1h1
+   3) szLeqH9nrxOjO8YoZtZr0rsJz8I3
+   4) vPlghZG3t2eeV8YK2iUwRHP1TRG2
+   5) zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+
+Average length of a meeting was 38.4 minutes
+
+Total number of participants in these meetings was 11
+
+7 rooms used
+venturepartner: 8 meetings
+	attended by 4 - 6 participants
+	lasting from 15.0 to 70.6 minutes (avg: 47.7)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (7)
+		i04sExUAQXQrwvVQJHwSGHdCWZw2 (6)
+		s3gTshv19PNr1Ca0Fim7UbedO1h1 (8)
+		szLeqH9nrxOjO8YoZtZr0rsJz8I3 (8)
+		vPlghZG3t2eeV8YK2iUwRHP1TRG2 (7)
+		zaxAMLXgFzRrC1k0UKyoxtFDCrL2 (5)
+
+EricBeth: 1 meetings
+	attended by 2 participants
+	lasting 57.2 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		szLeqH9nrxOjO8YoZtZr0rsJz8I3 (1)
+
+Peerceptiv: 1 meetings
+	attended by 4 participants
+	lasting 68.9 minutes
+	room participants (# of meetings)
+		ZbUVEuwCs6ZtJq17t4HYwxuNotE3 (1)
+		keAQROKwkyOogBo3UJ7XEByHB0W2 (1)
+		rR0th66ZaaRBzBV6cFeSUG6ht4D2 (1)
+		uYeodlLiFNbTuOnh9pg9h21eebU2 (1)
+
+Riff: 1 meetings
+	attended by 2 participants
+	lasting 12.5 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		s3gTshv19PNr1Ca0Fim7UbedO1h1 (1)
+
+MaryBeth: 5 meetings
+	attended by 2 participants
+	lasting from 2.7 to 35.1 minutes (avg: 19.1)
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (5)
+		zaxAMLXgFzRrC1k0UKyoxtFDCrL2 (5)
+
+JeanBeth: 1 meetings
+	attended by 2 participants
+	lasting 37.6 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		vPlghZG3t2eeV8YK2iUwRHP1TRG2 (1)
+
+milestones: 1 meetings
+	attended by 2 participants
+	lasting 38.4 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		MYYURFPb1jUKZZ52AjP0VRQJnnJ2 (1)
+

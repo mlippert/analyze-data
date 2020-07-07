@@ -1,0 +1,44 @@
+There were 4 meetings  
+  first meeting on: Apr 16 2020
+  last meeting on:  Apr 17 2020
+
+Number of meetings grouped by number of participants:
+{1: 2, 2: 2}
+
+Number of meetings with more than 1 participant was 2
+The 2 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    1
+    10 -   20:    1
+    20 -   40:    0
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (smoke-test-1) in room smoke-test
+2020 Apr 16 22:02 — 22:21 (19.8 minutes)
+2 participants:
+   1) G0DAHoX1U8hbz1IefV2Vq3TmOy72
+   2) V4Kc1uN0pgP7oVhaDjcmp6swV2F3
+
+Average length of a meeting was 13.9 minutes
+
+Total number of participants in these meetings was 4
+
+2 rooms used
+smoke-test: 1 meetings
+	attended by 2 participants
+	lasting 19.8 minutes
+	room participants (# of meetings)
+		G0DAHoX1U8hbz1IefV2Vq3TmOy72 (1)
+		V4Kc1uN0pgP7oVhaDjcmp6swV2F3 (1)
+
+BeSci Team: 1 meetings
+	attended by 2 participants
+	lasting 8.1 minutes
+	room participants (# of meetings)
+		pJcVQDEfjCSc5Sy2iVzXkEiLSpb2 (1)
+		whIBDl9KTUR9LyJqbqN5tn7jvff2 (1)
+

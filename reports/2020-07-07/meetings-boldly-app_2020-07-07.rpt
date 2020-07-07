@@ -1,0 +1,39 @@
+There were 2 meetings  
+  first meeting on: Jun 29 2020
+  last meeting on:  Jun 29 2020
+
+Number of meetings grouped by number of participants:
+{1: 1, 3: 1}
+
+Number of meetings with more than 1 participant was 1
+The 1 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Becs Room-2) in room Becs Room
+2020 Jun 29 01:30 — 02:00 (30.9 minutes)
+3 participants:
+   1) 4TAXfDcSt6aGeotEUAIXAOfL6LG3
+   2) QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+   3) R2C9wiflZLe06RVM6q3pJNplh4M2
+
+Average length of a meeting was 30.9 minutes
+
+Total number of participants in these meetings was 3
+
+1 rooms used
+Becs Room: 1 meetings
+	attended by 3 participants
+	lasting 30.9 minutes
+	room participants (# of meetings)
+		4TAXfDcSt6aGeotEUAIXAOfL6LG3 (1)
+		QqGw0tzwFBZj3wtJ8p0FGwXAK0x1 (1)
+		R2C9wiflZLe06RVM6q3pJNplh4M2 (1)
+
