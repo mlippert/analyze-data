@@ -25,7 +25,7 @@ import click
 from visualize.utterance_duration import do_analysis as do_utterance_duration_analysis
 from visualize.zero_duration_distrib import do_analysis as do_zero_duration_analysis
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
-from visualize.meetings import do_analysis2 as do_meetings_analysis
+from visualize.meetings import do_analysis as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
 from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant
 
