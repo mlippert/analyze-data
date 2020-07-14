@@ -25,7 +25,7 @@ import click
 from visualize.utterance_duration import do_analysis as do_utterance_duration_analysis
 from visualize.zero_duration_distrib import do_analysis as do_zero_duration_analysis
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
-from visualize.meetings import do_analysis as do_meetings_analysis
+from visualize.meetings import do_analysis2 as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
 from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant
 
@@ -72,7 +72,8 @@ def drop_riffdata_db():
 @click.option('--from', '-s', 'start_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date of the earliest meetings to include, defaults to include earliest meeting')
 @click.option('--to', '-e', 'end_date', type=click.DateTime(('%Y-%m-%d',)), default=None, required=False, help='Date following the last meetings to include, defaults to include last meeting')
 @click.option('--room-detail', '-R', type=click.Choice(['none', 'count', 'summary', 'summary-attendees', 'all-meetings']), default='none', required=False, help='Room usage detail level for the selected meetings')
-def meetings(start_date, end_date, room_detail):
+@click.option('--format', '-f', 'report_format', type=click.Choice(['human', 'yaml']), default='human', required=False, help='Format of the meeting report, human readable or yaml')
+def meetings(start_date, end_date, room_detail, report_format):
     """
     Display information about all the meetings in a given time period.
 
@@ -86,7 +87,7 @@ def meetings(start_date, end_date, room_detail):
                         count of the meetings that participant attended
     all-meetings      - every meeting in the room listed w/ its meeting info
     """
-    do_meetings_analysis((start_date, end_date), room_detail)
+    do_meetings_analysis((start_date, end_date), room_detail, report_format=report_format)
 
 
 @click.command()
