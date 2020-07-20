@@ -376,9 +376,9 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     # meeting data request period
     start = meeting_data.request_period['start']
     end = meeting_data.request_period['end']
-    start_value = f'{datetime.utcfromtimestamp(start):%Y-%m-%dT%H:%M:%SZ}' if start is not None \
+    start_value = f'{start:%Y-%m-%dT%H:%M:%SZ}' if start is not None \
                   else '# from the beginning of time'
-    end_value = f'{datetime.utcfromtimestamp(end):%Y-%m-%dT%H:%M:%SZ}' if end is not None \
+    end_value = f'{end:%Y-%m-%dT%H:%M:%SZ}' if end is not None \
                 else '# to the end of time'
     f.write('request_period:\n')
     f.write('  {:<6}: {}\n'.format('start', start_value))
