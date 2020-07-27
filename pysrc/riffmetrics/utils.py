@@ -213,7 +213,7 @@ def compute_utterance_pairwise_relations(sorted_utterances,
 AFFIRMATION_MIN_OVERLAP = 250
 AFFIRMATION_MAX_LENGTH = 2000
 
-def get_meeting_affirmations(meeting):
+def get_meeting_affirmations(meeting: Meeting):
     """
     Goal is to create counts of who affirmed whom.
     A affirms B if A begins to speak while B is speaking;
@@ -226,7 +226,7 @@ def get_meeting_affirmations(meeting):
         If the earlier utterance ends after the later utterance starts,
         future utterances could possibly affirm the earlier utterance.
         """
-        time_diff = getDurationInSeconds(earlierUtt.endTime, laterUtt.startTime);
+        time_diff = getDurationInSeconds(earlier_ut.endTime, later_ut.startTime);
         keep = time_diff < 0
 
         return keep
@@ -248,6 +248,12 @@ def get_meeting_affirmations(meeting):
         is_affirming = sufficient_overlap && short_affirmation && affirmation_ends
 
         return is_affirming
+
+    affirmations = compute_utterance_pairwise_relations(meeting.utterances,
+                                                        meeting.participants,
+                                                        is_affirmation,
+                                                        is_possibly_related
+                                                       )
 
 
 def get_meeting_interruptions(meeting):
