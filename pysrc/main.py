@@ -27,7 +27,7 @@ from visualize.zero_duration_distrib import do_analysis as do_zero_duration_anal
 from visualize.utterance_gap_len import do_analysis as do_utterance_gap_analysis
 from visualize.meetings import do_analysis as do_meetings_analysis
 from visualize.meeting_timeline import do_analysis as do_meeting_timeline_analysis
-from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant
+from riffdata.riffdata import do_drop_db as do_drop_riffdata_db, do_extract_participant, do_schema_update_meetings
 
 
 @click.command()
@@ -66,6 +66,22 @@ def drop_riffdata_db():
     Drop the riffdata database, so that a backup can be restored cleanly.
     """
     do_drop_riffdata_db()
+
+
+@click.command()
+def schema_update_meetings():
+    """
+    Update the schema of the meetings collection
+    (from a db from before riff-server 2.0.0-dev.8 to dev.8's schema)
+
+    \b
+    - set the title field (handling meetings in personal rooms)
+    - remove meetingUrl
+    - rename descriptions to meetingTypes
+
+    Use with care!
+    """
+    do_schema_update_meetings()
 
 
 @click.command()
@@ -148,6 +164,7 @@ cli.add_command(meetings)
 cli.add_command(meeting_timeline)
 cli.add_command(extract_participant)
 cli.add_command(drop_riffdata_db)
+cli.add_command(schema_update_meetings)
 
 
 if __name__ == '__main__':
