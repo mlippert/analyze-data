@@ -1,0 +1,265 @@
+%YAML 1.2
+---
+site: manpower.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-04-30T19:55:51Z
+  last_meeting           : 2020-07-23T13:57:01Z
+  total_meetings         : 82
+  real_meetings          : 14
+  avg_meeting_length     : 35.2
+  total_num_participants : 26
+  num_reused_rooms       : 4
+  longest_meeting:
+    room               : manpower
+    start              : 2020-04-30T20:26:49Z
+    length             : 71.4
+    num_participants   : 2
+  count_by_participants:
+    - [1,  68]
+    - [2,   7]
+    - [3,   3]
+    - [4,   1]
+    - [5,   1]
+    - [6,   1]
+    - [7,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   2]
+    - [ 10,   2]
+    - [ 20,   0]
+    - [ 40,   1]
+    - [ 60,   8]
+    - [120,   1]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 9 rooms used
+  - room_name        : Gruppo 1
+    num_meetings     : 1
+    first_meeting    : 2020-05-25T13:33:31Z
+    last_meeting     : 2020-05-25T13:33:31Z
+    num_participants : [3, 3]
+    meeting_length   : [20.7, 20.7]
+    avg_length       : 20.7
+    participants:  # participant id, num meetings attended
+      - ["MLRP_00pbejooUaWr7hz",  1]
+      - ["MLRP_4IM9GllJqHGDXZH",  1]
+      - ["MLRP_6fC53nvbRVDIgoB",  1]
+  - room_name        : Gruppo 2
+    num_meetings     : 1
+    first_meeting    : 2020-05-18T13:31:25Z
+    last_meeting     : 2020-05-18T13:31:25Z
+    num_participants : [3, 3]
+    meeting_length   : [48.1, 48.1]
+    avg_length       : 48.1
+    participants:  # participant id, num meetings attended
+      - ["MLRP_bvc4ab5T2KMtSE5",  1]
+      - ["MLRP_d5Ocur1txINayTb",  1]
+      - ["MLRP_eakxA3IhuXOVsDb",  1]
+  - room_name        : Gruppo 3
+    num_meetings     : 2
+    first_meeting    : 2020-05-18T13:28:28Z
+    last_meeting     : 2020-05-25T13:28:48Z
+    num_participants : [2, 6]
+    meeting_length   : [46.2, 48.9]
+    avg_length       : 47.6
+    participants:  # participant id, num meetings attended
+      - ["MLRP_4IM9GllJqHGDXZH",  1]
+      - ["MLRP_5tDJrR6kvEXEuWN",  2]
+      - ["MLRP_a32wDRi957Gv19H",  2]
+      - ["MLRP_b0ZJXlRsYCAHBK5",  1]
+      - ["MLRP_bd9tDJpVys2GzoV",  1]
+      - ["MLRP_bvc4ab5T2KMtSE5",  1]
+  - room_name        : Gruppo 4
+    num_meetings     : 2
+    first_meeting    : 2020-05-18T14:56:48Z
+    last_meeting     : 2020-05-25T15:01:01Z
+    num_participants : [2, 3]
+    meeting_length   : [40.6, 41.8]
+    avg_length       : 41.2
+    participants:  # participant id, num meetings attended
+      - ["MLRP_08Kf3A58QodRpyt",  2]
+      - ["MLRP_cBKUmVAOnKyZ1Qh",  2]
+      - ["MLRP_bQpFAvobSpVQIqp",  1]
+  - room_name        : Gruppo 5
+    num_meetings     : 1
+    first_meeting    : 2020-05-18T15:02:29Z
+    last_meeting     : 2020-05-18T15:02:29Z
+    num_participants : [5, 5]
+    meeting_length   : [42.1, 42.1]
+    avg_length       : 42.1
+    participants:  # participant id, num meetings attended
+      - ["MLRP_3LcRfBGddnOHy73",  1]
+      - ["MLRP_5z5zF72DSGxCFQ9",  1]
+      - ["MLRP_b3B9MtMcBPVyLbv",  1]
+      - ["MLRP_d59pWd0ai5NzHGR",  1]
+      - ["MLRP_e5thWeQqy7MhnXD",  1]
+  - room_name        : Gruppo 6
+    num_meetings     : 2
+    first_meeting    : 2020-05-18T14:59:22Z
+    last_meeting     : 2020-05-25T14:59:22Z
+    num_participants : [4, 7]
+    meeting_length   : [57.3, 57.4]
+    avg_length       : 57.3
+    participants:  # participant id, num meetings attended
+      - ["MLRP_6fC53nvbRVDIgoB",  1]
+      - ["MLRP_dp9iIeU30oXwyK9",  2]
+      - ["MLRP_eKXe0rPT2wsXB5P",  2]
+      - ["MLRP_ewJRRWvk4wcCloN",  2]
+      - ["None",  1]
+      - ["MLRP_6PrGfUGOWSaD0Mt",  1]
+      - ["MLRP_b3B9MtMcBPVyLbv",  1]
+      - ["MLRP_d59pWd0ai5NzHGR",  1]
+  - room_name        : manpower
+    num_meetings     : 1
+    first_meeting    : 2020-04-30T20:26:49Z
+    last_meeting     : 2020-04-30T20:26:49Z
+    num_participants : [2, 2]
+    meeting_length   : [71.4, 71.4]
+    avg_length       : 71.4
+    participants:  # participant id, num meetings attended
+      - ["MLRP_298IVOqSKD7mMYZ",  1]
+      - ["MLRP_afQIdW6ivZYbPvf",  1]
+  - room_name        : riff smoke test
+    num_meetings     : 1
+    first_meeting    : 2020-05-13T19:42:01Z
+    last_meeting     : 2020-05-13T19:42:01Z
+    num_participants : [2, 2]
+    meeting_length   : [0.7, 0.7]
+    avg_length       : 0.7
+    participants:  # participant id, num meetings attended
+      - ["MLRP_298IVOqSKD7mMYZ",  1]
+      - ["Mike12345",  1]
+  - room_name        : test
+    num_meetings     : 3
+    first_meeting    : 2020-05-04T17:33:04Z
+    last_meeting     : 2020-05-13T20:41:25Z
+    num_participants : [2, 2]
+    meeting_length   : [1.1, 8.8]
+    avg_length       : 5.8
+    participants:  # participant id, num meetings attended
+      - ["MLRP_298IVOqSKD7mMYZ",  3]
+      - ["Mike12345",  1]
+      - ["MLRP_afQIdW6ivZYbPvf",  2]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : manpower-1
+    room_name        : manpower
+    meeting_start_ts : 2020-04-30T20:26:49Z
+    meeting_length   : 71.39211666666667
+    participants:
+      - MLRP_298IVOqSKD7mMYZ
+      - MLRP_afQIdW6ivZYbPvf
+  - _id              : test-4
+    room_name        : test
+    meeting_start_ts : 2020-05-04T17:33:04Z
+    meeting_length   : 1.0910666666666666
+    participants:
+      - MLRP_298IVOqSKD7mMYZ
+      - Mike12345
+  - _id              : riff smoke test-1
+    room_name        : riff smoke test
+    meeting_start_ts : 2020-05-13T19:42:01Z
+    meeting_length   : 0.7415166666666667
+    participants:
+      - MLRP_298IVOqSKD7mMYZ
+      - Mike12345
+  - _id              : test-6
+    room_name        : test
+    meeting_start_ts : 2020-05-13T20:19:40Z
+    meeting_length   : 7.41605
+    participants:
+      - MLRP_298IVOqSKD7mMYZ
+      - MLRP_afQIdW6ivZYbPvf
+  - _id              : test-7
+    room_name        : test
+    meeting_start_ts : 2020-05-13T20:41:25Z
+    meeting_length   : 8.781816666666666
+    participants:
+      - MLRP_298IVOqSKD7mMYZ
+      - MLRP_afQIdW6ivZYbPvf
+  - _id              : Gruppo 3-2
+    room_name        : Gruppo 3
+    meeting_start_ts : 2020-05-18T13:28:28Z
+    meeting_length   : 48.927483333333335
+    participants:
+      - MLRP_4IM9GllJqHGDXZH
+      - MLRP_5tDJrR6kvEXEuWN
+      - MLRP_a32wDRi957Gv19H
+      - MLRP_b0ZJXlRsYCAHBK5
+      - MLRP_bd9tDJpVys2GzoV
+      - MLRP_bvc4ab5T2KMtSE5
+  - _id              : Gruppo 2-1
+    room_name        : Gruppo 2
+    meeting_start_ts : 2020-05-18T13:31:25Z
+    meeting_length   : 48.11893333333333
+    participants:
+      - MLRP_bvc4ab5T2KMtSE5
+      - MLRP_d5Ocur1txINayTb
+      - MLRP_eakxA3IhuXOVsDb
+  - _id              : Gruppo 4-1
+    room_name        : Gruppo 4
+    meeting_start_ts : 2020-05-18T14:56:48Z
+    meeting_length   : 40.61313333333333
+    participants:
+      - MLRP_08Kf3A58QodRpyt
+      - MLRP_cBKUmVAOnKyZ1Qh
+  - _id              : Gruppo 6-1
+    room_name        : Gruppo 6
+    meeting_start_ts : 2020-05-18T14:59:22Z
+    meeting_length   : 57.362966666666665
+    participants:
+      - MLRP_6fC53nvbRVDIgoB
+      - MLRP_dp9iIeU30oXwyK9
+      - MLRP_eKXe0rPT2wsXB5P
+      - MLRP_ewJRRWvk4wcCloN
+  - _id              : Gruppo 5-2
+    room_name        : Gruppo 5
+    meeting_start_ts : 2020-05-18T15:02:29Z
+    meeting_length   : 42.10348333333334
+    participants:
+      - MLRP_3LcRfBGddnOHy73
+      - MLRP_5z5zF72DSGxCFQ9
+      - MLRP_b3B9MtMcBPVyLbv
+      - MLRP_d59pWd0ai5NzHGR
+      - MLRP_e5thWeQqy7MhnXD
+  - _id              : Gruppo 3-5
+    room_name        : Gruppo 3
+    meeting_start_ts : 2020-05-25T13:28:48Z
+    meeting_length   : 46.19351666666667
+    participants:
+      - MLRP_5tDJrR6kvEXEuWN
+      - MLRP_a32wDRi957Gv19H
+  - _id              : Gruppo 1-12
+    room_name        : Gruppo 1
+    meeting_start_ts : 2020-05-25T13:33:31Z
+    meeting_length   : 20.677316666666666
+    participants:
+      - MLRP_00pbejooUaWr7hz
+      - MLRP_4IM9GllJqHGDXZH
+      - MLRP_6fC53nvbRVDIgoB
+  - _id              : Gruppo 6-4
+    room_name        : Gruppo 6
+    meeting_start_ts : 2020-05-25T14:59:22Z
+    meeting_length   : 57.3106
+    participants:
+      - None
+      - MLRP_6PrGfUGOWSaD0Mt
+      - MLRP_b3B9MtMcBPVyLbv
+      - MLRP_d59pWd0ai5NzHGR
+      - MLRP_dp9iIeU30oXwyK9
+      - MLRP_eKXe0rPT2wsXB5P
+      - MLRP_ewJRRWvk4wcCloN
+  - _id              : Gruppo 4-2
+    room_name        : Gruppo 4
+    meeting_start_ts : 2020-05-25T15:01:01Z
+    meeting_length   : 41.773316666666666
+    participants:
+      - MLRP_08Kf3A58QodRpyt
+      - MLRP_bQpFAvobSpVQIqp
+      - MLRP_cBKUmVAOnKyZ1Qh
+...

@@ -1,0 +1,30 @@
+There were 4 meetings
+  first meeting on: Sep 22 2020
+  last meeting on:  Oct 14 2020
+
+Number of meetings grouped by number of participants:
+   1:   3
+   2:   1
+
+Number of meetings with more than 1 participant was 1
+The 1 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Sid-Shai-2) in room Sid-Shai (21.6 minutes)
+2020 Oct 14 13:26 — 13:48 with 2 participants
+
+Average length of a meeting was 21.6 minutes
+
+Total number of participants in these meetings was 2
+
+1 rooms used
+Count of the number of times a meeting room was used:
+Sid-Shai: 1

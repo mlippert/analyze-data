@@ -1,0 +1,32 @@
+There were 9 meetings
+  first meeting on: Jul 31 2020
+  last meeting on:  Aug 03 2020
+
+Number of meetings grouped by number of participants:
+   1:   6
+   2:   1
+   3:   1
+   5:   1
+
+Number of meetings with more than 1 participant was 3
+The 3 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    1
+    20 -   40:    2
+    40 -   60:    0
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (WPotF-5) in room WPotF (22.3 minutes)
+2020 Aug 03 21:45 — 22:07 with 2 participants
+
+Average length of a meeting was 21.1 minutes
+
+Total number of participants in these meetings was 7
+
+1 rooms used
+Count of the number of times a meeting room was used:
+WPotF: 3

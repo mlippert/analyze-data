@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+site: asb-my.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  total_meetings         : 0
+  real_meetings          : 0
+  avg_meeting_length     : 0.0
+  total_num_participants : 0
+...

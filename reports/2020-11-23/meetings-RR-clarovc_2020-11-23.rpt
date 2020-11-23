@@ -1,0 +1,32 @@
+There were 4 meetings
+  first meeting on: Jun 08 2020
+  last meeting on:  Jul 03 2020
+
+Number of meetings grouped by number of participants:
+   1:   1
+   2:   3
+
+Number of meetings with more than 1 participant was 3
+The 3 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    2
+    40 -   60:    0
+    60 -  120:    1
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Marilyn & Jennifer-1) in room Marilyn & Jennifer (60.3 minutes)
+2020 Jul 03 13:59 — 14:59 with 2 participants
+
+Average length of a meeting was 39.5 minutes
+
+Total number of participants in these meetings was 4
+
+3 rooms used
+Count of the number of times a meeting room was used:
+Claudia/Jennifer: 1
+Marilyn & Jennifer: 1
+SAIL: 1

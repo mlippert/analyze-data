@@ -1,0 +1,92 @@
+%YAML 1.2
+---
+site: boldly-app.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-06-29T01:26:54Z
+  last_meeting           : 2020-11-16T23:46:58Z
+  total_meetings         : 16
+  real_meetings          : 5
+  avg_meeting_length     : 37.1
+  total_num_participants : 6
+  num_reused_rooms       : 1
+  longest_meeting:
+    room               : Becs Room
+    start              : 2020-07-15T23:00:56Z
+    length             : 62.1
+    num_participants   : 2
+  count_by_participants:
+    - [1,  11]
+    - [2,   3]
+    - [3,   1]
+    - [4,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   1]
+    - [ 20,   0]
+    - [ 40,   2]
+    - [ 60,   1]
+    - [120,   1]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 1 rooms used
+  - room_name        : Becs Room
+    num_meetings     : 5
+    first_meeting    : 2020-06-29T01:30:05Z
+    last_meeting     : 2020-11-16T21:29:46Z
+    num_participants : [2, 4]
+    meeting_length   : [8.7, 62.1]
+    avg_length       : 37.1
+    participants:  # participant id, num meetings attended
+      - ["4TAXfDcSt6aGeotEUAIXAOfL6LG3",  2]
+      - ["QqGw0tzwFBZj3wtJ8p0FGwXAK0x1",  5]
+      - ["R2C9wiflZLe06RVM6q3pJNplh4M2",  3]
+      - ["LfqGMEEmAdPGMimgeJald9mNy9E2",  1]
+      - ["PGWVOjWz5tOYXZSlgma2QOc2jWB2",  1]
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : Becs Room-2
+    room_name        : Becs Room
+    meeting_start_ts : 2020-06-29T01:30:05Z
+    meeting_length   : 30.852133333333335
+    participants:
+      - 4TAXfDcSt6aGeotEUAIXAOfL6LG3
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+      - R2C9wiflZLe06RVM6q3pJNplh4M2
+  - _id              : Becs Room-3
+    room_name        : Becs Room
+    meeting_start_ts : 2020-07-15T23:00:56Z
+    meeting_length   : 62.11038333333333
+    participants:
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+      - R2C9wiflZLe06RVM6q3pJNplh4M2
+  - _id              : Becs Room-4
+    room_name        : Becs Room
+    meeting_start_ts : 2020-07-16T03:01:41Z
+    meeting_length   : 52.90821666666667
+    participants:
+      - 4TAXfDcSt6aGeotEUAIXAOfL6LG3
+      - LfqGMEEmAdPGMimgeJald9mNy9E2
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+      - R2C9wiflZLe06RVM6q3pJNplh4M2
+  - _id              : Becs Room-6
+    room_name        : Becs Room
+    meeting_start_ts : 2020-07-24T02:00:12Z
+    meeting_length   : 8.739616666666667
+    participants:
+      - PGWVOjWz5tOYXZSlgma2QOc2jWB2
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+  - _id              : Becs Room-13
+    room_name        : Becs Room
+    meeting_start_ts : 2020-11-16T21:29:46Z
+    meeting_length   : 31.024433333333334
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+...

@@ -1,0 +1,43 @@
+There were 82 meetings
+  first meeting on: Apr 30 2020
+  last meeting on:  Jul 23 2020
+
+Number of meetings grouped by number of participants:
+   1:  68
+   2:   7
+   3:   3
+   4:   1
+   5:   1
+   6:   1
+   7:   1
+
+Number of meetings with more than 1 participant was 14
+The 14 meetings grouped by meeting length in minutes:
+       <    5:    2
+     5 -   10:    2
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    8
+    60 -  120:    1
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (manpower-1) in room manpower (71.4 minutes)
+2020 Apr 30 20:26 — 21:38 with 2 participants
+
+Average length of a meeting was 35.2 minutes
+
+Total number of participants in these meetings was 26
+
+9 rooms used
+Count of the number of times a meeting room was used:
+Gruppo 1: 1
+Gruppo 2: 1
+Gruppo 3: 2
+Gruppo 4: 2
+Gruppo 5: 1
+Gruppo 6: 2
+manpower: 1
+riff smoke test: 1
+test: 3

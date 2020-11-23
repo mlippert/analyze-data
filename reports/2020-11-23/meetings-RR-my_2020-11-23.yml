@@ -1,0 +1,1063 @@
+%YAML 1.2
+---
+site: my.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-05-15T18:12:47Z
+  last_meeting           : 2020-11-20T19:20:35Z
+  total_meetings         : 241
+  real_meetings          : 73
+  avg_meeting_length     : 27.2
+  total_num_participants : 114
+  num_reused_rooms       : 14
+  longest_meeting:
+    room               : 42jx2c9rcw
+    start              : 2020-08-20T14:09:00Z
+    length             : 96.6
+    num_participants   : 2
+  count_by_participants:
+    - [1, 168]
+    - [2,  52]
+    - [3,  14]
+    - [4,   3]
+    - [5,   2]
+    - [7,   1]
+    - [9,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   5]
+    - [ 10,   9]
+    - [ 20,  22]
+    - [ 40,  21]
+    - [ 60,  11]
+    - [120,   5]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 42 rooms used
+  - room_name        : 0atkj3t889
+    num_meetings     : 1
+    first_meeting    : 2020-08-24T23:07:31Z
+    last_meeting     : 2020-08-24T23:07:31Z
+    num_participants : [3, 3]
+    meeting_length   : [5.0, 5.0]
+    avg_length       : 5.0
+    participants:  # participant id, num meetings attended
+      - ["KZTBMXvpI9QUZr7IxPOEsIA4lw72",  1]
+      - ["NUrQbIHMGyOUr5WCbRNjZC68Fgr1",  1]
+      - ["UoTvjPepqZYVjPfrGsIbir9GRvu2",  1]
+  - room_name        : 0kxrcftgxq
+    num_meetings     : 2
+    first_meeting    : 2020-08-07T16:04:05Z
+    last_meeting     : 2020-10-05T19:30:52Z
+    num_participants : [2, 2]
+    meeting_length   : [37.8, 67.4]
+    avg_length       : 52.6
+    participants:  # participant id, num meetings attended
+      - ["HyDDkJMxWndlFuZoIYcGfA1CGYQ2",  1]
+      - ["YUPBouTc1TQ6t5gIMMhYJ2nR2OG2",  2]
+      - ["hce6WOWQGVO0nl4humjIspzPV7B2",  1]
+  - room_name        : 13ihspgjrp
+    num_meetings     : 1
+    first_meeting    : 2020-08-03T18:37:05Z
+    last_meeting     : 2020-08-03T18:37:05Z
+    num_participants : [5, 5]
+    meeting_length   : [38.6, 38.6]
+    avg_length       : 38.6
+    participants:  # participant id, num meetings attended
+      - ["6CgGIPG8V5dxQWGZy4As3HtRGOB2",  1]
+      - ["BID15XKGHjW8mHu9bm1t0v8MCdE2",  1]
+      - ["Ko20Hnm5L2bpIENXUOP0dneRuXH2",  1]
+      - ["NC6tcCuNQSaVw7tHQXJmfoCH2qf2",  1]
+      - ["gUHL7W5xpDWQ3BY7NJEYoPZ5TBZ2",  1]
+  - room_name        : 1nr5zuzxtf
+    num_meetings     : 1
+    first_meeting    : 2020-08-03T12:11:07Z
+    last_meeting     : 2020-08-03T12:11:07Z
+    num_participants : [2, 2]
+    meeting_length   : [29.5, 29.5]
+    avg_length       : 29.5
+    participants:  # participant id, num meetings attended
+      - ["hGxkG6rItmWF8BqcVUOugZhdOG72",  1]
+      - ["vsAvWqhS4Dazc9rofifyG5iLSG53",  1]
+  - room_name        : 2zh1vs7eyk
+    num_meetings     : 1
+    first_meeting    : 2020-11-03T16:20:20Z
+    last_meeting     : 2020-11-03T16:20:20Z
+    num_participants : [2, 2]
+    meeting_length   : [3.6, 3.6]
+    avg_length       : 3.6
+    participants:  # participant id, num meetings attended
+      - ["3s6Fkz4EgAf1KEXXZS7DMqlU3bq1",  1]
+      - ["hQgyd06Xp0QP1wVlUdX4hMOT3n92",  1]
+  - room_name        : 3ceon6q42n
+    num_meetings     : 2
+    first_meeting    : 2020-05-26T14:58:55Z
+    last_meeting     : 2020-05-28T14:35:46Z
+    num_participants : [3, 5]
+    meeting_length   : [33.0, 52.6]
+    avg_length       : 42.8
+    participants:  # participant id, num meetings attended
+      - ["BLf8tHoLYRcfGr4FjLMaPKZYS1g2",  1]
+      - ["BpD0RSphYgMhAfybDDLhyKNl6ow2",  2]
+      - ["DJRQhw8WwrMD5bdQ4ShW8PvWvPF2",  2]
+      - ["t4Yqct4D1KMiCybUpNffWuaCnar1",  2]
+      - ["xjN9mhpntte8t1CfR97h3G9nqke2",  1]
+  - room_name        : 3i7ikrqfxi
+    num_meetings     : 1
+    first_meeting    : 2020-11-04T21:31:07Z
+    last_meeting     : 2020-11-04T21:31:07Z
+    num_participants : [4, 4]
+    meeting_length   : [29.7, 29.7]
+    avg_length       : 29.7
+    participants:  # participant id, num meetings attended
+      - ["1LO0r53XlYOz4JtvdsQQeo68j4X2",  1]
+      - ["3vtxNy6Vsabo1WYq1t634SzLyz33",  1]
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["nkEMsYQRUaOPj4gyW0Cx1IAQoQT2",  1]
+  - room_name        : 42jx2c9rcw
+    num_meetings     : 1
+    first_meeting    : 2020-08-20T14:09:00Z
+    last_meeting     : 2020-08-20T14:09:00Z
+    num_participants : [2, 2]
+    meeting_length   : [96.6, 96.6]
+    avg_length       : 96.6
+    participants:  # participant id, num meetings attended
+      - ["0gWyAHTZ7cf1NmVCJ9HNSdZdVfv1",  1]
+      - ["h9fjEdJDDpN5zeE9UyW5O1evRm82",  1]
+  - room_name        : 4p0636s018
+    num_meetings     : 2
+    first_meeting    : 2020-09-28T08:01:48Z
+    last_meeting     : 2020-10-02T16:35:26Z
+    num_participants : [2, 2]
+    meeting_length   : [14.1, 73.4]
+    avg_length       : 43.8
+    participants:  # participant id, num meetings attended
+      - ["OTJqc2gnGjefNhLveLsDDpXkOpS2",  1]
+      - ["xdrIlKHpLheTXyWEBKjrs6MX60e2",  2]
+      - ["e0zvi5ua6VSP8RSRU9hkxTQCo4X2",  1]
+  - room_name        : 5mtk7jkbdt
+    num_meetings     : 1
+    first_meeting    : 2020-05-15T18:12:47Z
+    last_meeting     : 2020-05-15T18:12:47Z
+    num_participants : [2, 2]
+    meeting_length   : [10.5, 10.5]
+    avg_length       : 10.5
+    participants:  # participant id, num meetings attended
+      - ["6kcPnLpGVFSjxX95OqpuYLI2Jun1",  1]
+      - ["JUQuvggv76ctK1nJNOWvkkf3McT2",  1]
+  - room_name        : 7h3qoutd5k
+    num_meetings     : 1
+    first_meeting    : 2020-06-11T00:53:39Z
+    last_meeting     : 2020-06-11T00:53:39Z
+    num_participants : [2, 2]
+    meeting_length   : [11.4, 11.4]
+    avg_length       : 11.4
+    participants:  # participant id, num meetings attended
+      - ["GZHj3PKYPFdcCEoxcQoSwYIZ8pf2",  1]
+      - ["TtN2bxmplFMOFbUPgwqjimFnuEs2",  1]
+  - room_name        : 8bzdtb1sol
+    num_meetings     : 1
+    first_meeting    : 2020-08-03T11:38:02Z
+    last_meeting     : 2020-08-03T11:38:02Z
+    num_participants : [2, 2]
+    meeting_length   : [33.5, 33.5]
+    avg_length       : 33.5
+    participants:  # participant id, num meetings attended
+      - ["hGxkG6rItmWF8BqcVUOugZhdOG72",  1]
+      - ["vsAvWqhS4Dazc9rofifyG5iLSG53",  1]
+  - room_name        : 9y5osxtnh9
+    num_meetings     : 2
+    first_meeting    : 2020-06-12T16:52:31Z
+    last_meeting     : 2020-06-15T13:30:38Z
+    num_participants : [2, 2]
+    meeting_length   : [6.5, 18.4]
+    avg_length       : 12.5
+    participants:  # participant id, num meetings attended
+      - ["C6R6ZQRwSBXHq4SC2RIka9adaJF2",  2]
+      - ["QNQawlzNTGb0We1gEusXhIRqOIQ2",  2]
+  - room_name        : a5h87z3z1u
+    num_meetings     : 1
+    first_meeting    : 2020-08-25T14:01:44Z
+    last_meeting     : 2020-08-25T14:01:44Z
+    num_participants : [4, 4]
+    meeting_length   : [22.1, 22.1]
+    avg_length       : 22.1
+    participants:  # participant id, num meetings attended
+      - ["EseHCIQYiOXmRKwaYr5DjdNKOuu1",  1]
+      - ["LSXTQB0AIab4hB4FKFEFU2cdLfx2",  1]
+      - ["RP3gGoXLxfRxaOx0fwCXA8kz7gt2",  1]
+      - ["YJ7ctMta65WKBPzFrHZf36tui7J3",  1]
+  - room_name        : b3ge1x7u4m
+    num_meetings     : 2
+    first_meeting    : 2020-11-12T19:00:12Z
+    last_meeting     : 2020-11-12T20:01:30Z
+    num_participants : [2, 2]
+    meeting_length   : [42.2, 43.7]
+    avg_length       : 42.9
+    participants:  # participant id, num meetings attended
+      - ["BkoiAxmWVWRir5PKP6xOWZ9RaVM2",  2]
+      - ["LQQVbw7xSRaZF3pMsMV2SywggHm2",  1]
+      - ["dLWbPgWyHeQqeh4B5HRiGKozF123",  1]
+  - room_name        : f64wxqhqzy
+    num_meetings     : 1
+    first_meeting    : 2020-05-28T19:19:58Z
+    last_meeting     : 2020-05-28T19:19:58Z
+    num_participants : [2, 2]
+    meeting_length   : [16.8, 16.8]
+    avg_length       : 16.8
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["UDGme19BA8TjogLkyfBHc9OklLX2",  1]
+  - room_name        : ftem8l18gj
+    num_meetings     : 1
+    first_meeting    : 2020-10-15T19:07:23Z
+    last_meeting     : 2020-10-15T19:07:23Z
+    num_participants : [2, 2]
+    meeting_length   : [28.7, 28.7]
+    avg_length       : 28.7
+    participants:  # participant id, num meetings attended
+      - ["72CDpHRx9lTkB17J4uALKObymXL2",  1]
+      - ["Hms3ChvZizXOUvAfReSKdyzVvsm2",  1]
+  - room_name        : hmlph2pup2
+    num_meetings     : 1
+    first_meeting    : 2020-07-15T01:33:01Z
+    last_meeting     : 2020-07-15T01:33:01Z
+    num_participants : [2, 2]
+    meeting_length   : [22.6, 22.6]
+    avg_length       : 22.6
+    participants:  # participant id, num meetings attended
+      - ["LfqGMEEmAdPGMimgeJald9mNy9E2",  1]
+      - ["QqGw0tzwFBZj3wtJ8p0FGwXAK0x1",  1]
+  - room_name        : hwpuy9x10n
+    num_meetings     : 4
+    first_meeting    : 2020-06-12T07:43:49Z
+    last_meeting     : 2020-07-23T11:31:53Z
+    num_participants : [2, 3]
+    meeting_length   : [12.6, 38.4]
+    avg_length       : 25.9
+    participants:  # participant id, num meetings attended
+      - ["238AcZDJyPPmsJffhZ8s2XPH66E2",  1]
+      - ["CVOIml4Os8UgIJKUycxnFoXQm0i1",  4]
+      - ["y0h6Biq06uQuZdoLesBBdE2onA52",  1]
+      - ["5Cjn6gZRpvSAr93fT53eNHb0L102",  3]
+      - ["VASntFLpScfE74WR5LRb3UH5rGT2",  1]
+  - room_name        : j3xz64nof6
+    num_meetings     : 1
+    first_meeting    : 2020-07-01T09:02:42Z
+    last_meeting     : 2020-07-01T09:02:42Z
+    num_participants : [2, 2]
+    meeting_length   : [14.5, 14.5]
+    avg_length       : 14.5
+    participants:  # participant id, num meetings attended
+      - ["OleSk4nlZONmKY4VYsXEVO4JBxC3",  1]
+      - ["UnhLU7d1KdRKwVhfn61v36KaSsS2",  1]
+  - room_name        : jvk54si925
+    num_meetings     : 1
+    first_meeting    : 2020-10-14T00:34:01Z
+    last_meeting     : 2020-10-14T00:34:01Z
+    num_participants : [3, 3]
+    meeting_length   : [5.3, 5.3]
+    avg_length       : 5.3
+    participants:  # participant id, num meetings attended
+      - ["O8O8Nz3yBsR52UgyPdagTHdxN132",  1]
+      - ["gOG4finJsbM6O0bFowfsUtym1iP2",  1]
+      - ["iSikv9jzkMb5la2Kwp5QrsW0dgc2",  1]
+  - room_name        : ka5mmmbjtv
+    num_meetings     : 5
+    first_meeting    : 2020-08-18T16:09:28Z
+    last_meeting     : 2020-09-22T18:00:26Z
+    num_participants : [2, 3]
+    meeting_length   : [10.7, 42.3]
+    avg_length       : 32.2
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  2]
+      - ["mfwx8UQvx2ea787m0eb2Hq0reP63",  5]
+      - ["Ll7SMRF0E0OHTfBQAE3ja6CfM8l2",  1]
+      - ["cdjTiW6POQeajeOBkE563cpRd2F3",  3]
+  - room_name        : kh7fw74cwy
+    num_meetings     : 1
+    first_meeting    : 2020-10-30T20:11:53Z
+    last_meeting     : 2020-10-30T20:11:53Z
+    num_participants : [2, 2]
+    meeting_length   : [17.5, 17.5]
+    avg_length       : 17.5
+    participants:  # participant id, num meetings attended
+      - ["L14T0zhGvXUwXuRVSkLj93pG4NZ2",  1]
+      - ["iVhajIbKLPdhKhP9kNa25xm0tzz2",  1]
+  - room_name        : kj2do5fppt
+    num_meetings     : 1
+    first_meeting    : 2020-11-09T18:28:04Z
+    last_meeting     : 2020-11-09T18:28:04Z
+    num_participants : [2, 2]
+    meeting_length   : [28.6, 28.6]
+    avg_length       : 28.6
+    participants:  # participant id, num meetings attended
+      - ["kqxvHjc8eBYK45L4hs4411QkZW33",  1]
+      - ["p3ySd2NQXeeofRT1GT1RZzuogwv1",  1]
+  - room_name        : knm55ao9v9
+    num_meetings     : 1
+    first_meeting    : 2020-05-21T13:40:32Z
+    last_meeting     : 2020-05-21T13:40:32Z
+    num_participants : [2, 2]
+    meeting_length   : [15.7, 15.7]
+    avg_length       : 15.7
+    participants:  # participant id, num meetings attended
+      - ["5riV8ft3DESS9KZVFLOdZTPvrlh2",  1]
+      - ["ZaUCMof8lJZ2JH00staEkBtQKYL2",  1]
+  - room_name        : ods8ewe5ac
+    num_meetings     : 2
+    first_meeting    : 2020-06-02T14:49:52Z
+    last_meeting     : 2020-06-02T20:03:17Z
+    num_participants : [2, 3]
+    meeting_length   : [28.3, 57.2]
+    avg_length       : 42.8
+    participants:  # participant id, num meetings attended
+      - ["1g50p11zcjTs843p0rrBIbFiKKs2",  1]
+      - ["fBs9By3LbrfOoIMQCDQwXUnv4u53",  2]
+      - ["uulOAga06UfdEMzstejRJ2w3BY72",  1]
+      - ["YLh7QC0QIpWEJDudQNhwPSieyQ83",  1]
+  - room_name        : p6ucbqfpqh
+    num_meetings     : 1
+    first_meeting    : 2020-05-19T13:32:01Z
+    last_meeting     : 2020-05-19T13:32:01Z
+    num_participants : [2, 2]
+    meeting_length   : [31.7, 31.7]
+    avg_length       : 31.7
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["JUQuvggv76ctK1nJNOWvkkf3McT2",  1]
+  - room_name        : pwnh8kpmv7
+    num_meetings     : 11
+    first_meeting    : 2020-05-15T19:22:20Z
+    last_meeting     : 2020-06-24T16:59:31Z
+    num_participants : [2, 3]
+    meeting_length   : [0.4, 67.3]
+    avg_length       : 30.5
+    participants:  # participant id, num meetings attended
+      - ["6kcPnLpGVFSjxX95OqpuYLI2Jun1",  1]
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72", 11]
+      - ["JUQuvggv76ctK1nJNOWvkkf3McT2",  1]
+      - ["cdjTiW6POQeajeOBkE563cpRd2F3",  1]
+      - ["D5m6F1s4nufDVULRwgU2ASIaMRH2",  1]
+      - ["UDGme19BA8TjogLkyfBHc9OklLX2",  1]
+      - ["YfIY0j8AcmPbyRMd4FjwnV9RjcO2",  1]
+      - ["1uwNrCoccXNwwMmrVrQ9f8Z5Ort1",  1]
+      - ["wVT5wEYlEpYxwKrhCSD7nm32bms2",  1]
+      - ["72CDpHRx9lTkB17J4uALKObymXL2",  3]
+      - ["Hf4jakzjG5TV7TuNhNQlj1rBZ4F2",  1]
+      - ["QqGw0tzwFBZj3wtJ8p0FGwXAK0x1",  1]
+      - ["AEHB65VyVLfmdOBe3yzoZBcyzMS2",  1]
+  - room_name        : pxiqrqkw7o
+    num_meetings     : 1
+    first_meeting    : 2020-11-11T03:00:10Z
+    last_meeting     : 2020-11-11T03:00:10Z
+    num_participants : [2, 2]
+    meeting_length   : [7.5, 7.5]
+    avg_length       : 7.5
+    participants:  # participant id, num meetings attended
+      - ["DsURlfIq8cb8LqZA9xNY8J85pcl1",  1]
+      - ["gT29eNIvWEf9GsxutvdcU7Kr5eI2",  1]
+  - room_name        : sdwtagm94x
+    num_meetings     : 2
+    first_meeting    : 2020-08-09T15:54:00Z
+    last_meeting     : 2020-08-18T18:30:50Z
+    num_participants : [2, 7]
+    meeting_length   : [40.7, 74.3]
+    avg_length       : 57.5
+    participants:  # participant id, num meetings attended
+      - ["1RfQt6eGSbRSeFdH97Hv5wdSh7q1",  1]
+      - ["SKubVm4lB5NhvKX14MopQvGug1P2",  1]
+      - ["UUXSYTQjwgZMC1lMJEqWLQr0rsD2",  1]
+      - ["WJ127FPYVhZUOKo8QMDJHJ7tp2j1",  2]
+      - ["WRyJgmB0bpdWwLIL2yK50MvV6Ij2",  1]
+      - ["fdK1uqXefzW2WKR93xJZ7bRzOPY2",  1]
+      - ["xBLthFcvKwVwiNdhMQrTS7pOoRY2",  1]
+      - ["kf61KjlrNqbdiTYA5aJWksPqxMD3",  1]
+  - room_name        : tkyvb7ff3c
+    num_meetings     : 1
+    first_meeting    : 2020-09-28T17:04:29Z
+    last_meeting     : 2020-09-28T17:04:29Z
+    num_participants : [2, 2]
+    meeting_length   : [58.0, 58.0]
+    avg_length       : 58.0
+    participants:  # participant id, num meetings attended
+      - ["HTZIGAmoIFYK4LnI9FR3cKiqAsl1",  1]
+      - ["KLzjgSeIjEgP50uboHgJEGIR1052",  1]
+  - room_name        : twkmpd3xxl
+    num_meetings     : 1
+    first_meeting    : 2020-11-17T21:31:56Z
+    last_meeting     : 2020-11-17T21:31:56Z
+    num_participants : [3, 3]
+    meeting_length   : [52.0, 52.0]
+    avg_length       : 52.0
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["JzdMn8YlOyMZSdm8J2gs8eAtk8J2",  1]
+      - ["tSBgRXBzwEUgUVVK93x9Ssgg50l1",  1]
+  - room_name        : uo8xa7yfdh
+    num_meetings     : 1
+    first_meeting    : 2020-07-21T16:31:16Z
+    last_meeting     : 2020-07-21T16:31:16Z
+    num_participants : [2, 2]
+    meeting_length   : [8.4, 8.4]
+    avg_length       : 8.4
+    participants:  # participant id, num meetings attended
+      - ["NfoV1F5f6wOjaP7KB6y1G1OUHmk2",  1]
+      - ["uqdymondMpTurdiSSpLsItRhgb62",  1]
+  - room_name        : usqy7h0phu
+    num_meetings     : 1
+    first_meeting    : 2020-10-30T20:09:49Z
+    last_meeting     : 2020-10-30T20:09:49Z
+    num_participants : [2, 2]
+    meeting_length   : [12.5, 12.5]
+    avg_length       : 12.5
+    participants:  # participant id, num meetings attended
+      - ["L14T0zhGvXUwXuRVSkLj93pG4NZ2",  1]
+      - ["iVhajIbKLPdhKhP9kNa25xm0tzz2",  1]
+  - room_name        : v0fxraelnd
+    num_meetings     : 1
+    first_meeting    : 2020-08-24T23:03:37Z
+    last_meeting     : 2020-08-24T23:03:37Z
+    num_participants : [2, 2]
+    meeting_length   : [7.7, 7.7]
+    avg_length       : 7.7
+    participants:  # participant id, num meetings attended
+      - ["KZTBMXvpI9QUZr7IxPOEsIA4lw72",  1]
+      - ["NUrQbIHMGyOUr5WCbRNjZC68Fgr1",  1]
+  - room_name        : vnxgecjhvh
+    num_meetings     : 3
+    first_meeting    : 2020-10-22T16:12:30Z
+    last_meeting     : 2020-10-28T16:30:28Z
+    num_participants : [2, 2]
+    meeting_length   : [11.2, 16.5]
+    avg_length       : 14.2
+    participants:  # participant id, num meetings attended
+      - ["cdjTiW6POQeajeOBkE563cpRd2F3",  3]
+      - ["fM1UK8ylFFUj6iuyhdMJC1CfJhx1",  3]
+  - room_name        : wmzioh8ewo
+    num_meetings     : 1
+    first_meeting    : 2020-10-20T18:15:03Z
+    last_meeting     : 2020-10-20T18:15:03Z
+    num_participants : [2, 2]
+    meeting_length   : [9.2, 9.2]
+    avg_length       : 9.2
+    participants:  # participant id, num meetings attended
+      - ["CIki0NoQ0vhUYNjEGqA6TvLyxHB3",  1]
+      - ["r06IZHpO4tYQ9GicpJ8ZOaZPgeM2",  1]
+  - room_name        : xevrfh6gat
+    num_meetings     : 2
+    first_meeting    : 2020-10-21T13:35:44Z
+    last_meeting     : 2020-10-28T13:02:59Z
+    num_participants : [3, 3]
+    meeting_length   : [10.4, 30.3]
+    avg_length       : 20.4
+    participants:  # participant id, num meetings attended
+      - ["FjT5Ao6WWdf0fxjU8oBhFpCYpZr1",  2]
+      - ["MRWBeg2q1QSQo3wzk8hyk4BPPDo2",  2]
+      - ["hXIbQ89nMaXyYcm8EDGC4OhanUV2",  2]
+  - room_name        : xk350ljym7
+    num_meetings     : 1
+    first_meeting    : 2020-07-21T16:41:29Z
+    last_meeting     : 2020-07-21T16:41:29Z
+    num_participants : [4, 4]
+    meeting_length   : [14.8, 14.8]
+    avg_length       : 14.8
+    participants:  # participant id, num meetings attended
+      - ["DqabcYt5DAckcEN0NUd5CMJq6ZE3",  1]
+      - ["NfoV1F5f6wOjaP7KB6y1G1OUHmk2",  1]
+      - ["hva9UzDpsIVNnMPrC9l7wQCv4UL2",  1]
+      - ["uqdymondMpTurdiSSpLsItRhgb62",  1]
+  - room_name        : xmmbb73kwj
+    num_meetings     : 3
+    first_meeting    : 2020-07-21T07:04:13Z
+    last_meeting     : 2020-07-22T08:54:10Z
+    num_participants : [2, 2]
+    meeting_length   : [7.1, 11.5]
+    avg_length       : 8.9
+    participants:  # participant id, num meetings attended
+      - ["BAUvnytqb3ayL58f4OVwMGR0mKf2",  3]
+      - ["UnyS7IZfp6X2Qz3Wl55IGeJibEO2",  2]
+      - ["xaffRAkTYtYxmW0enzBRNr8rbL92",  1]
+  - room_name        : xtsmknpioq
+    num_meetings     : 1
+    first_meeting    : 2020-10-12T12:34:57Z
+    last_meeting     : 2020-10-12T12:34:57Z
+    num_participants : [2, 2]
+    meeting_length   : [2.7, 2.7]
+    avg_length       : 2.7
+    participants:  # participant id, num meetings attended
+      - ["9ERUtVyYied7DGrHxg1u0U6LoIa2",  1]
+      - ["DBnbAPz4IkWnGqDzpaauLeVFjX92",  1]
+  - room_name        : zsesw8oryk
+    num_meetings     : 3
+    first_meeting    : 2020-10-02T16:17:57Z
+    last_meeting     : 2020-10-06T23:14:33Z
+    num_participants : [2, 9]
+    meeting_length   : [2.7, 33.3]
+    avg_length       : 17.9
+    participants:  # participant id, num meetings attended
+      - ["3elxJ9FhyLf7rOoyOUwioyHR8aV2",  3]
+      - ["523hJU8S0IbuIpYaNrGASWxdMUS2",  3]
+      - ["9tcXnegaJPX3uXUZFO2CUJzxzZa2",  2]
+      - ["C2T24pgRAHSpw5Am0kDhChsyfFr1",  1]
+      - ["cAzBORSXkyS213mUF4SormQ3oud2",  1]
+      - ["i1lXAJbxvgPrwatHSPunOswWKPq1",  1]
+      - ["kHVjqltDyIMKVmyQJO9srqk1UmO2",  1]
+      - ["mfkqEjqMvNNuCgmmsN8ZYWDBohO2",  1]
+      - ["qwOBTGhhp6WsGhIJklQ6RHjv4Vf1",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : 5mtk7jkbdt-1
+    room_name        : 5mtk7jkbdt
+    meeting_start_ts : 2020-05-15T18:12:47Z
+    meeting_length   : 10.54895
+    participants:
+      - 6kcPnLpGVFSjxX95OqpuYLI2Jun1
+      - JUQuvggv76ctK1nJNOWvkkf3McT2
+  - _id              : pwnh8kpmv7-1
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-05-15T19:22:20Z
+    meeting_length   : 39.722683333333336
+    participants:
+      - 6kcPnLpGVFSjxX95OqpuYLI2Jun1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - JUQuvggv76ctK1nJNOWvkkf3McT2
+  - _id              : p6ucbqfpqh-1
+    room_name        : p6ucbqfpqh
+    meeting_start_ts : 2020-05-19T13:32:01Z
+    meeting_length   : 31.65175
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - JUQuvggv76ctK1nJNOWvkkf3McT2
+  - _id              : knm55ao9v9-4
+    room_name        : knm55ao9v9
+    meeting_start_ts : 2020-05-21T13:40:32Z
+    meeting_length   : 15.739716666666666
+    participants:
+      - 5riV8ft3DESS9KZVFLOdZTPvrlh2
+      - ZaUCMof8lJZ2JH00staEkBtQKYL2
+  - _id              : pwnh8kpmv7-3
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-05-22T20:48:33Z
+    meeting_length   : 11.97255
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+  - _id              : 3ceon6q42n-2
+    room_name        : 3ceon6q42n
+    meeting_start_ts : 2020-05-26T14:58:55Z
+    meeting_length   : 32.970333333333336
+    participants:
+      - BLf8tHoLYRcfGr4FjLMaPKZYS1g2
+      - BpD0RSphYgMhAfybDDLhyKNl6ow2
+      - DJRQhw8WwrMD5bdQ4ShW8PvWvPF2
+      - t4Yqct4D1KMiCybUpNffWuaCnar1
+      - xjN9mhpntte8t1CfR97h3G9nqke2
+  - _id              : pwnh8kpmv7-4
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-05-28T12:33:33Z
+    meeting_length   : 31.438933333333335
+    participants:
+      - D5m6F1s4nufDVULRwgU2ASIaMRH2
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : 3ceon6q42n-3
+    room_name        : 3ceon6q42n
+    meeting_start_ts : 2020-05-28T14:35:46Z
+    meeting_length   : 52.63543333333333
+    participants:
+      - BpD0RSphYgMhAfybDDLhyKNl6ow2
+      - DJRQhw8WwrMD5bdQ4ShW8PvWvPF2
+      - t4Yqct4D1KMiCybUpNffWuaCnar1
+  - _id              : pwnh8kpmv7-5
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-05-28T19:00:57Z
+    meeting_length   : 16.416483333333332
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - UDGme19BA8TjogLkyfBHc9OklLX2
+  - _id              : f64wxqhqzy-1
+    room_name        : f64wxqhqzy
+    meeting_start_ts : 2020-05-28T19:19:58Z
+    meeting_length   : 16.8252
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - UDGme19BA8TjogLkyfBHc9OklLX2
+  - _id              : ods8ewe5ac-1
+    room_name        : ods8ewe5ac
+    meeting_start_ts : 2020-06-02T14:49:52Z
+    meeting_length   : 28.319683333333334
+    participants:
+      - 1g50p11zcjTs843p0rrBIbFiKKs2
+      - fBs9By3LbrfOoIMQCDQwXUnv4u53
+      - uulOAga06UfdEMzstejRJ2w3BY72
+  - _id              : pwnh8kpmv7-6
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-02T19:29:55Z
+    meeting_length   : 67.33978333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - YfIY0j8AcmPbyRMd4FjwnV9RjcO2
+  - _id              : ods8ewe5ac-2
+    room_name        : ods8ewe5ac
+    meeting_start_ts : 2020-06-02T20:03:17Z
+    meeting_length   : 57.204966666666664
+    participants:
+      - YLh7QC0QIpWEJDudQNhwPSieyQ83
+      - fBs9By3LbrfOoIMQCDQwXUnv4u53
+  - _id              : pwnh8kpmv7-7
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-04T18:28:22Z
+    meeting_length   : 32.10385
+    participants:
+      - 1uwNrCoccXNwwMmrVrQ9f8Z5Ort1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - wVT5wEYlEpYxwKrhCSD7nm32bms2
+  - _id              : 7h3qoutd5k-4
+    room_name        : 7h3qoutd5k
+    meeting_start_ts : 2020-06-11T00:53:39Z
+    meeting_length   : 11.449733333333333
+    participants:
+      - GZHj3PKYPFdcCEoxcQoSwYIZ8pf2
+      - TtN2bxmplFMOFbUPgwqjimFnuEs2
+  - _id              : hwpuy9x10n-4
+    room_name        : hwpuy9x10n
+    meeting_start_ts : 2020-06-12T07:43:49Z
+    meeting_length   : 35.99818333333333
+    participants:
+      - 238AcZDJyPPmsJffhZ8s2XPH66E2
+      - CVOIml4Os8UgIJKUycxnFoXQm0i1
+      - y0h6Biq06uQuZdoLesBBdE2onA52
+  - _id              : 9y5osxtnh9-2
+    room_name        : 9y5osxtnh9
+    meeting_start_ts : 2020-06-12T16:52:31Z
+    meeting_length   : 6.5238
+    participants:
+      - C6R6ZQRwSBXHq4SC2RIka9adaJF2
+      - QNQawlzNTGb0We1gEusXhIRqOIQ2
+  - _id              : 9y5osxtnh9-3
+    room_name        : 9y5osxtnh9
+    meeting_start_ts : 2020-06-15T13:30:38Z
+    meeting_length   : 18.442383333333332
+    participants:
+      - C6R6ZQRwSBXHq4SC2RIka9adaJF2
+      - QNQawlzNTGb0We1gEusXhIRqOIQ2
+  - _id              : pwnh8kpmv7-10
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-22T03:30:58Z
+    meeting_length   : 18.763
+    participants:
+      - 72CDpHRx9lTkB17J4uALKObymXL2
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : pwnh8kpmv7-12
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-22T03:59:31Z
+    meeting_length   : 0.356
+    participants:
+      - 72CDpHRx9lTkB17J4uALKObymXL2
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : pwnh8kpmv7-13
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-22T04:00:46Z
+    meeting_length   : 1.5562333333333334
+    participants:
+      - 72CDpHRx9lTkB17J4uALKObymXL2
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : pwnh8kpmv7-14
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-23T19:05:21Z
+    meeting_length   : 59.14333333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - Hf4jakzjG5TV7TuNhNQlj1rBZ4F2
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+  - _id              : pwnh8kpmv7-15
+    room_name        : pwnh8kpmv7
+    meeting_start_ts : 2020-06-24T16:59:31Z
+    meeting_length   : 56.51343333333333
+    participants:
+      - AEHB65VyVLfmdOBe3yzoZBcyzMS2
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : j3xz64nof6-2
+    room_name        : j3xz64nof6
+    meeting_start_ts : 2020-07-01T09:02:42Z
+    meeting_length   : 14.538366666666667
+    participants:
+      - OleSk4nlZONmKY4VYsXEVO4JBxC3
+      - UnhLU7d1KdRKwVhfn61v36KaSsS2
+  - _id              : hwpuy9x10n-5
+    room_name        : hwpuy9x10n
+    meeting_start_ts : 2020-07-10T11:40:34Z
+    meeting_length   : 38.44488333333334
+    participants:
+      - 5Cjn6gZRpvSAr93fT53eNHb0L102
+      - CVOIml4Os8UgIJKUycxnFoXQm0i1
+      - VASntFLpScfE74WR5LRb3UH5rGT2
+  - _id              : hmlph2pup2-3
+    room_name        : hmlph2pup2
+    meeting_start_ts : 2020-07-15T01:33:01Z
+    meeting_length   : 22.645333333333333
+    participants:
+      - LfqGMEEmAdPGMimgeJald9mNy9E2
+      - QqGw0tzwFBZj3wtJ8p0FGwXAK0x1
+  - _id              : hwpuy9x10n-6
+    room_name        : hwpuy9x10n
+    meeting_start_ts : 2020-07-19T07:39:14Z
+    meeting_length   : 12.60405
+    participants:
+      - 5Cjn6gZRpvSAr93fT53eNHb0L102
+      - CVOIml4Os8UgIJKUycxnFoXQm0i1
+  - _id              : xmmbb73kwj-1
+    room_name        : xmmbb73kwj
+    meeting_start_ts : 2020-07-21T07:04:13Z
+    meeting_length   : 7.09405
+    participants:
+      - BAUvnytqb3ayL58f4OVwMGR0mKf2
+      - UnyS7IZfp6X2Qz3Wl55IGeJibEO2
+  - _id              : xmmbb73kwj-2
+    room_name        : xmmbb73kwj
+    meeting_start_ts : 2020-07-21T07:11:38Z
+    meeting_length   : 8.109183333333334
+    participants:
+      - BAUvnytqb3ayL58f4OVwMGR0mKf2
+      - UnyS7IZfp6X2Qz3Wl55IGeJibEO2
+  - _id              : uo8xa7yfdh-2
+    room_name        : uo8xa7yfdh
+    meeting_start_ts : 2020-07-21T16:31:16Z
+    meeting_length   : 8.40955
+    participants:
+      - NfoV1F5f6wOjaP7KB6y1G1OUHmk2
+      - uqdymondMpTurdiSSpLsItRhgb62
+  - _id              : xk350ljym7-7
+    room_name        : xk350ljym7
+    meeting_start_ts : 2020-07-21T16:41:29Z
+    meeting_length   : 14.787633333333334
+    participants:
+      - DqabcYt5DAckcEN0NUd5CMJq6ZE3
+      - NfoV1F5f6wOjaP7KB6y1G1OUHmk2
+      - hva9UzDpsIVNnMPrC9l7wQCv4UL2
+      - uqdymondMpTurdiSSpLsItRhgb62
+  - _id              : xmmbb73kwj-3
+    room_name        : xmmbb73kwj
+    meeting_start_ts : 2020-07-22T08:54:10Z
+    meeting_length   : 11.515016666666666
+    participants:
+      - BAUvnytqb3ayL58f4OVwMGR0mKf2
+      - xaffRAkTYtYxmW0enzBRNr8rbL92
+  - _id              : hwpuy9x10n-7
+    room_name        : hwpuy9x10n
+    meeting_start_ts : 2020-07-23T11:31:53Z
+    meeting_length   : 16.497016666666667
+    participants:
+      - 5Cjn6gZRpvSAr93fT53eNHb0L102
+      - CVOIml4Os8UgIJKUycxnFoXQm0i1
+  - _id              : 8bzdtb1sol-4
+    room_name        : 8bzdtb1sol
+    meeting_start_ts : 2020-08-03T11:38:02Z
+    meeting_length   : 33.480216666666664
+    participants:
+      - hGxkG6rItmWF8BqcVUOugZhdOG72
+      - vsAvWqhS4Dazc9rofifyG5iLSG53
+  - _id              : 1nr5zuzxtf-1
+    room_name        : 1nr5zuzxtf
+    meeting_start_ts : 2020-08-03T12:11:07Z
+    meeting_length   : 29.5335
+    participants:
+      - hGxkG6rItmWF8BqcVUOugZhdOG72
+      - vsAvWqhS4Dazc9rofifyG5iLSG53
+  - _id              : 13ihspgjrp-1
+    room_name        : 13ihspgjrp
+    meeting_start_ts : 2020-08-03T18:37:05Z
+    meeting_length   : 38.58813333333333
+    participants:
+      - 6CgGIPG8V5dxQWGZy4As3HtRGOB2
+      - BID15XKGHjW8mHu9bm1t0v8MCdE2
+      - Ko20Hnm5L2bpIENXUOP0dneRuXH2
+      - NC6tcCuNQSaVw7tHQXJmfoCH2qf2
+      - gUHL7W5xpDWQ3BY7NJEYoPZ5TBZ2
+  - _id              : 0kxrcftgxq-1
+    room_name        : 0kxrcftgxq
+    meeting_start_ts : 2020-08-07T16:04:05Z
+    meeting_length   : 67.40828333333333
+    participants:
+      - HyDDkJMxWndlFuZoIYcGfA1CGYQ2
+      - YUPBouTc1TQ6t5gIMMhYJ2nR2OG2
+  - _id              : sdwtagm94x-4
+    room_name        : sdwtagm94x
+    meeting_start_ts : 2020-08-09T15:54:00Z
+    meeting_length   : 40.661833333333334
+    participants:
+      - 1RfQt6eGSbRSeFdH97Hv5wdSh7q1
+      - SKubVm4lB5NhvKX14MopQvGug1P2
+      - UUXSYTQjwgZMC1lMJEqWLQr0rsD2
+      - WJ127FPYVhZUOKo8QMDJHJ7tp2j1
+      - WRyJgmB0bpdWwLIL2yK50MvV6Ij2
+      - fdK1uqXefzW2WKR93xJZ7bRzOPY2
+      - xBLthFcvKwVwiNdhMQrTS7pOoRY2
+  - _id              : ka5mmmbjtv-1
+    room_name        : ka5mmmbjtv
+    meeting_start_ts : 2020-08-18T16:09:28Z
+    meeting_length   : 32.27596666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - mfwx8UQvx2ea787m0eb2Hq0reP63
+  - _id              : sdwtagm94x-5
+    room_name        : sdwtagm94x
+    meeting_start_ts : 2020-08-18T18:30:50Z
+    meeting_length   : 74.31341666666667
+    participants:
+      - WJ127FPYVhZUOKo8QMDJHJ7tp2j1
+      - kf61KjlrNqbdiTYA5aJWksPqxMD3
+  - _id              : 42jx2c9rcw-2
+    room_name        : 42jx2c9rcw
+    meeting_start_ts : 2020-08-20T14:09:00Z
+    meeting_length   : 96.64511666666667
+    participants:
+      - 0gWyAHTZ7cf1NmVCJ9HNSdZdVfv1
+      - h9fjEdJDDpN5zeE9UyW5O1evRm82
+  - _id              : v0fxraelnd-2
+    room_name        : v0fxraelnd
+    meeting_start_ts : 2020-08-24T23:03:37Z
+    meeting_length   : 7.703333333333333
+    participants:
+      - KZTBMXvpI9QUZr7IxPOEsIA4lw72
+      - NUrQbIHMGyOUr5WCbRNjZC68Fgr1
+  - _id              : 0atkj3t889-1
+    room_name        : 0atkj3t889
+    meeting_start_ts : 2020-08-24T23:07:31Z
+    meeting_length   : 5.0255
+    participants:
+      - KZTBMXvpI9QUZr7IxPOEsIA4lw72
+      - NUrQbIHMGyOUr5WCbRNjZC68Fgr1
+      - UoTvjPepqZYVjPfrGsIbir9GRvu2
+  - _id              : a5h87z3z1u-2
+    room_name        : a5h87z3z1u
+    meeting_start_ts : 2020-08-25T14:01:44Z
+    meeting_length   : 22.099933333333333
+    participants:
+      - EseHCIQYiOXmRKwaYr5DjdNKOuu1
+      - LSXTQB0AIab4hB4FKFEFU2cdLfx2
+      - RP3gGoXLxfRxaOx0fwCXA8kz7gt2
+      - YJ7ctMta65WKBPzFrHZf36tui7J3
+  - _id              : ka5mmmbjtv-2
+    room_name        : ka5mmmbjtv
+    meeting_start_ts : 2020-08-27T20:13:51Z
+    meeting_length   : 42.32151666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - mfwx8UQvx2ea787m0eb2Hq0reP63
+  - _id              : ka5mmmbjtv-3
+    room_name        : ka5mmmbjtv
+    meeting_start_ts : 2020-09-04T18:30:42Z
+    meeting_length   : 40.71606666666667
+    participants:
+      - Ll7SMRF0E0OHTfBQAE3ja6CfM8l2
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - mfwx8UQvx2ea787m0eb2Hq0reP63
+  - _id              : ka5mmmbjtv-4
+    room_name        : ka5mmmbjtv
+    meeting_start_ts : 2020-09-07T18:09:06Z
+    meeting_length   : 35.00491666666667
+    participants:
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - mfwx8UQvx2ea787m0eb2Hq0reP63
+  - _id              : ka5mmmbjtv-5
+    room_name        : ka5mmmbjtv
+    meeting_start_ts : 2020-09-22T18:00:26Z
+    meeting_length   : 10.6765
+    participants:
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - mfwx8UQvx2ea787m0eb2Hq0reP63
+  - _id              : 4p0636s018-3
+    room_name        : 4p0636s018
+    meeting_start_ts : 2020-09-28T08:01:48Z
+    meeting_length   : 73.44778333333333
+    participants:
+      - OTJqc2gnGjefNhLveLsDDpXkOpS2
+      - xdrIlKHpLheTXyWEBKjrs6MX60e2
+  - _id              : tkyvb7ff3c-2
+    room_name        : tkyvb7ff3c
+    meeting_start_ts : 2020-09-28T17:04:29Z
+    meeting_length   : 57.962583333333335
+    participants:
+      - HTZIGAmoIFYK4LnI9FR3cKiqAsl1
+      - KLzjgSeIjEgP50uboHgJEGIR1052
+  - _id              : zsesw8oryk-1
+    room_name        : zsesw8oryk
+    meeting_start_ts : 2020-10-02T16:17:57Z
+    meeting_length   : 17.82496666666667
+    participants:
+      - 3elxJ9FhyLf7rOoyOUwioyHR8aV2
+      - 523hJU8S0IbuIpYaNrGASWxdMUS2
+      - 9tcXnegaJPX3uXUZFO2CUJzxzZa2
+  - _id              : 4p0636s018-4
+    room_name        : 4p0636s018
+    meeting_start_ts : 2020-10-02T16:35:26Z
+    meeting_length   : 14.096283333333334
+    participants:
+      - e0zvi5ua6VSP8RSRU9hkxTQCo4X2
+      - xdrIlKHpLheTXyWEBKjrs6MX60e2
+  - _id              : 0kxrcftgxq-3
+    room_name        : 0kxrcftgxq
+    meeting_start_ts : 2020-10-05T19:30:52Z
+    meeting_length   : 37.788916666666665
+    participants:
+      - YUPBouTc1TQ6t5gIMMhYJ2nR2OG2
+      - hce6WOWQGVO0nl4humjIspzPV7B2
+  - _id              : zsesw8oryk-4
+    room_name        : zsesw8oryk
+    meeting_start_ts : 2020-10-06T17:45:06Z
+    meeting_length   : 2.7045
+    participants:
+      - 3elxJ9FhyLf7rOoyOUwioyHR8aV2
+      - 523hJU8S0IbuIpYaNrGASWxdMUS2
+  - _id              : zsesw8oryk-5
+    room_name        : zsesw8oryk
+    meeting_start_ts : 2020-10-06T23:14:33Z
+    meeting_length   : 33.30845
+    participants:
+      - 3elxJ9FhyLf7rOoyOUwioyHR8aV2
+      - 523hJU8S0IbuIpYaNrGASWxdMUS2
+      - 9tcXnegaJPX3uXUZFO2CUJzxzZa2
+      - C2T24pgRAHSpw5Am0kDhChsyfFr1
+      - cAzBORSXkyS213mUF4SormQ3oud2
+      - i1lXAJbxvgPrwatHSPunOswWKPq1
+      - kHVjqltDyIMKVmyQJO9srqk1UmO2
+      - mfkqEjqMvNNuCgmmsN8ZYWDBohO2
+      - qwOBTGhhp6WsGhIJklQ6RHjv4Vf1
+  - _id              : xtsmknpioq-3
+    room_name        : xtsmknpioq
+    meeting_start_ts : 2020-10-12T12:34:57Z
+    meeting_length   : 2.7269
+    participants:
+      - 9ERUtVyYied7DGrHxg1u0U6LoIa2
+      - DBnbAPz4IkWnGqDzpaauLeVFjX92
+  - _id              : jvk54si925-1
+    room_name        : jvk54si925
+    meeting_start_ts : 2020-10-14T00:34:01Z
+    meeting_length   : 5.3341
+    participants:
+      - O8O8Nz3yBsR52UgyPdagTHdxN132
+      - gOG4finJsbM6O0bFowfsUtym1iP2
+      - iSikv9jzkMb5la2Kwp5QrsW0dgc2
+  - _id              : ftem8l18gj-2
+    room_name        : ftem8l18gj
+    meeting_start_ts : 2020-10-15T19:07:23Z
+    meeting_length   : 28.72265
+    participants:
+      - 72CDpHRx9lTkB17J4uALKObymXL2
+      - Hms3ChvZizXOUvAfReSKdyzVvsm2
+  - _id              : wmzioh8ewo-2
+    room_name        : wmzioh8ewo
+    meeting_start_ts : 2020-10-20T18:15:03Z
+    meeting_length   : 9.20565
+    participants:
+      - CIki0NoQ0vhUYNjEGqA6TvLyxHB3
+      - r06IZHpO4tYQ9GicpJ8ZOaZPgeM2
+  - _id              : xevrfh6gat-2
+    room_name        : xevrfh6gat
+    meeting_start_ts : 2020-10-21T13:35:44Z
+    meeting_length   : 10.401133333333334
+    participants:
+      - FjT5Ao6WWdf0fxjU8oBhFpCYpZr1
+      - MRWBeg2q1QSQo3wzk8hyk4BPPDo2
+      - hXIbQ89nMaXyYcm8EDGC4OhanUV2
+  - _id              : vnxgecjhvh-3
+    room_name        : vnxgecjhvh
+    meeting_start_ts : 2020-10-22T16:12:30Z
+    meeting_length   : 14.772833333333333
+    participants:
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - fM1UK8ylFFUj6iuyhdMJC1CfJhx1
+  - _id              : vnxgecjhvh-5
+    room_name        : vnxgecjhvh
+    meeting_start_ts : 2020-10-26T15:01:42Z
+    meeting_length   : 11.238316666666666
+    participants:
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - fM1UK8ylFFUj6iuyhdMJC1CfJhx1
+  - _id              : xevrfh6gat-3
+    room_name        : xevrfh6gat
+    meeting_start_ts : 2020-10-28T13:02:59Z
+    meeting_length   : 30.336966666666665
+    participants:
+      - FjT5Ao6WWdf0fxjU8oBhFpCYpZr1
+      - MRWBeg2q1QSQo3wzk8hyk4BPPDo2
+      - hXIbQ89nMaXyYcm8EDGC4OhanUV2
+  - _id              : vnxgecjhvh-6
+    room_name        : vnxgecjhvh
+    meeting_start_ts : 2020-10-28T16:30:28Z
+    meeting_length   : 16.477516666666666
+    participants:
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - fM1UK8ylFFUj6iuyhdMJC1CfJhx1
+  - _id              : usqy7h0phu-6
+    room_name        : usqy7h0phu
+    meeting_start_ts : 2020-10-30T20:09:49Z
+    meeting_length   : 12.548266666666667
+    participants:
+      - L14T0zhGvXUwXuRVSkLj93pG4NZ2
+      - iVhajIbKLPdhKhP9kNa25xm0tzz2
+  - _id              : kh7fw74cwy-1
+    room_name        : kh7fw74cwy
+    meeting_start_ts : 2020-10-30T20:11:53Z
+    meeting_length   : 17.547133333333335
+    participants:
+      - L14T0zhGvXUwXuRVSkLj93pG4NZ2
+      - iVhajIbKLPdhKhP9kNa25xm0tzz2
+  - _id              : 2zh1vs7eyk-1
+    room_name        : 2zh1vs7eyk
+    meeting_start_ts : 2020-11-03T16:20:20Z
+    meeting_length   : 3.578133333333333
+    participants:
+      - 3s6Fkz4EgAf1KEXXZS7DMqlU3bq1
+      - hQgyd06Xp0QP1wVlUdX4hMOT3n92
+  - _id              : 3i7ikrqfxi-1
+    room_name        : 3i7ikrqfxi
+    meeting_start_ts : 2020-11-04T21:31:07Z
+    meeting_length   : 29.7303
+    participants:
+      - 1LO0r53XlYOz4JtvdsQQeo68j4X2
+      - 3vtxNy6Vsabo1WYq1t634SzLyz33
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - nkEMsYQRUaOPj4gyW0Cx1IAQoQT2
+  - _id              : kj2do5fppt-1
+    room_name        : kj2do5fppt
+    meeting_start_ts : 2020-11-09T18:28:04Z
+    meeting_length   : 28.5917
+    participants:
+      - kqxvHjc8eBYK45L4hs4411QkZW33
+      - p3ySd2NQXeeofRT1GT1RZzuogwv1
+  - _id              : pxiqrqkw7o-1
+    room_name        : pxiqrqkw7o
+    meeting_start_ts : 2020-11-11T03:00:10Z
+    meeting_length   : 7.528216666666666
+    participants:
+      - DsURlfIq8cb8LqZA9xNY8J85pcl1
+      - gT29eNIvWEf9GsxutvdcU7Kr5eI2
+  - _id              : b3ge1x7u4m-1
+    room_name        : b3ge1x7u4m
+    meeting_start_ts : 2020-11-12T19:00:12Z
+    meeting_length   : 43.70595
+    participants:
+      - BkoiAxmWVWRir5PKP6xOWZ9RaVM2
+      - LQQVbw7xSRaZF3pMsMV2SywggHm2
+  - _id              : b3ge1x7u4m-2
+    room_name        : b3ge1x7u4m
+    meeting_start_ts : 2020-11-12T20:01:30Z
+    meeting_length   : 42.1712
+    participants:
+      - BkoiAxmWVWRir5PKP6xOWZ9RaVM2
+      - dLWbPgWyHeQqeh4B5HRiGKozF123
+  - _id              : twkmpd3xxl-3
+    room_name        : twkmpd3xxl
+    meeting_start_ts : 2020-11-17T21:31:56Z
+    meeting_length   : 51.98895
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - JzdMn8YlOyMZSdm8J2gs8eAtk8J2
+      - tSBgRXBzwEUgUVVK93x9Ssgg50l1
+...

@@ -1,0 +1,36 @@
+There were 13 meetings
+  first meeting on: May 27 2020
+  last meeting on:  Sep 30 2020
+
+Number of meetings grouped by number of participants:
+   1:   8
+   2:   2
+   3:   1
+   6:   2
+
+Number of meetings with more than 1 participant was 5
+The 5 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    2
+    20 -   40:    1
+    40 -   60:    1
+    60 -  120:    1
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (brain-1) in room brain (72.3 minutes)
+2020 Jun 03 06:46 — 07:58 with 6 participants
+
+Average length of a meeting was 36.1 minutes
+
+Total number of participants in these meetings was 12
+
+5 rooms used
+Count of the number of times a meeting room was used:
+brain: 1
+experiment: 1
+experiment : 1
+test: 1
+test123: 1

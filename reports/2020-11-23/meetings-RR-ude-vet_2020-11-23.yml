@@ -1,0 +1,377 @@
+%YAML 1.2
+---
+site: ude-vet.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-06-08T04:40:32Z
+  last_meeting           : 2020-11-20T10:51:43Z
+  total_meetings         : 59
+  real_meetings          : 26
+  avg_meeting_length     : 21.7
+  total_num_participants : 34
+  num_reused_rooms       : 3
+  longest_meeting:
+    room               : 001
+    start              : 2020-11-20T09:19:56Z
+    length             : 84.2
+    num_participants   : 3
+  count_by_participants:
+    - [1,  33]
+    - [2,  20]
+    - [3,   3]
+    - [4,   3]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   5]
+    - [ 10,   5]
+    - [ 20,   6]
+    - [ 40,   6]
+    - [ 60,   2]
+    - [120,   2]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 13 rooms used
+  - room_name        : 000
+    num_meetings     : 9
+    first_meeting    : 2020-11-10T19:40:19Z
+    last_meeting     : 2020-11-17T16:59:18Z
+    num_participants : [2, 2]
+    meeting_length   : [1.6, 31.8]
+    avg_length       : 14.1
+    participants:  # participant id, num meetings attended
+      - ["beth01",  2]
+      - ["mike01",  2]
+      - ["MLRP_1BKrTZ0ZdsSmhMx",  2]
+      - ["MLRP_6D3jlTMb1QUab9H",  2]
+      - ["MLRP_9H0fFAOqKkMUtSJ",  5]
+      - ["MLRP_blmRPqBs119a765",  1]
+      - ["MLRP_8ubwKFZZxGoL8u9",  2]
+      - ["MLRP_6M4fuXhjUtig79H",  1]
+      - ["MLRP_41ssbOkir4LtpGt",  1]
+  - room_name        : 001
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:19:56Z
+    last_meeting     : 2020-11-20T09:19:56Z
+    num_participants : [3, 3]
+    meeting_length   : [84.2, 84.2]
+    avg_length       : 84.2
+    participants:  # participant id, num meetings attended
+      - ["MLRP_0OEfQNnf3lBqoip",  1]
+      - ["MLRP_723zZaNVvcftMCV",  1]
+      - ["MLRP_8e5DbwSA1THoLJ3",  1]
+  - room_name        : 002
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:19:28Z
+    last_meeting     : 2020-11-20T09:19:28Z
+    num_participants : [4, 4]
+    meeting_length   : [70.2, 70.2]
+    avg_length       : 70.2
+    participants:  # participant id, num meetings attended
+      - ["MLRP_3JmBbdIC19nQsU5",  1]
+      - ["MLRP_5znoFkPmFOfNBoF",  1]
+      - ["MLRP_81fwZ2OGV27PXdb",  1]
+      - ["MLRP_9FQrGZHjPJ6AVpz",  1]
+  - room_name        : 003
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:20:18Z
+    last_meeting     : 2020-11-20T09:20:18Z
+    num_participants : [3, 3]
+    meeting_length   : [58.5, 58.5]
+    avg_length       : 58.5
+    participants:  # participant id, num meetings attended
+      - ["MLRP_83d6ikvsBDqcvfT",  1]
+      - ["MLRP_cvutiYZLdRcdCN7",  1]
+      - ["MLRP_dhvX4u9Xzi7Bpyd",  1]
+  - room_name        : 041
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:20:13Z
+    last_meeting     : 2020-11-20T09:20:13Z
+    num_participants : [4, 4]
+    meeting_length   : [40.8, 40.8]
+    avg_length       : 40.8
+    participants:  # participant id, num meetings attended
+      - ["MLRP_0wXUPsQYK0p3HX7",  1]
+      - ["MLRP_8JqaGPoZ5bXLrwN",  1]
+      - ["MLRP_eCGlJgLDzx38XoF",  1]
+      - ["MLRP_eWqTmo6X1VqgMip",  1]
+  - room_name        : 042
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:22:15Z
+    last_meeting     : 2020-11-20T09:22:15Z
+    num_participants : [3, 3]
+    meeting_length   : [34.9, 34.9]
+    avg_length       : 34.9
+    participants:  # participant id, num meetings attended
+      - ["MLRP_0rluWBdyeKGErTn",  1]
+      - ["MLRP_2bPxzfz9t0Hv85D",  1]
+      - ["MLRP_7X8nhjdHKcbTjKd",  1]
+  - room_name        : 043
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:20:38Z
+    last_meeting     : 2020-11-20T09:20:38Z
+    num_participants : [4, 4]
+    meeting_length   : [36.0, 36.0]
+    avg_length       : 36.0
+    participants:  # participant id, num meetings attended
+      - ["MLRP_3sH8wvK9CeWW9Eh",  1]
+      - ["MLRP_4GRngqHnIJtDJUV",  1]
+      - ["MLRP_aVJawvBeaKJmqjj",  1]
+      - ["MLRP_erHQEU2lCTbsuvb",  1]
+  - room_name        : 044
+    num_meetings     : 1
+    first_meeting    : 2020-11-20T09:24:41Z
+    last_meeting     : 2020-11-20T09:24:41Z
+    num_participants : [2, 2]
+    meeting_length   : [18.6, 18.6]
+    avg_length       : 18.6
+    participants:  # participant id, num meetings attended
+      - ["MLRP_2bPxzfz9t0Hv85D",  1]
+      - ["MLRP_dhvX4u9Xzi7Bpyd",  1]
+  - room_name        : MikeBeth
+    num_meetings     : 3
+    first_meeting    : 2020-11-10T19:34:26Z
+    last_meeting     : 2020-11-10T22:32:20Z
+    num_participants : [2, 2]
+    meeting_length   : [1.1, 3.2]
+    avg_length       : 2.0
+    participants:  # participant id, num meetings attended
+      - ["beth01",  3]
+      - ["mike01",  3]
+  - room_name        : Szenariotest01
+    num_meetings     : 1
+    first_meeting    : 2020-07-27T20:30:48Z
+    last_meeting     : 2020-07-27T20:30:48Z
+    num_participants : [2, 2]
+    meeting_length   : [13.6, 13.6]
+    avg_length       : 13.6
+    participants:  # participant id, num meetings attended
+      - ["MLRP_b72QpJCBSUE9Tsp",  1]
+      - ["MLRP_em7omwFSKKXqGYB",  1]
+  - room_name        : szenariotest01
+    num_meetings     : 4
+    first_meeting    : 2020-06-09T08:16:52Z
+    last_meeting     : 2020-06-09T13:17:11Z
+    num_participants : [2, 2]
+    meeting_length   : [2.0, 28.4]
+    avg_length       : 12.9
+    participants:  # participant id, num meetings attended
+      - ["MLRP_2oywe9i8nBkhqHX",  4]
+      - ["MLRP_4IsQ6GUPigIm2s5",  4]
+  - room_name        : test room
+    num_meetings     : 1
+    first_meeting    : 2020-11-10T16:28:48Z
+    last_meeting     : 2020-11-10T16:28:48Z
+    num_participants : [2, 2]
+    meeting_length   : [13.1, 13.1]
+    avg_length       : 13.1
+    participants:  # participant id, num meetings attended
+      - ["beth01",  1]
+      - ["mike01",  1]
+  - room_name        : ude-vet
+    num_meetings     : 1
+    first_meeting    : 2020-07-27T20:21:21Z
+    last_meeting     : 2020-07-27T20:21:21Z
+    num_participants : [2, 2]
+    meeting_length   : [9.1, 9.1]
+    avg_length       : 9.1
+    participants:  # participant id, num meetings attended
+      - ["MLRP_b72QpJCBSUE9Tsp",  1]
+      - ["MLRP_em7omwFSKKXqGYB",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : szenariotest01-1
+    room_name        : szenariotest01
+    meeting_start_ts : 2020-06-09T08:16:52Z
+    meeting_length   : 15.25555
+    participants:
+      - MLRP_2oywe9i8nBkhqHX
+      - MLRP_4IsQ6GUPigIm2s5
+  - _id              : szenariotest01-7
+    room_name        : szenariotest01
+    meeting_start_ts : 2020-06-09T13:04:17Z
+    meeting_length   : 6.03785
+    participants:
+      - MLRP_2oywe9i8nBkhqHX
+      - MLRP_4IsQ6GUPigIm2s5
+  - _id              : szenariotest01-8
+    room_name        : szenariotest01
+    meeting_start_ts : 2020-06-09T13:10:47Z
+    meeting_length   : 2.0336
+    participants:
+      - MLRP_2oywe9i8nBkhqHX
+      - MLRP_4IsQ6GUPigIm2s5
+  - _id              : szenariotest01-12
+    room_name        : szenariotest01
+    meeting_start_ts : 2020-06-09T13:17:11Z
+    meeting_length   : 28.362066666666667
+    participants:
+      - MLRP_2oywe9i8nBkhqHX
+      - MLRP_4IsQ6GUPigIm2s5
+  - _id              : ude-vet-1
+    room_name        : ude-vet
+    meeting_start_ts : 2020-07-27T20:21:21Z
+    meeting_length   : 9.11755
+    participants:
+      - MLRP_b72QpJCBSUE9Tsp
+      - MLRP_em7omwFSKKXqGYB
+  - _id              : Szenariotest01-1
+    room_name        : Szenariotest01
+    meeting_start_ts : 2020-07-27T20:30:48Z
+    meeting_length   : 13.55515
+    participants:
+      - MLRP_b72QpJCBSUE9Tsp
+      - MLRP_em7omwFSKKXqGYB
+  - _id              : test room-1
+    room_name        : test room
+    meeting_start_ts : 2020-11-10T16:28:48Z
+    meeting_length   : 13.052433333333333
+    participants:
+      - beth01
+      - mike01
+  - _id              : MikeBeth-1
+    room_name        : MikeBeth
+    meeting_start_ts : 2020-11-10T19:34:26Z
+    meeting_length   : 1.7589166666666667
+    participants:
+      - beth01
+      - mike01
+  - _id              : MikeBeth-2
+    room_name        : MikeBeth
+    meeting_start_ts : 2020-11-10T19:36:57Z
+    meeting_length   : 3.197766666666667
+    participants:
+      - beth01
+      - mike01
+  - _id              : 000-2
+    room_name        : 000
+    meeting_start_ts : 2020-11-10T19:40:19Z
+    meeting_length   : 5.073966666666666
+    participants:
+      - beth01
+      - mike01
+  - _id              : MikeBeth-3
+    room_name        : MikeBeth
+    meeting_start_ts : 2020-11-10T22:32:20Z
+    meeting_length   : 1.13815
+    participants:
+      - beth01
+      - mike01
+  - _id              : 000-3
+    room_name        : 000
+    meeting_start_ts : 2020-11-10T22:33:37Z
+    meeting_length   : 13.142033333333334
+    participants:
+      - beth01
+      - mike01
+  - _id              : 000-4
+    room_name        : 000
+    meeting_start_ts : 2020-11-13T22:49:02Z
+    meeting_length   : 9.5649
+    participants:
+      - MLRP_1BKrTZ0ZdsSmhMx
+      - MLRP_6D3jlTMb1QUab9H
+  - _id              : 000-5
+    room_name        : 000
+    meeting_start_ts : 2020-11-13T23:04:10Z
+    meeting_length   : 23.0384
+    participants:
+      - MLRP_1BKrTZ0ZdsSmhMx
+      - MLRP_6D3jlTMb1QUab9H
+  - _id              : 000-11
+    room_name        : 000
+    meeting_start_ts : 2020-11-16T07:22:04Z
+    meeting_length   : 8.9173
+    participants:
+      - MLRP_9H0fFAOqKkMUtSJ
+      - MLRP_blmRPqBs119a765
+  - _id              : 000-14
+    room_name        : 000
+    meeting_start_ts : 2020-11-16T15:04:17Z
+    meeting_length   : 21.634566666666668
+    participants:
+      - MLRP_8ubwKFZZxGoL8u9
+      - MLRP_9H0fFAOqKkMUtSJ
+  - _id              : 000-15
+    room_name        : 000
+    meeting_start_ts : 2020-11-16T15:54:20Z
+    meeting_length   : 1.619
+    participants:
+      - MLRP_8ubwKFZZxGoL8u9
+      - MLRP_9H0fFAOqKkMUtSJ
+  - _id              : 000-16
+    room_name        : 000
+    meeting_start_ts : 2020-11-17T13:13:20Z
+    meeting_length   : 11.751783333333334
+    participants:
+      - MLRP_6M4fuXhjUtig79H
+      - MLRP_9H0fFAOqKkMUtSJ
+  - _id              : 000-18
+    room_name        : 000
+    meeting_start_ts : 2020-11-17T16:59:18Z
+    meeting_length   : 31.78345
+    participants:
+      - MLRP_41ssbOkir4LtpGt
+      - MLRP_9H0fFAOqKkMUtSJ
+  - _id              : 002-1
+    room_name        : 002
+    meeting_start_ts : 2020-11-20T09:19:28Z
+    meeting_length   : 70.21166666666667
+    participants:
+      - MLRP_3JmBbdIC19nQsU5
+      - MLRP_5znoFkPmFOfNBoF
+      - MLRP_81fwZ2OGV27PXdb
+      - MLRP_9FQrGZHjPJ6AVpz
+  - _id              : 001-1
+    room_name        : 001
+    meeting_start_ts : 2020-11-20T09:19:56Z
+    meeting_length   : 84.1762
+    participants:
+      - MLRP_0OEfQNnf3lBqoip
+      - MLRP_723zZaNVvcftMCV
+      - MLRP_8e5DbwSA1THoLJ3
+  - _id              : 041-1
+    room_name        : 041
+    meeting_start_ts : 2020-11-20T09:20:13Z
+    meeting_length   : 40.823433333333334
+    participants:
+      - MLRP_0wXUPsQYK0p3HX7
+      - MLRP_8JqaGPoZ5bXLrwN
+      - MLRP_eCGlJgLDzx38XoF
+      - MLRP_eWqTmo6X1VqgMip
+  - _id              : 003-1
+    room_name        : 003
+    meeting_start_ts : 2020-11-20T09:20:18Z
+    meeting_length   : 58.544783333333335
+    participants:
+      - MLRP_83d6ikvsBDqcvfT
+      - MLRP_cvutiYZLdRcdCN7
+      - MLRP_dhvX4u9Xzi7Bpyd
+  - _id              : 043-1
+    room_name        : 043
+    meeting_start_ts : 2020-11-20T09:20:38Z
+    meeting_length   : 36.01958333333334
+    participants:
+      - MLRP_3sH8wvK9CeWW9Eh
+      - MLRP_4GRngqHnIJtDJUV
+      - MLRP_aVJawvBeaKJmqjj
+      - MLRP_erHQEU2lCTbsuvb
+  - _id              : 042-1
+    room_name        : 042
+    meeting_start_ts : 2020-11-20T09:22:15Z
+    meeting_length   : 34.87898333333333
+    participants:
+      - MLRP_0rluWBdyeKGErTn
+      - MLRP_2bPxzfz9t0Hv85D
+      - MLRP_7X8nhjdHKcbTjKd
+  - _id              : 044-1
+    room_name        : 044
+    meeting_start_ts : 2020-11-20T09:24:41Z
+    meeting_length   : 18.6092
+    participants:
+      - MLRP_2bPxzfz9t0Hv85D
+      - MLRP_dhvX4u9Xzi7Bpyd
+...

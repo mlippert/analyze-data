@@ -1,0 +1,72 @@
+%YAML 1.2
+---
+site: callcoach.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-07-24T17:14:50Z
+  last_meeting           : 2020-07-30T10:01:34Z
+  total_meetings         : 5
+  real_meetings          : 2
+  avg_meeting_length     : 37.3
+  total_num_participants : 3
+  num_reused_rooms       : 0
+  longest_meeting:
+    room               : Cockle & How
+    start              : 2020-07-30T10:01:34Z
+    length             : 49.8
+    num_participants   : 2
+  count_by_participants:
+    - [1,   3]
+    - [2,   2]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   0]
+    - [ 20,   0]
+    - [ 40,   1]
+    - [ 60,   1]
+    - [120,   0]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 2 rooms used
+  - room_name        : Antony Cockle
+    num_meetings     : 1
+    first_meeting    : 2020-07-30T08:03:08Z
+    last_meeting     : 2020-07-30T08:03:08Z
+    num_participants : [2, 2]
+    meeting_length   : [24.9, 24.9]
+    avg_length       : 24.9
+    participants:  # participant id, num meetings attended
+      - ["BAUvnytqb3ayL58f4OVwMGR0mKf2",  1]
+      - ["Y1Wf7Jx0wJT0KMxKZT6U9xlDVlo1",  1]
+  - room_name        : Cockle & How
+    num_meetings     : 1
+    first_meeting    : 2020-07-30T10:01:34Z
+    last_meeting     : 2020-07-30T10:01:34Z
+    num_participants : [2, 2]
+    meeting_length   : [49.8, 49.8]
+    avg_length       : 49.8
+    participants:  # participant id, num meetings attended
+      - ["BAUvnytqb3ayL58f4OVwMGR0mKf2",  1]
+      - ["CYyF3FbAxAfjW7qsuzSlKbZ2p6X2",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : Antony Cockle-2
+    room_name        : Antony Cockle
+    meeting_start_ts : 2020-07-30T08:03:08Z
+    meeting_length   : 24.892783333333334
+    participants:
+      - BAUvnytqb3ayL58f4OVwMGR0mKf2
+      - Y1Wf7Jx0wJT0KMxKZT6U9xlDVlo1
+  - _id              : Cockle & How-1
+    room_name        : Cockle & How
+    meeting_start_ts : 2020-07-30T10:01:34Z
+    meeting_length   : 49.76133333333333
+    participants:
+      - BAUvnytqb3ayL58f4OVwMGR0mKf2
+      - CYyF3FbAxAfjW7qsuzSlKbZ2p6X2
+...

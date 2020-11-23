@@ -1,0 +1,143 @@
+%YAML 1.2
+---
+site: surfx.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-05-27T13:27:51Z
+  last_meeting           : 2020-09-30T15:31:07Z
+  total_meetings         : 13
+  real_meetings          : 5
+  avg_meeting_length     : 36.1
+  total_num_participants : 12
+  num_reused_rooms       : 0
+  longest_meeting:
+    room               : brain
+    start              : 2020-06-03T06:46:10Z
+    length             : 72.3
+    num_participants   : 6
+  count_by_participants:
+    - [1,   8]
+    - [2,   2]
+    - [3,   1]
+    - [6,   2]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   0]
+    - [ 20,   2]
+    - [ 40,   1]
+    - [ 60,   1]
+    - [120,   1]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 5 rooms used
+  - room_name        : brain
+    num_meetings     : 1
+    first_meeting    : 2020-06-03T06:46:10Z
+    last_meeting     : 2020-06-03T06:46:10Z
+    num_participants : [6, 6]
+    meeting_length   : [72.3, 72.3]
+    avg_length       : 72.3
+    participants:  # participant id, num meetings attended
+      - ["557PZ0yRqLQUXFKIlnOSyIMycJh2",  1]
+      - ["58z5CoaDMyWMwLrf8pxWa0ADKfC2",  1]
+      - ["B7nnN0PY58QgYZLiokNDRj7kGH82",  1]
+      - ["K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2",  1]
+      - ["Pdurre2KQQcv4mYTI2JIQnL2U3C2",  1]
+      - ["woeXCQGQVxdCW5lIswXB2gYTA3N2",  1]
+  - room_name        : experiment
+    num_meetings     : 1
+    first_meeting    : 2020-09-30T15:13:10Z
+    last_meeting     : 2020-09-30T15:13:10Z
+    num_participants : [6, 6]
+    meeting_length   : [34.1, 34.1]
+    avg_length       : 34.1
+    participants:  # participant id, num meetings attended
+      - ["0Ee2S8rs0GWqTLf3DcD8xhTx0Br2",  1]
+      - ["MaF74GE212MABs8UtFJJiWheEjE2",  1]
+      - ["nnaFz0TivPdrbuCNBaRmy2fsBVs1",  1]
+      - ["px2ujnLYmhd7Sn7giXe6Ccve4Qb2",  1]
+      - ["raXBa2SvdgMr3eA6o4bo7yUelrg1",  1]
+      - ["woeXCQGQVxdCW5lIswXB2gYTA3N2",  1]
+  - room_name        : experiment
+    num_meetings     : 1
+    first_meeting    : 2020-09-30T15:14:45Z
+    last_meeting     : 2020-09-30T15:14:45Z
+    num_participants : [3, 3]
+    meeting_length   : [12.5, 12.5]
+    avg_length       : 12.5
+    participants:  # participant id, num meetings attended
+      - ["0Ee2S8rs0GWqTLf3DcD8xhTx0Br2",  1]
+      - ["nnaFz0TivPdrbuCNBaRmy2fsBVs1",  1]
+      - ["px2ujnLYmhd7Sn7giXe6Ccve4Qb2",  1]
+  - room_name        : test
+    num_meetings     : 1
+    first_meeting    : 2020-09-29T21:54:36Z
+    last_meeting     : 2020-09-29T21:54:36Z
+    num_participants : [2, 2]
+    meeting_length   : [12.6, 12.6]
+    avg_length       : 12.6
+    participants:  # participant id, num meetings attended
+      - ["NNAc4hVQd3Pt6LxgKAJnKLTg2mf2",  1]
+      - ["woeXCQGQVxdCW5lIswXB2gYTA3N2",  1]
+  - room_name        : test123
+    num_meetings     : 1
+    first_meeting    : 2020-05-27T19:08:23Z
+    last_meeting     : 2020-05-27T19:08:23Z
+    num_participants : [2, 2]
+    meeting_length   : [48.9, 48.9]
+    avg_length       : 48.9
+    participants:  # participant id, num meetings attended
+      - ["K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2",  1]
+      - ["woeXCQGQVxdCW5lIswXB2gYTA3N2",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : test123-2
+    room_name        : test123
+    meeting_start_ts : 2020-05-27T19:08:23Z
+    meeting_length   : 48.89945
+    participants:
+      - K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2
+      - woeXCQGQVxdCW5lIswXB2gYTA3N2
+  - _id              : brain-1
+    room_name        : brain
+    meeting_start_ts : 2020-06-03T06:46:10Z
+    meeting_length   : 72.30558333333333
+    participants:
+      - 557PZ0yRqLQUXFKIlnOSyIMycJh2
+      - 58z5CoaDMyWMwLrf8pxWa0ADKfC2
+      - B7nnN0PY58QgYZLiokNDRj7kGH82
+      - K0uEZcRXMQQUMaRlM6Qs0fg4Wtf2
+      - Pdurre2KQQcv4mYTI2JIQnL2U3C2
+      - woeXCQGQVxdCW5lIswXB2gYTA3N2
+  - _id              : test-1
+    room_name        : test
+    meeting_start_ts : 2020-09-29T21:54:36Z
+    meeting_length   : 12.63085
+    participants:
+      - NNAc4hVQd3Pt6LxgKAJnKLTg2mf2
+      - woeXCQGQVxdCW5lIswXB2gYTA3N2
+  - _id              : experiment-1
+    room_name        : experiment
+    meeting_start_ts : 2020-09-30T15:13:10Z
+    meeting_length   : 34.11351666666667
+    participants:
+      - 0Ee2S8rs0GWqTLf3DcD8xhTx0Br2
+      - MaF74GE212MABs8UtFJJiWheEjE2
+      - nnaFz0TivPdrbuCNBaRmy2fsBVs1
+      - px2ujnLYmhd7Sn7giXe6Ccve4Qb2
+      - raXBa2SvdgMr3eA6o4bo7yUelrg1
+      - woeXCQGQVxdCW5lIswXB2gYTA3N2
+  - _id              : experiment -1
+    room_name        : experiment
+    meeting_start_ts : 2020-09-30T15:14:45Z
+    meeting_length   : 12.528216666666667
+    participants:
+      - 0Ee2S8rs0GWqTLf3DcD8xhTx0Br2
+      - nnaFz0TivPdrbuCNBaRmy2fsBVs1
+      - px2ujnLYmhd7Sn7giXe6Ccve4Qb2
+...

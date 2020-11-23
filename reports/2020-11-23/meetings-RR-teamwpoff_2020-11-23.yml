@@ -1,0 +1,80 @@
+%YAML 1.2
+---
+site: teamwpoff.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-07-31T16:26:45Z
+  last_meeting           : 2020-08-03T22:48:53Z
+  total_meetings         : 9
+  real_meetings          : 3
+  avg_meeting_length     : 21.1
+  total_num_participants : 7
+  num_reused_rooms       : 1
+  longest_meeting:
+    room               : WPotF
+    start              : 2020-08-03T21:45:38Z
+    length             : 22.3
+    num_participants   : 2
+  count_by_participants:
+    - [1,   6]
+    - [2,   1]
+    - [3,   1]
+    - [5,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   0]
+    - [ 20,   1]
+    - [ 40,   2]
+    - [ 60,   0]
+    - [120,   0]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 1 rooms used
+  - room_name        : WPotF
+    num_meetings     : 3
+    first_meeting    : 2020-07-31T19:17:24Z
+    last_meeting     : 2020-08-03T22:26:39Z
+    num_participants : [2, 5]
+    meeting_length   : [19.5, 22.3]
+    avg_length       : 21.1
+    participants:  # participant id, num meetings attended
+      - ["BcjJbC4lfeOCAcYMnQslCBoE6sL2",  1]
+      - ["FzHoMGmilJOOuFTD5RoSpYuV9dB3",  1]
+      - ["anUAI96ec5cRoisuLGXAdvDhSBE3",  3]
+      - ["nRf4W7LKsLbhj7XlCrbHIDfrS0y1",  1]
+      - ["yRSWj8brk1S3daww15UvVqynBa63",  1]
+      - ["08wlNyMTzCatR2qs1EflRo2OLhx2",  2]
+      - ["z1PeEia8hVSkSXKA8wXe6fsijod2",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : WPotF-3
+    room_name        : WPotF
+    meeting_start_ts : 2020-07-31T19:17:24Z
+    meeting_length   : 21.420683333333333
+    participants:
+      - BcjJbC4lfeOCAcYMnQslCBoE6sL2
+      - FzHoMGmilJOOuFTD5RoSpYuV9dB3
+      - anUAI96ec5cRoisuLGXAdvDhSBE3
+      - nRf4W7LKsLbhj7XlCrbHIDfrS0y1
+      - yRSWj8brk1S3daww15UvVqynBa63
+  - _id              : WPotF-5
+    room_name        : WPotF
+    meeting_start_ts : 2020-08-03T21:45:38Z
+    meeting_length   : 22.314533333333333
+    participants:
+      - 08wlNyMTzCatR2qs1EflRo2OLhx2
+      - anUAI96ec5cRoisuLGXAdvDhSBE3
+  - _id              : WPotF-6
+    room_name        : WPotF
+    meeting_start_ts : 2020-08-03T22:26:39Z
+    meeting_length   : 19.45928333333333
+    participants:
+      - 08wlNyMTzCatR2qs1EflRo2OLhx2
+      - anUAI96ec5cRoisuLGXAdvDhSBE3
+      - z1PeEia8hVSkSXKA8wXe6fsijod2
+...
