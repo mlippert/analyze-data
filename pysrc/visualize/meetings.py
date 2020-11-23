@@ -388,6 +388,16 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     # meeting stats
     meeting_stats = meeting_data.meeting_stats
     f.write('meeting_stats:\n')
+
+    # NO Meetings! - write truncated report!
+    if meeting_stats['total_meetings'] == 0:
+        f.write('  {:<23}: {}\n'.format('total_meetings', meeting_stats['total_meetings']))
+        f.write('  {:<23}: {}\n'.format('real_meetings', meeting_stats['real_meetings']))
+        f.write('  {:<23}: {:.1f}\n'.format('avg_meeting_length', meeting_stats['avg_meeting_length']))
+        f.write('  {:<23}: {}\n'.format('total_num_participants', meeting_stats['total_num_participants']))
+        f.write('...\n')
+        return
+
     f.write('  {:<23}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('first_meeting', meeting_stats['first_meeting']))
     f.write('  {:<23}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('last_meeting', meeting_stats['last_meeting']))
     f.write('  {:<23}: {}\n'.format('total_meetings', meeting_stats['total_meetings']))
