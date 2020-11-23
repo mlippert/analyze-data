@@ -1,0 +1,390 @@
+%YAML 1.2
+---
+site: learnlaunch.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-05-01T12:01:17Z
+  last_meeting           : 2020-10-06T17:00:59Z
+  total_meetings         : 48
+  real_meetings          : 31
+  avg_meeting_length     : 38.4
+  total_num_participants : 16
+  num_reused_rooms       : 3
+  longest_meeting:
+    room               : venturepartner
+    start              : 2020-06-12T11:59:15Z
+    length             : 70.6
+    num_participants   : 5
+  count_by_participants:
+    - [1,  17]
+    - [2,  14]
+    - [3,   4]
+    - [4,   5]
+    - [5,   6]
+    - [6,   2]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   1]
+    - [ 10,   2]
+    - [ 20,   5]
+    - [ 40,   9]
+    - [ 60,  10]
+    - [120,   4]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 8 rooms used
+  - room_name        : EricBeth
+    num_meetings     : 1
+    first_meeting    : 2020-05-04T21:01:20Z
+    last_meeting     : 2020-05-04T21:01:20Z
+    num_participants : [2, 2]
+    meeting_length   : [57.2, 57.2]
+    avg_length       : 57.2
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["szLeqH9nrxOjO8YoZtZr0rsJz8I3",  1]
+  - room_name        : JeanBeth
+    num_meetings     : 1
+    first_meeting    : 2020-06-11T20:45:45Z
+    last_meeting     : 2020-06-11T20:45:45Z
+    num_participants : [2, 2]
+    meeting_length   : [37.6, 37.6]
+    avg_length       : 37.6
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["vPlghZG3t2eeV8YK2iUwRHP1TRG2",  1]
+  - room_name        : MaryBeth
+    num_meetings     : 5
+    first_meeting    : 2020-05-29T13:14:22Z
+    last_meeting     : 2020-06-29T20:23:57Z
+    num_participants : [2, 2]
+    meeting_length   : [2.7, 35.1]
+    avg_length       : 19.1
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  5]
+      - ["zaxAMLXgFzRrC1k0UKyoxtFDCrL2",  5]
+  - room_name        : Peerceptiv
+    num_meetings     : 1
+    first_meeting    : 2020-05-06T17:57:32Z
+    last_meeting     : 2020-05-06T17:57:32Z
+    num_participants : [4, 4]
+    meeting_length   : [68.9, 68.9]
+    avg_length       : 68.9
+    participants:  # participant id, num meetings attended
+      - ["ZbUVEuwCs6ZtJq17t4HYwxuNotE3",  1]
+      - ["keAQROKwkyOogBo3UJ7XEByHB0W2",  1]
+      - ["rR0th66ZaaRBzBV6cFeSUG6ht4D2",  1]
+      - ["uYeodlLiFNbTuOnh9pg9h21eebU2",  1]
+  - room_name        : Riff
+    num_meetings     : 1
+    first_meeting    : 2020-05-07T15:35:33Z
+    last_meeting     : 2020-05-07T15:35:33Z
+    num_participants : [2, 2]
+    meeting_length   : [12.5, 12.5]
+    avg_length       : 12.5
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["s3gTshv19PNr1Ca0Fim7UbedO1h1",  1]
+  - room_name        : SteveBeth
+    num_meetings     : 3
+    first_meeting    : 2020-09-02T16:15:54Z
+    last_meeting     : 2020-10-06T17:00:59Z
+    num_participants : [2, 2]
+    meeting_length   : [11.9, 52.9]
+    avg_length       : 27.7
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  3]
+      - ["i04sExUAQXQrwvVQJHwSGHdCWZw2",  3]
+  - room_name        : milestones
+    num_meetings     : 1
+    first_meeting    : 2020-06-12T19:02:43Z
+    last_meeting     : 2020-06-12T19:02:43Z
+    num_participants : [2, 2]
+    meeting_length   : [38.4, 38.4]
+    avg_length       : 38.4
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  1]
+      - ["MYYURFPb1jUKZZ52AjP0VRQJnnJ2",  1]
+  - room_name        : venturepartner
+    num_meetings     : 18
+    first_meeting    : 2020-05-01T12:01:17Z
+    last_meeting     : 2020-09-17T18:29:20Z
+    num_participants : [2, 6]
+    meeting_length   : [6.0, 70.6]
+    avg_length       : 44.2
+    participants:  # participant id, num meetings attended
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72", 17]
+      - ["i04sExUAQXQrwvVQJHwSGHdCWZw2",  8]
+      - ["s3gTshv19PNr1Ca0Fim7UbedO1h1",  8]
+      - ["szLeqH9nrxOjO8YoZtZr0rsJz8I3", 14]
+      - ["vPlghZG3t2eeV8YK2iUwRHP1TRG2", 11]
+      - ["zaxAMLXgFzRrC1k0UKyoxtFDCrL2",  5]
+      - ["cdjTiW6POQeajeOBkE563cpRd2F3",  7]
+      - ["3GsBy8bXUdYKz9UNdsneTf9Vgbg1",  1]
+      - ["Ll7SMRF0E0OHTfBQAE3ja6CfM8l2",  1]
+      - ["7Y5e43qeUGSVJgi4kqbOmSxgRy12",  1]
+      - ["Lmi57mzBjCPQRRmtWkioqfggUpF3",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : venturepartner-1
+    room_name        : venturepartner
+    meeting_start_ts : 2020-05-01T12:01:17Z
+    meeting_length   : 14.9753
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : EricBeth-1
+    room_name        : EricBeth
+    meeting_start_ts : 2020-05-04T21:01:20Z
+    meeting_length   : 57.20721666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : Peerceptiv-2
+    room_name        : Peerceptiv
+    meeting_start_ts : 2020-05-06T17:57:32Z
+    meeting_length   : 68.9056
+    participants:
+      - ZbUVEuwCs6ZtJq17t4HYwxuNotE3
+      - keAQROKwkyOogBo3UJ7XEByHB0W2
+      - rR0th66ZaaRBzBV6cFeSUG6ht4D2
+      - uYeodlLiFNbTuOnh9pg9h21eebU2
+  - _id              : Riff-2
+    room_name        : Riff
+    meeting_start_ts : 2020-05-07T15:35:33Z
+    meeting_length   : 12.482533333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+  - _id              : venturepartner-3
+    room_name        : venturepartner
+    meeting_start_ts : 2020-05-08T11:59:10Z
+    meeting_length   : 58.06491666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-4
+    room_name        : venturepartner
+    meeting_start_ts : 2020-05-22T11:57:37Z
+    meeting_length   : 60.555933333333336
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-6
+    room_name        : venturepartner
+    meeting_start_ts : 2020-05-29T11:59:35Z
+    meeting_length   : 30.8381
+    participants:
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : MaryBeth-1
+    room_name        : MaryBeth
+    meeting_start_ts : 2020-05-29T13:14:22Z
+    meeting_length   : 18.535316666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : venturepartner-7
+    room_name        : venturepartner
+    meeting_start_ts : 2020-06-05T11:59:17Z
+    meeting_length   : 58.337066666666665
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : MaryBeth-3
+    room_name        : MaryBeth
+    meeting_start_ts : 2020-06-05T14:33:16Z
+    meeting_length   : 31.0711
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : JeanBeth-1
+    room_name        : JeanBeth
+    meeting_start_ts : 2020-06-11T20:45:45Z
+    meeting_length   : 37.5506
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-8
+    room_name        : venturepartner
+    meeting_start_ts : 2020-06-12T11:59:15Z
+    meeting_length   : 70.59676666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : milestones-1
+    room_name        : milestones
+    meeting_start_ts : 2020-06-12T19:02:43Z
+    meeting_length   : 38.3507
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - MYYURFPb1jUKZZ52AjP0VRQJnnJ2
+  - _id              : MaryBeth-4
+    room_name        : MaryBeth
+    meeting_start_ts : 2020-06-15T18:31:02Z
+    meeting_length   : 35.09146666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : venturepartner-9
+    room_name        : venturepartner
+    meeting_start_ts : 2020-06-19T11:58:17Z
+    meeting_length   : 58.091116666666665
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : venturepartner-10
+    room_name        : venturepartner
+    meeting_start_ts : 2020-06-26T12:29:32Z
+    meeting_length   : 29.920883333333332
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - s3gTshv19PNr1Ca0Fim7UbedO1h1
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : MaryBeth-5
+    room_name        : MaryBeth
+    meeting_start_ts : 2020-06-29T20:15:41Z
+    meeting_length   : 8.086633333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : MaryBeth-6
+    room_name        : MaryBeth
+    meeting_start_ts : 2020-06-29T20:23:57Z
+    meeting_length   : 2.6814
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - zaxAMLXgFzRrC1k0UKyoxtFDCrL2
+  - _id              : venturepartner-11
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-10T11:58:55Z
+    meeting_length   : 53.69238333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-13
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-17T12:00:20Z
+    meeting_length   : 55.76105
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : venturepartner-14
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-21T12:30:14Z
+    meeting_length   : 36.69708333333333
+    participants:
+      - 3GsBy8bXUdYKz9UNdsneTf9Vgbg1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+  - _id              : venturepartner-17
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-24T12:30:28Z
+    meeting_length   : 42.175266666666666
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-18
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-28T22:01:07Z
+    meeting_length   : 5.966
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : venturepartner-19
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-28T22:07:12Z
+    meeting_length   : 34.5834
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : venturepartner-20
+    room_name        : venturepartner
+    meeting_start_ts : 2020-07-29T15:59:02Z
+    meeting_length   : 42.03633333333333
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - Ll7SMRF0E0OHTfBQAE3ja6CfM8l2
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : venturepartner-21
+    room_name        : venturepartner
+    meeting_start_ts : 2020-08-12T21:00:22Z
+    meeting_length   : 31.404866666666667
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : venturepartner-25
+    room_name        : venturepartner
+    meeting_start_ts : 2020-08-31T21:00:29Z
+    meeting_length   : 51.166783333333335
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - cdjTiW6POQeajeOBkE563cpRd2F3
+      - szLeqH9nrxOjO8YoZtZr0rsJz8I3
+  - _id              : SteveBeth-1
+    room_name        : SteveBeth
+    meeting_start_ts : 2020-09-02T16:15:54Z
+    meeting_length   : 18.424383333333335
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+  - _id              : SteveBeth-2
+    room_name        : SteveBeth
+    meeting_start_ts : 2020-09-02T16:34:23Z
+    meeting_length   : 11.8654
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+  - _id              : venturepartner-26
+    room_name        : venturepartner
+    meeting_start_ts : 2020-09-17T18:29:20Z
+    meeting_length   : 61.39151666666667
+    participants:
+      - 7Y5e43qeUGSVJgi4kqbOmSxgRy12
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - Lmi57mzBjCPQRRmtWkioqfggUpF3
+      - vPlghZG3t2eeV8YK2iUwRHP1TRG2
+  - _id              : SteveBeth-3
+    room_name        : SteveBeth
+    meeting_start_ts : 2020-10-06T17:00:59Z
+    meeting_length   : 52.880583333333334
+    participants:
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+      - i04sExUAQXQrwvVQJHwSGHdCWZw2
+...

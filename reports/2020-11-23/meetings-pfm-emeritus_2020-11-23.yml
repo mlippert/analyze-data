@@ -1,0 +1,1097 @@
+%YAML 1.2
+---
+site: UNKNOWN
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2019-04-01T16:38:43Z
+  last_meeting           : 2020-08-07T19:26:43Z
+  total_meetings         : 260
+  real_meetings          : 89
+  avg_meeting_length     : 36.7
+  total_num_participants : 91
+  num_reused_rooms       : 16
+  longest_meeting:
+    room               : riff_Group 6_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    start              : 2020-07-20T18:31:52Z
+    length             : 98.3
+    num_participants   : 4
+  count_by_participants:
+    - [1, 171]
+    - [2,  17]
+    - [3,  21]
+    - [4,  28]
+    - [5,  21]
+    - [6,   2]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   4]
+    - [ 10,   2]
+    - [ 20,  16]
+    - [ 40,  33]
+    - [ 60,  20]
+    - [120,  14]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 24 rooms used
+  - room_name        : riff_Blue Team_eabb2ed57cf5dec85996803535cbccb4c7f62492
+    num_meetings     : 1
+    first_meeting    : 2019-05-07T13:52:32Z
+    last_meeting     : 2019-05-07T13:52:32Z
+    num_participants : [2, 2]
+    meeting_length   : [1.1, 1.1]
+    avg_length       : 1.1
+    participants:  # participant id, num meetings attended
+      - ["UHsHbxwAXFRLIxzb3nh8t4Fv2F63",  1]
+      - ["b4gpGxvp1JfEz0XHwGwIrfUYYdd2",  1]
+  - room_name        : riff_CLs_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 1
+    first_meeting    : 2020-03-19T15:00:44Z
+    last_meeting     : 2020-03-19T15:00:44Z
+    num_participants : [4, 4]
+    meeting_length   : [19.9, 19.9]
+    avg_length       : 19.9
+    participants:  # participant id, num meetings attended
+      - ["LoASPasAFDhh5Rpu0ltJuzyOpTr1",  1]
+      - ["MijyUEvzGaSod4hWcsPr8B4k6iX2",  1]
+      - ["Wq6c8eGxyTVs9JIuBrGSOoYhUPA3",  1]
+      - ["jwFKvCLQvaOUhLaFY7KVMohuCM82",  1]
+  - room_name        : riff_Group 10_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 1
+    first_meeting    : 2020-07-20T19:58:21Z
+    last_meeting     : 2020-07-20T19:58:21Z
+    num_participants : [4, 4]
+    meeting_length   : [68.0, 68.0]
+    avg_length       : 68.0
+    participants:  # participant id, num meetings attended
+      - ["LmeExtXFqIZpbafvwRT7kR7XdZ92",  1]
+      - ["bQkoGIUD17Olb9YkdrYlr4628x92",  1]
+      - ["fZsnZ4rq73Si8ZM93YXMO6U9bZL2",  1]
+      - ["nthUfw0W7oPpgeh0gcXtHanJsSR2",  1]
+  - room_name        : riff_Group 1_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 2
+    first_meeting    : 2020-07-20T13:54:51Z
+    last_meeting     : 2020-07-20T14:08:00Z
+    num_participants : [3, 3]
+    meeting_length   : [12.4, 51.9]
+    avg_length       : 32.2
+    participants:  # participant id, num meetings attended
+      - ["VOxyR90S71NCpRRbrjgIru99u5c2",  2]
+      - ["bx72wqw3efhC3wIO1af1bhTkc353",  2]
+      - ["z1yuWKx4IqUgXQivWkgGAy0ZWHq2",  2]
+  - room_name        : riff_Group 2_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 2
+    first_meeting    : 2020-07-17T08:28:21Z
+    last_meeting     : 2020-07-24T11:57:09Z
+    num_participants : [2, 4]
+    meeting_length   : [24.6, 52.0]
+    avg_length       : 38.3
+    participants:  # participant id, num meetings attended
+      - ["Sl3ti0lrClcaziGzhhsRn8jltej1",  2]
+      - ["khD4MnlrlFScSvVriEDlDqq6qts1",  1]
+      - ["wHWGzXsY4SSnStUkI47PKuDE7833",  1]
+      - ["yhOvqUIHa7Vn3S2uZmPzicCgX2k2",  2]
+  - room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 7
+    first_meeting    : 2020-07-20T16:30:32Z
+    last_meeting     : 2020-08-03T16:33:43Z
+    num_participants : [2, 5]
+    meeting_length   : [0.8, 54.4]
+    avg_length       : 28.3
+    participants:  # participant id, num meetings attended
+      - ["BgO1jSKEq2Tlnb129GdPvQbuQZM2",  5]
+      - ["R91uw9wVp0YwVpMEdvwvlfFOtEk2",  6]
+      - ["Z8gDCOcDwxRByDXrLVNIBzT9tZS2",  4]
+      - ["o9SAb7DbTKOmvc4yT3CwjDl93GF3",  6]
+      - ["T9qWJ2HkIFhD3xJrMSZEW2aSKQy2",  5]
+  - room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 5
+    first_meeting    : 2020-07-20T19:29:31Z
+    last_meeting     : 2020-07-27T18:29:01Z
+    num_participants : [4, 4]
+    meeting_length   : [14.7, 85.6]
+    avg_length       : 48.3
+    participants:  # participant id, num meetings attended
+      - ["6YUIA66HKugMBwjNWgumB4CP67J3",  5]
+      - ["F4y82P3uVJMneuVFvw9Tujkxies1",  5]
+      - ["hQ7mtOHSGlSpUUM6aV9Xu379o8U2",  5]
+      - ["jGdOPfyzFzUbSKcxUrl3XRFqw5o2",  5]
+  - room_name        : riff_Group 5_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 2
+    first_meeting    : 2020-07-30T18:01:42Z
+    last_meeting     : 2020-08-07T19:00:31Z
+    num_participants : [2, 4]
+    meeting_length   : [24.5, 65.6]
+    avg_length       : 45.1
+    participants:  # participant id, num meetings attended
+      - ["X36nmHS6OpREwI62mXIfBnBGRBv2",  1]
+      - ["k7oYwC8HwFhEc7JMyK1I4lwSA723",  2]
+      - ["uY7od9FOlEgXbS69CniJ1Nz88Cu1",  1]
+      - ["xfKBCZbwcUhZYKBsZviuFsPeRmG2",  2]
+  - room_name        : riff_Group 6_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 1
+    first_meeting    : 2020-07-20T18:31:52Z
+    last_meeting     : 2020-07-20T18:31:52Z
+    num_participants : [4, 4]
+    meeting_length   : [98.3, 98.3]
+    avg_length       : 98.3
+    participants:  # participant id, num meetings attended
+      - ["0OWGcciNFVU0e3z2C7m36OXSIGD3",  1]
+      - ["MsvdesIxkURsCbAfHbIeMKBVK2u1",  1]
+      - ["OS5lginO6uYQclDjScPFXJrurku1",  1]
+      - ["tgKRNf0HXqeg17kmKSzWhL1OQZx1",  1]
+  - room_name        : riff_Group 8_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    num_meetings     : 1
+    first_meeting    : 2020-07-27T13:09:16Z
+    last_meeting     : 2020-07-27T13:09:16Z
+    num_participants : [2, 2]
+    meeting_length   : [21.6, 21.6]
+    avg_length       : 21.6
+    participants:  # participant id, num meetings attended
+      - ["X6tjiTJ4wRdRBDiEN0SCErgt95h1",  1]
+      - ["kwAcJjs1FBYCv5icBgYJ1RK3cx22",  1]
+  - room_name        : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    num_meetings     : 4
+    first_meeting    : 2019-06-30T14:27:46Z
+    last_meeting     : 2019-07-20T15:00:03Z
+    num_participants : [4, 4]
+    meeting_length   : [52.8, 78.9]
+    avg_length       : 63.9
+    participants:  # participant id, num meetings attended
+      - ["STxolpJT2rMjCBsZYdInWb3GHvG3",  4]
+      - ["WuWB7etI2gWuo2K5gCggrpdDIqI3",  4]
+      - ["YTOZIkL6KodMfyXlBuxt4xsKxmn1",  4]
+      - ["YWM5Pwvv6Vg1OBGqdYxb4WtKkU53",  4]
+  - room_name        : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    num_meetings     : 4
+    first_meeting    : 2019-05-31T13:59:01Z
+    last_meeting     : 2019-06-17T16:02:30Z
+    num_participants : [2, 3]
+    meeting_length   : [22.0, 59.9]
+    avg_length       : 38.4
+    participants:  # participant id, num meetings attended
+      - ["Lo51IV2WUjWpCJM6FKzIV74iLus2",  4]
+      - ["THGO450IdxTvNLD9iBMhF5AzzZ53",  4]
+      - ["v261NGPaM2Tc5RqhBnVYjT7H8y82",  1]
+  - room_name        : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 3
+    first_meeting    : 2020-03-30T12:11:50Z
+    last_meeting     : 2020-04-13T12:00:31Z
+    num_participants : [2, 3]
+    meeting_length   : [17.2, 36.1]
+    avg_length       : 28.8
+    participants:  # participant id, num meetings attended
+      - ["21VgUIlAsweMRIjwusgoM9GPiRl1",  3]
+      - ["uMcbB7k5HKalsf814dYiW9Ey5VK2",  2]
+      - ["vRdJvuFwmvgMBjIUE4ulA3eii1B3",  1]
+      - ["2xDga3otUxchpPg6PBcjEiUILSW2",  1]
+  - room_name        : riff_Team 1_eabb2ed57cf5dec85996803535cbccb4c7f62492
+    num_meetings     : 1
+    first_meeting    : 2019-04-01T16:53:43Z
+    last_meeting     : 2019-04-01T16:53:43Z
+    num_participants : [2, 2]
+    meeting_length   : [30.5, 30.5]
+    avg_length       : 30.5
+    participants:  # participant id, num meetings attended
+      - ["oifiqVpoNFep5tRMYUL44nMLEUf2",  1]
+      - ["zrFv8J47diNlytl4HPW3rNHlUe12",  1]
+  - room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    num_meetings     : 8
+    first_meeting    : 2019-07-05T15:57:41Z
+    last_meeting     : 2019-07-22T12:28:20Z
+    num_participants : [3, 5]
+    meeting_length   : [7.9, 63.0]
+    avg_length       : 33.0
+    participants:  # participant id, num meetings attended
+      - ["68ivnpw3AzM0lZzfMtlP8U37Xqy2",  6]
+      - ["Za76S9xafgad7Is2k528I7SaVYX2",  8]
+      - ["el31uObnwpYdDC7WtoPJMKKZQ1I3",  5]
+      - ["ILiQC3hGMiQry93UB9u80DR4nMh1",  6]
+      - ["b1lCh71GAtfuEFLq5JbvyZbJ4tC3",  6]
+  - room_name        : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    num_meetings     : 3
+    first_meeting    : 2019-06-05T00:22:57Z
+    last_meeting     : 2019-06-11T00:31:52Z
+    num_participants : [3, 3]
+    meeting_length   : [6.9, 65.5]
+    avg_length       : 38.2
+    participants:  # participant id, num meetings attended
+      - ["G19XN38Uj2gtZGEzHcGTLy4zdJK2",  3]
+      - ["L0rMM7TjeWODiAd4KnPOFGvoFy22",  3]
+      - ["cRSDtDkLR3expBzphYT1NYR7w0I2",  3]
+  - room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 10
+    first_meeting    : 2020-03-30T05:24:12Z
+    last_meeting     : 2020-04-20T12:24:16Z
+    num_participants : [4, 5]
+    meeting_length   : [4.9, 41.4]
+    avg_length       : 27.2
+    participants:  # participant id, num meetings attended
+      - ["7nCsaB1qMsRRo5cvfnXwqRWFHTv2", 10]
+      - ["Ys14GNLYXnaTU1pPV2PNHCpySZ32", 10]
+      - ["nrc9vmh6xta03bcmGp5NH2cbMX82",  9]
+      - ["ouKNTb09WWMZh9k8IxClZW5UqPE2", 10]
+      - ["uvlk6OWsyXfpE62LGkBL5advoZQ2", 10]
+  - room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    num_meetings     : 5
+    first_meeting    : 2019-06-28T13:53:45Z
+    last_meeting     : 2019-07-19T11:30:12Z
+    num_participants : [3, 6]
+    meeting_length   : [20.9, 55.4]
+    avg_length       : 38.0
+    participants:  # participant id, num meetings attended
+      - ["0Kceo3KTC9ZYDgIeExYfD2MZJCs2",  4]
+      - ["BSR6JnICi1OiElHjLjklFjuQ6bY2",  5]
+      - ["LkF08Bstzzf6Iuo1rqLs8wcVqu33",  1]
+      - ["YWazyk2OFmd0pzl3NU0X5HBZlvz2",  4]
+      - ["d4m0K0I632SV4sbyFDM24AJurof1",  5]
+      - ["lf3fi69OO7aIfIGIpZllNOYCt313",  3]
+      - ["aFLHdKMJaqVL7pilAly7WF8kVxi2",  3]
+  - room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 8
+    first_meeting    : 2020-03-27T11:42:00Z
+    last_meeting     : 2020-04-16T09:55:54Z
+    num_participants : [3, 4]
+    meeting_length   : [14.6, 47.2]
+    avg_length       : 26.8
+    participants:  # participant id, num meetings attended
+      - ["4znAYIrIkqWTwJKg9zkN6krYyM83",  8]
+      - ["BnNd4jeyebbuhgR1aqVxYM5yvFN2",  8]
+      - ["eYxNwMp9ssMGgpsSMUFuSXPh6v32",  8]
+      - ["o2GNha1YavQzJT6SabOPhVIbWdS2",  2]
+      - ["RpNEqJ5RElciBX7bjUR5hR83zDd2",  1]
+  - room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    num_meetings     : 5
+    first_meeting    : 2019-06-30T13:50:46Z
+    last_meeting     : 2019-07-21T14:12:42Z
+    num_participants : [2, 5]
+    meeting_length   : [16.2, 56.0]
+    avg_length       : 40.3
+    participants:  # participant id, num meetings attended
+      - ["GxSXO0AmNlOmu7gnvZNNk5eUWJo1",  5]
+      - ["Hqz6NwHpifbSOxoyovAg0LJJi622",  4]
+      - ["u0NkPOrjwBZVjjC3ZwwGVx7CQlt1",  3]
+      - ["wGqKGIgZCrOy2dQIj0Yl6J1n5sy2",  5]
+      - ["sJN4myFC4le1pK8v3d2y8BDmf562",  3]
+  - room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 9
+    first_meeting    : 2020-04-02T11:27:33Z
+    last_meeting     : 2020-04-23T10:50:39Z
+    num_participants : [2, 5]
+    meeting_length   : [11.9, 80.0]
+    avg_length       : 42.7
+    participants:  # participant id, num meetings attended
+      - ["HORpQWkBypUH0IzHztBtmohl4372",  9]
+      - ["YpCc10VwMngEqYzCpjx22Dpn8JD2",  8]
+      - ["aXajbvtDikQG096bsX0t5gvHWN42",  7]
+      - ["GhMyGNOixfXRJQcM8nNJ5zJm2wJ3",  5]
+      - ["ujOhX00z2kdOIPtjKbOUpuWae7l1",  4]
+  - room_name        : riff_Team 5
+    num_meetings     : 1
+    first_meeting    : 2020-04-02T17:07:39Z
+    last_meeting     : 2020-04-02T17:07:39Z
+    num_participants : [2, 2]
+    meeting_length   : [11.5, 11.5]
+    avg_length       : 11.5
+    participants:  # participant id, num meetings attended
+      - ["1qGKka1zfTgyZFN2jwq2F8H8Fgt2",  1]
+      - ["I65qg0Y76chl368xmJb57ZYhA7j1",  1]
+  - room_name        : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326
+    num_meetings     : 4
+    first_meeting    : 2020-04-02T17:00:22Z
+    last_meeting     : 2020-04-19T11:03:14Z
+    num_participants : [3, 4]
+    meeting_length   : [26.2, 62.2]
+    avg_length       : 47.0
+    participants:  # participant id, num meetings attended
+      - ["QoUvFEuH64UgAYRzfE85lHFuwf92",  4]
+      - ["Ty2ceP1CMoP7fhCwKc4a9Y0rQ1w1",  4]
+      - ["p0ExjfKIphMouLWg33nWEFFrMg92",  4]
+      - ["UO9talX4VsQpjsNlnyJ0TkJyGnK2",  2]
+  - room_name        : riff_group_1_54c7d5940bacae3005456b4a0a0bc22013a70148
+    num_meetings     : 1
+    first_meeting    : 2019-05-17T11:41:59Z
+    last_meeting     : 2019-05-17T11:41:59Z
+    num_participants : [2, 2]
+    meeting_length   : [20.7, 20.7]
+    avg_length       : 20.7
+    participants:  # participant id, num meetings attended
+      - ["GcsDfgbN7YQ8k7ksoSXZiPwW6Im1",  1]
+      - ["UHsHbxwAXFRLIxzb3nh8t4Fv2F63",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : riff_Team 1_eabb2ed57cf5dec85996803535cbccb4c7f62492-2
+    room_name        : riff_Team 1_eabb2ed57cf5dec85996803535cbccb4c7f62492
+    meeting_start_ts : 2019-04-01T16:53:43Z
+    meeting_length   : 30.492916666666666
+    participants:
+      - oifiqVpoNFep5tRMYUL44nMLEUf2
+      - zrFv8J47diNlytl4HPW3rNHlUe12
+  - _id              : riff_Blue Team_eabb2ed57cf5dec85996803535cbccb4c7f62492-4
+    room_name        : riff_Blue Team_eabb2ed57cf5dec85996803535cbccb4c7f62492
+    meeting_start_ts : 2019-05-07T13:52:32Z
+    meeting_length   : 1.0549166666666667
+    participants:
+      - UHsHbxwAXFRLIxzb3nh8t4Fv2F63
+      - b4gpGxvp1JfEz0XHwGwIrfUYYdd2
+  - _id              : riff_group_1_54c7d5940bacae3005456b4a0a0bc22013a70148-3
+    room_name        : riff_group_1_54c7d5940bacae3005456b4a0a0bc22013a70148
+    meeting_start_ts : 2019-05-17T11:41:59Z
+    meeting_length   : 20.6561
+    participants:
+      - GcsDfgbN7YQ8k7ksoSXZiPwW6Im1
+      - UHsHbxwAXFRLIxzb3nh8t4Fv2F63
+  - _id              : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-2
+    room_name        : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-05-31T13:59:01Z
+    meeting_length   : 59.917433333333335
+    participants:
+      - Lo51IV2WUjWpCJM6FKzIV74iLus2
+      - THGO450IdxTvNLD9iBMhF5AzzZ53
+      - v261NGPaM2Tc5RqhBnVYjT7H8y82
+  - _id              : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-3
+    room_name        : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-03T14:58:51Z
+    meeting_length   : 47.06135
+    participants:
+      - Lo51IV2WUjWpCJM6FKzIV74iLus2
+      - THGO450IdxTvNLD9iBMhF5AzzZ53
+  - _id              : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-9
+    room_name        : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-05T00:22:57Z
+    meeting_length   : 65.51643333333334
+    participants:
+      - G19XN38Uj2gtZGEzHcGTLy4zdJK2
+      - L0rMM7TjeWODiAd4KnPOFGvoFy22
+      - cRSDtDkLR3expBzphYT1NYR7w0I2
+  - _id              : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-12
+    room_name        : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-11T00:24:49Z
+    meeting_length   : 6.921516666666666
+    participants:
+      - G19XN38Uj2gtZGEzHcGTLy4zdJK2
+      - L0rMM7TjeWODiAd4KnPOFGvoFy22
+      - cRSDtDkLR3expBzphYT1NYR7w0I2
+  - _id              : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-13
+    room_name        : riff_Team 2_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-11T00:31:52Z
+    meeting_length   : 42.10791666666667
+    participants:
+      - G19XN38Uj2gtZGEzHcGTLy4zdJK2
+      - L0rMM7TjeWODiAd4KnPOFGvoFy22
+      - cRSDtDkLR3expBzphYT1NYR7w0I2
+  - _id              : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-5
+    room_name        : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-11T16:31:11Z
+    meeting_length   : 21.96915
+    participants:
+      - Lo51IV2WUjWpCJM6FKzIV74iLus2
+      - THGO450IdxTvNLD9iBMhF5AzzZ53
+  - _id              : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f-7
+    room_name        : riff_Team 1_b9db33b689f0e4ebd01638b1b9fc6b7d45c9291f
+    meeting_start_ts : 2019-06-17T16:02:30Z
+    meeting_length   : 24.476983333333333
+    participants:
+      - Lo51IV2WUjWpCJM6FKzIV74iLus2
+      - THGO450IdxTvNLD9iBMhF5AzzZ53
+  - _id              : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0-1
+    room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-06-28T13:53:45Z
+    meeting_length   : 20.87725
+    participants:
+      - 0Kceo3KTC9ZYDgIeExYfD2MZJCs2
+      - BSR6JnICi1OiElHjLjklFjuQ6bY2
+      - LkF08Bstzzf6Iuo1rqLs8wcVqu33
+      - YWazyk2OFmd0pzl3NU0X5HBZlvz2
+      - d4m0K0I632SV4sbyFDM24AJurof1
+      - lf3fi69OO7aIfIGIpZllNOYCt313
+  - _id              : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0-2
+    room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-06-28T14:17:11Z
+    meeting_length   : 26.639566666666667
+    participants:
+      - 0Kceo3KTC9ZYDgIeExYfD2MZJCs2
+      - BSR6JnICi1OiElHjLjklFjuQ6bY2
+      - YWazyk2OFmd0pzl3NU0X5HBZlvz2
+      - d4m0K0I632SV4sbyFDM24AJurof1
+      - lf3fi69OO7aIfIGIpZllNOYCt313
+  - _id              : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0-3
+    room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-06-30T13:50:46Z
+    meeting_length   : 38.6378
+    participants:
+      - GxSXO0AmNlOmu7gnvZNNk5eUWJo1
+      - Hqz6NwHpifbSOxoyovAg0LJJi622
+      - u0NkPOrjwBZVjjC3ZwwGVx7CQlt1
+      - wGqKGIgZCrOy2dQIj0Yl6J1n5sy2
+  - _id              : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0-4
+    room_name        : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-06-30T14:27:46Z
+    meeting_length   : 62.94453333333333
+    participants:
+      - STxolpJT2rMjCBsZYdInWb3GHvG3
+      - WuWB7etI2gWuo2K5gCggrpdDIqI3
+      - YTOZIkL6KodMfyXlBuxt4xsKxmn1
+      - YWM5Pwvv6Vg1OBGqdYxb4WtKkU53
+  - _id              : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0-5
+    room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-04T13:49:56Z
+    meeting_length   : 56.01448333333333
+    participants:
+      - GxSXO0AmNlOmu7gnvZNNk5eUWJo1
+      - Hqz6NwHpifbSOxoyovAg0LJJi622
+      - sJN4myFC4le1pK8v3d2y8BDmf562
+      - u0NkPOrjwBZVjjC3ZwwGVx7CQlt1
+      - wGqKGIgZCrOy2dQIj0Yl6J1n5sy2
+  - _id              : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0-4
+    room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-05T13:58:40Z
+    meeting_length   : 52.02396666666667
+    participants:
+      - 0Kceo3KTC9ZYDgIeExYfD2MZJCs2
+      - BSR6JnICi1OiElHjLjklFjuQ6bY2
+      - YWazyk2OFmd0pzl3NU0X5HBZlvz2
+      - aFLHdKMJaqVL7pilAly7WF8kVxi2
+      - d4m0K0I632SV4sbyFDM24AJurof1
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-6
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-05T15:57:41Z
+    meeting_length   : 10.2141
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - el31uObnwpYdDC7WtoPJMKKZQ1I3
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-7
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-05T16:08:14Z
+    meeting_length   : 37.741
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+      - el31uObnwpYdDC7WtoPJMKKZQ1I3
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-9
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-06T12:24:23Z
+    meeting_length   : 7.879016666666667
+    participants:
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-10
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-06T12:32:32Z
+    meeting_length   : 63.0125
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+  - _id              : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0-6
+    room_name        : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-06T14:30:16Z
+    meeting_length   : 60.87598333333333
+    participants:
+      - STxolpJT2rMjCBsZYdInWb3GHvG3
+      - WuWB7etI2gWuo2K5gCggrpdDIqI3
+      - YTOZIkL6KodMfyXlBuxt4xsKxmn1
+      - YWM5Pwvv6Vg1OBGqdYxb4WtKkU53
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-11
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-09T12:54:08Z
+    meeting_length   : 36.84485
+    participants:
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+      - el31uObnwpYdDC7WtoPJMKKZQ1I3
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-12
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-12T16:49:26Z
+    meeting_length   : 33.7571
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-13
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-12T17:23:39Z
+    meeting_length   : 38.35863333333333
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - b1lCh71GAtfuEFLq5JbvyZbJ4tC3
+      - el31uObnwpYdDC7WtoPJMKKZQ1I3
+  - _id              : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0-7
+    room_name        : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-13T12:59:50Z
+    meeting_length   : 78.89533333333334
+    participants:
+      - STxolpJT2rMjCBsZYdInWb3GHvG3
+      - WuWB7etI2gWuo2K5gCggrpdDIqI3
+      - YTOZIkL6KodMfyXlBuxt4xsKxmn1
+      - YWM5Pwvv6Vg1OBGqdYxb4WtKkU53
+  - _id              : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0-6
+    room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-13T15:26:27Z
+    meeting_length   : 55.38843333333333
+    participants:
+      - 0Kceo3KTC9ZYDgIeExYfD2MZJCs2
+      - BSR6JnICi1OiElHjLjklFjuQ6bY2
+      - YWazyk2OFmd0pzl3NU0X5HBZlvz2
+      - aFLHdKMJaqVL7pilAly7WF8kVxi2
+      - d4m0K0I632SV4sbyFDM24AJurof1
+      - lf3fi69OO7aIfIGIpZllNOYCt313
+  - _id              : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0-8
+    room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-14T12:46:07Z
+    meeting_length   : 48.242666666666665
+    participants:
+      - GxSXO0AmNlOmu7gnvZNNk5eUWJo1
+      - Hqz6NwHpifbSOxoyovAg0LJJi622
+      - sJN4myFC4le1pK8v3d2y8BDmf562
+      - u0NkPOrjwBZVjjC3ZwwGVx7CQlt1
+      - wGqKGIgZCrOy2dQIj0Yl6J1n5sy2
+  - _id              : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0-7
+    room_name        : riff_Team 3_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-19T11:30:12Z
+    meeting_length   : 34.91065
+    participants:
+      - BSR6JnICi1OiElHjLjklFjuQ6bY2
+      - aFLHdKMJaqVL7pilAly7WF8kVxi2
+      - d4m0K0I632SV4sbyFDM24AJurof1
+  - _id              : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0-8
+    room_name        : riff_Team 1_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-20T15:00:03Z
+    meeting_length   : 52.8499
+    participants:
+      - STxolpJT2rMjCBsZYdInWb3GHvG3
+      - WuWB7etI2gWuo2K5gCggrpdDIqI3
+      - YTOZIkL6KodMfyXlBuxt4xsKxmn1
+      - YWM5Pwvv6Vg1OBGqdYxb4WtKkU53
+  - _id              : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0-9
+    room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-21T13:55:52Z
+    meeting_length   : 16.203
+    participants:
+      - GxSXO0AmNlOmu7gnvZNNk5eUWJo1
+      - wGqKGIgZCrOy2dQIj0Yl6J1n5sy2
+  - _id              : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0-10
+    room_name        : riff_Team 4_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-21T14:12:42Z
+    meeting_length   : 42.47255
+    participants:
+      - GxSXO0AmNlOmu7gnvZNNk5eUWJo1
+      - Hqz6NwHpifbSOxoyovAg0LJJi622
+      - sJN4myFC4le1pK8v3d2y8BDmf562
+      - wGqKGIgZCrOy2dQIj0Yl6J1n5sy2
+  - _id              : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0-14
+    room_name        : riff_Team 2_1bb3a4e5036c99c732a05dc715362594765dd2d0
+    meeting_start_ts : 2019-07-22T12:28:20Z
+    meeting_length   : 36.23016666666667
+    participants:
+      - 68ivnpw3AzM0lZzfMtlP8U37Xqy2
+      - ILiQC3hGMiQry93UB9u80DR4nMh1
+      - Za76S9xafgad7Is2k528I7SaVYX2
+      - el31uObnwpYdDC7WtoPJMKKZQ1I3
+  - _id              : riff_CLs_df6c4be4eccc200c8f58275489fb676c42be6326-3
+    room_name        : riff_CLs_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-19T15:00:44Z
+    meeting_length   : 19.876516666666667
+    participants:
+      - LoASPasAFDhh5Rpu0ltJuzyOpTr1
+      - MijyUEvzGaSod4hWcsPr8B4k6iX2
+      - Wq6c8eGxyTVs9JIuBrGSOoYhUPA3
+      - jwFKvCLQvaOUhLaFY7KVMohuCM82
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-3
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-27T11:42:00Z
+    meeting_length   : 29.13595
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+      - o2GNha1YavQzJT6SabOPhVIbWdS2
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-4
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-27T12:11:23Z
+    meeting_length   : 38.13726666666667
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+      - o2GNha1YavQzJT6SabOPhVIbWdS2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-2
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-30T05:24:12Z
+    meeting_length   : 31.499566666666666
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-3
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-30T06:04:31Z
+    meeting_length   : 36.6497
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326-2
+    room_name        : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-03-30T12:11:50Z
+    meeting_length   : 17.23593333333333
+    participants:
+      - 21VgUIlAsweMRIjwusgoM9GPiRl1
+      - uMcbB7k5HKalsf814dYiW9Ey5VK2
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-5
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T09:57:39Z
+    meeting_length   : 19.319716666666668
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-6
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T10:17:39Z
+    meeting_length   : 16.211033333333333
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-7
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T10:34:15Z
+    meeting_length   : 14.571333333333333
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-1
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T11:27:33Z
+    meeting_length   : 11.891683333333333
+    participants:
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+  - _id              : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326-5
+    room_name        : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T17:00:22Z
+    meeting_length   : 54.759616666666666
+    participants:
+      - QoUvFEuH64UgAYRzfE85lHFuwf92
+      - Ty2ceP1CMoP7fhCwKc4a9Y0rQ1w1
+      - p0ExjfKIphMouLWg33nWEFFrMg92
+  - _id              : riff_Team 5-1
+    room_name        : riff_Team 5
+    meeting_start_ts : 2020-04-02T17:07:39Z
+    meeting_length   : 11.5084
+    participants:
+      - 1qGKka1zfTgyZFN2jwq2F8H8Fgt2
+      - I65qg0Y76chl368xmJb57ZYhA7j1
+  - _id              : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326-6
+    room_name        : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-02T17:55:35Z
+    meeting_length   : 45.01081666666666
+    participants:
+      - QoUvFEuH64UgAYRzfE85lHFuwf92
+      - Ty2ceP1CMoP7fhCwKc4a9Y0rQ1w1
+      - p0ExjfKIphMouLWg33nWEFFrMg92
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-5
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-03T07:46:14Z
+    meeting_length   : 28.269833333333334
+    participants:
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-6
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-03T08:18:51Z
+    meeting_length   : 22.9834
+    participants:
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-7
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-03T08:42:13Z
+    meeting_length   : 23.22345
+    participants:
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+  - _id              : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326-3
+    room_name        : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-03T11:00:19Z
+    meeting_length   : 36.14191666666667
+    participants:
+      - 21VgUIlAsweMRIjwusgoM9GPiRl1
+      - vRdJvuFwmvgMBjIUE4ulA3eii1B3
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-11
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-04T10:55:39Z
+    meeting_length   : 80.02981666666666
+    participants:
+      - GhMyGNOixfXRJQcM8nNJ5zJm2wJ3
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+      - ujOhX00z2kdOIPtjKbOUpuWae7l1
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-5
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-06T05:20:42Z
+    meeting_length   : 39.45101666666667
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-6
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-06T06:05:27Z
+    meeting_length   : 23.532666666666668
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-7
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-06T06:32:56Z
+    meeting_length   : 4.915666666666667
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-8
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-06T06:37:55Z
+    meeting_length   : 12.28775
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-8
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-10T06:56:50Z
+    meeting_length   : 28.072533333333332
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-9
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-10T09:56:57Z
+    meeting_length   : 22.056916666666666
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326-8
+    room_name        : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-10T12:01:33Z
+    meeting_length   : 62.15998333333334
+    participants:
+      - QoUvFEuH64UgAYRzfE85lHFuwf92
+      - Ty2ceP1CMoP7fhCwKc4a9Y0rQ1w1
+      - UO9talX4VsQpjsNlnyJ0TkJyGnK2
+      - p0ExjfKIphMouLWg33nWEFFrMg92
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-12
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-10T13:20:13Z
+    meeting_length   : 69.75921666666666
+    participants:
+      - GhMyGNOixfXRJQcM8nNJ5zJm2wJ3
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+      - ujOhX00z2kdOIPtjKbOUpuWae7l1
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-9
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-13T05:33:42Z
+    meeting_length   : 41.43716666666667
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-10
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-13T06:20:33Z
+    meeting_length   : 34.2805
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326-4
+    room_name        : riff_Team 1_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-13T12:00:31Z
+    meeting_length   : 32.87831666666667
+    participants:
+      - 21VgUIlAsweMRIjwusgoM9GPiRl1
+      - 2xDga3otUxchpPg6PBcjEiUILSW2
+      - uMcbB7k5HKalsf814dYiW9Ey5VK2
+  - _id              : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326-11
+    room_name        : riff_Team 3_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-16T09:55:54Z
+    meeting_length   : 47.1542
+    participants:
+      - 4znAYIrIkqWTwJKg9zkN6krYyM83
+      - BnNd4jeyebbuhgR1aqVxYM5yvFN2
+      - RpNEqJ5RElciBX7bjUR5hR83zDd2
+      - eYxNwMp9ssMGgpsSMUFuSXPh6v32
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-13
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-17T10:55:53Z
+    meeting_length   : 17.609166666666667
+    participants:
+      - GhMyGNOixfXRJQcM8nNJ5zJm2wJ3
+      - HORpQWkBypUH0IzHztBtmohl4372
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-14
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-17T11:57:42Z
+    meeting_length   : 52.1563
+    participants:
+      - GhMyGNOixfXRJQcM8nNJ5zJm2wJ3
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+      - ujOhX00z2kdOIPtjKbOUpuWae7l1
+  - _id              : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326-10
+    room_name        : riff_Team 5_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-19T11:03:14Z
+    meeting_length   : 26.1877
+    participants:
+      - QoUvFEuH64UgAYRzfE85lHFuwf92
+      - Ty2ceP1CMoP7fhCwKc4a9Y0rQ1w1
+      - UO9talX4VsQpjsNlnyJ0TkJyGnK2
+      - p0ExjfKIphMouLWg33nWEFFrMg92
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-11
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-20T11:53:30Z
+    meeting_length   : 30.554266666666667
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326-12
+    room_name        : riff_Team 2_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-20T12:24:16Z
+    meeting_length   : 17.875016666666667
+    participants:
+      - 7nCsaB1qMsRRo5cvfnXwqRWFHTv2
+      - Ys14GNLYXnaTU1pPV2PNHCpySZ32
+      - nrc9vmh6xta03bcmGp5NH2cbMX82
+      - ouKNTb09WWMZh9k8IxClZW5UqPE2
+      - uvlk6OWsyXfpE62LGkBL5advoZQ2
+  - _id              : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326-15
+    room_name        : riff_Team 4_df6c4be4eccc200c8f58275489fb676c42be6326
+    meeting_start_ts : 2020-04-23T10:50:39Z
+    meeting_length   : 78.43518333333333
+    participants:
+      - GhMyGNOixfXRJQcM8nNJ5zJm2wJ3
+      - HORpQWkBypUH0IzHztBtmohl4372
+      - YpCc10VwMngEqYzCpjx22Dpn8JD2
+      - aXajbvtDikQG096bsX0t5gvHWN42
+      - ujOhX00z2kdOIPtjKbOUpuWae7l1
+  - _id              : riff_Group 2_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-3
+    room_name        : riff_Group 2_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-17T08:28:21Z
+    meeting_length   : 52.02771666666667
+    participants:
+      - Sl3ti0lrClcaziGzhhsRn8jltej1
+      - khD4MnlrlFScSvVriEDlDqq6qts1
+      - wHWGzXsY4SSnStUkI47PKuDE7833
+      - yhOvqUIHa7Vn3S2uZmPzicCgX2k2
+  - _id              : riff_Group 1_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-9
+    room_name        : riff_Group 1_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T13:54:51Z
+    meeting_length   : 12.420383333333334
+    participants:
+      - VOxyR90S71NCpRRbrjgIru99u5c2
+      - bx72wqw3efhC3wIO1af1bhTkc353
+      - z1yuWKx4IqUgXQivWkgGAy0ZWHq2
+  - _id              : riff_Group 1_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-11
+    room_name        : riff_Group 1_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T14:08:00Z
+    meeting_length   : 51.91053333333333
+    participants:
+      - VOxyR90S71NCpRRbrjgIru99u5c2
+      - bx72wqw3efhC3wIO1af1bhTkc353
+      - z1yuWKx4IqUgXQivWkgGAy0ZWHq2
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-6
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T16:30:32Z
+    meeting_length   : 54.382666666666665
+    participants:
+      - BgO1jSKEq2Tlnb129GdPvQbuQZM2
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - Z8gDCOcDwxRByDXrLVNIBzT9tZS2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-7
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T17:28:43Z
+    meeting_length   : 19.68585
+    participants:
+      - BgO1jSKEq2Tlnb129GdPvQbuQZM2
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - Z8gDCOcDwxRByDXrLVNIBzT9tZS2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 6_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-12
+    room_name        : riff_Group 6_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T18:31:52Z
+    meeting_length   : 98.2583
+    participants:
+      - 0OWGcciNFVU0e3z2C7m36OXSIGD3
+      - MsvdesIxkURsCbAfHbIeMKBVK2u1
+      - OS5lginO6uYQclDjScPFXJrurku1
+      - tgKRNf0HXqeg17kmKSzWhL1OQZx1
+  - _id              : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-2
+    room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T19:29:31Z
+    meeting_length   : 15.801316666666667
+    participants:
+      - 6YUIA66HKugMBwjNWgumB4CP67J3
+      - F4y82P3uVJMneuVFvw9Tujkxies1
+      - hQ7mtOHSGlSpUUM6aV9Xu379o8U2
+      - jGdOPfyzFzUbSKcxUrl3XRFqw5o2
+  - _id              : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-3
+    room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T19:45:38Z
+    meeting_length   : 14.6899
+    participants:
+      - 6YUIA66HKugMBwjNWgumB4CP67J3
+      - F4y82P3uVJMneuVFvw9Tujkxies1
+      - hQ7mtOHSGlSpUUM6aV9Xu379o8U2
+      - jGdOPfyzFzUbSKcxUrl3XRFqw5o2
+  - _id              : riff_Group 10_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-2
+    room_name        : riff_Group 10_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T19:58:21Z
+    meeting_length   : 68.03946666666667
+    participants:
+      - LmeExtXFqIZpbafvwRT7kR7XdZ92
+      - bQkoGIUD17Olb9YkdrYlr4628x92
+      - fZsnZ4rq73Si8ZM93YXMO6U9bZL2
+      - nthUfw0W7oPpgeh0gcXtHanJsSR2
+  - _id              : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-4
+    room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T20:01:21Z
+    meeting_length   : 49.089083333333335
+    participants:
+      - 6YUIA66HKugMBwjNWgumB4CP67J3
+      - F4y82P3uVJMneuVFvw9Tujkxies1
+      - hQ7mtOHSGlSpUUM6aV9Xu379o8U2
+      - jGdOPfyzFzUbSKcxUrl3XRFqw5o2
+  - _id              : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-5
+    room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-20T20:52:06Z
+    meeting_length   : 76.5437
+    participants:
+      - 6YUIA66HKugMBwjNWgumB4CP67J3
+      - F4y82P3uVJMneuVFvw9Tujkxies1
+      - hQ7mtOHSGlSpUUM6aV9Xu379o8U2
+      - jGdOPfyzFzUbSKcxUrl3XRFqw5o2
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-8
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-21T13:42:36Z
+    meeting_length   : 0.7818333333333334
+    participants:
+      - T9qWJ2HkIFhD3xJrMSZEW2aSKQy2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-9
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-21T14:28:34Z
+    meeting_length   : 23.382416666666668
+    participants:
+      - BgO1jSKEq2Tlnb129GdPvQbuQZM2
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - T9qWJ2HkIFhD3xJrMSZEW2aSKQy2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 2_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-4
+    room_name        : riff_Group 2_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-24T11:57:09Z
+    meeting_length   : 24.6244
+    participants:
+      - Sl3ti0lrClcaziGzhhsRn8jltej1
+      - yhOvqUIHa7Vn3S2uZmPzicCgX2k2
+  - _id              : riff_Group 8_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-1
+    room_name        : riff_Group 8_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-27T13:09:16Z
+    meeting_length   : 21.6209
+    participants:
+      - X6tjiTJ4wRdRBDiEN0SCErgt95h1
+      - kwAcJjs1FBYCv5icBgYJ1RK3cx22
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-10
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-27T16:32:47Z
+    meeting_length   : 49.8922
+    participants:
+      - BgO1jSKEq2Tlnb129GdPvQbuQZM2
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - T9qWJ2HkIFhD3xJrMSZEW2aSKQy2
+      - Z8gDCOcDwxRByDXrLVNIBzT9tZS2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-6
+    room_name        : riff_Group 4_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-27T18:29:01Z
+    meeting_length   : 85.57903333333333
+    participants:
+      - 6YUIA66HKugMBwjNWgumB4CP67J3
+      - F4y82P3uVJMneuVFvw9Tujkxies1
+      - hQ7mtOHSGlSpUUM6aV9Xu379o8U2
+      - jGdOPfyzFzUbSKcxUrl3XRFqw5o2
+  - _id              : riff_Group 5_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-7
+    room_name        : riff_Group 5_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-07-30T18:01:42Z
+    meeting_length   : 65.64226666666667
+    participants:
+      - X36nmHS6OpREwI62mXIfBnBGRBv2
+      - k7oYwC8HwFhEc7JMyK1I4lwSA723
+      - uY7od9FOlEgXbS69CniJ1Nz88Cu1
+      - xfKBCZbwcUhZYKBsZviuFsPeRmG2
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-12
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-08-03T16:13:47Z
+    meeting_length   : 2.4472
+    participants:
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - T9qWJ2HkIFhD3xJrMSZEW2aSKQy2
+  - _id              : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-13
+    room_name        : riff_Group 3_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-08-03T16:33:43Z
+    meeting_length   : 47.787616666666665
+    participants:
+      - BgO1jSKEq2Tlnb129GdPvQbuQZM2
+      - R91uw9wVp0YwVpMEdvwvlfFOtEk2
+      - T9qWJ2HkIFhD3xJrMSZEW2aSKQy2
+      - Z8gDCOcDwxRByDXrLVNIBzT9tZS2
+      - o9SAb7DbTKOmvc4yT3CwjDl93GF3
+  - _id              : riff_Group 5_f5077aa8e2cb2398bf0649db4da119b786ab8a6a-12
+    room_name        : riff_Group 5_f5077aa8e2cb2398bf0649db4da119b786ab8a6a
+    meeting_start_ts : 2020-08-07T19:00:31Z
+    meeting_length   : 24.48978333333333
+    participants:
+      - k7oYwC8HwFhEc7JMyK1I4lwSA723
+      - xfKBCZbwcUhZYKBsZviuFsPeRmG2
+...

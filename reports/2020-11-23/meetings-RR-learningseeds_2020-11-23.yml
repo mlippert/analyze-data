@@ -1,0 +1,530 @@
+%YAML 1.2
+---
+site: learningseeds.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-05-28T15:59:06Z
+  last_meeting           : 2020-09-25T13:01:08Z
+  total_meetings         : 72
+  real_meetings          : 42
+  avg_meeting_length     : 73.7
+  total_num_participants : 21
+  num_reused_rooms       : 10
+  longest_meeting:
+    room               : MountainMoonBookGroup
+    start              : 2020-06-04T15:09:21Z
+    length             : 265.4
+    num_participants   : 5
+  count_by_participants:
+    - [1,  30]
+    - [2,  25]
+    - [3,   8]
+    - [4,   1]
+    - [5,   4]
+    - [6,   2]
+    - [7,   2]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   1]
+    - [ 10,   3]
+    - [ 20,   5]
+    - [ 40,   1]
+    - [ 60,   6]
+    - [120,  22]
+    - [180,   3]
+    - [720,   1]
+
+rooms: # 14 rooms used
+  - room_name        : Erica Beth Riff Chat
+    num_meetings     : 8
+    first_meeting    : 2020-06-10T20:16:20Z
+    last_meeting     : 2020-09-25T13:01:08Z
+    num_participants : [2, 2]
+    meeting_length   : [12.1, 99.3]
+    avg_length       : 61.2
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  8]
+      - ["G0DAHoX1U8hbz1IefV2Vq3TmOy72",  8]
+  - room_name        : Giggle Chats with Flynn
+    num_meetings     : 3
+    first_meeting    : 2020-05-29T14:02:34Z
+    last_meeting     : 2020-06-12T14:01:01Z
+    num_participants : [2, 2]
+    meeting_length   : [13.7, 62.5]
+    avg_length       : 36.1
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  3]
+      - ["flXGdigfIsc90I2CitZtZB72WpG3",  3]
+  - room_name        : Giggle Chats with Jonah
+    num_meetings     : 2
+    first_meeting    : 2020-05-29T17:00:40Z
+    last_meeting     : 2020-06-01T19:04:14Z
+    num_participants : [2, 2]
+    meeting_length   : [58.5, 65.3]
+    avg_length       : 61.9
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  2]
+      - ["gBxy9tlUOmfiVsyclDtWkKD3K0i1",  2]
+  - room_name        : Giggle Chats with Seamus and Sinead
+    num_meetings     : 1
+    first_meeting    : 2020-05-29T15:02:23Z
+    last_meeting     : 2020-05-29T15:02:23Z
+    num_participants : [2, 2]
+    meeting_length   : [86.5, 86.5]
+    avg_length       : 86.5
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  1]
+      - ["N0OzlawcrkQVh1HDbGF9WV8yhv03",  1]
+  - room_name        : Jamie P Playdate w Evelyn
+    num_meetings     : 6
+    first_meeting    : 2020-06-03T13:56:26Z
+    last_meeting     : 2020-06-29T17:12:49Z
+    num_participants : [2, 3]
+    meeting_length   : [7.1, 113.8]
+    avg_length       : 78.9
+    participants:  # participant id, num meetings attended
+      - ["1nyOVhzZQPV0XaIzUu63O5dvKJl1",  6]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  6]
+      - ["pySkrySvFLWWJGARQr18kPdQHGf1",  4]
+  - room_name        : Jamie Teddy Meet Up
+    num_meetings     : 1
+    first_meeting    : 2020-06-08T17:08:09Z
+    last_meeting     : 2020-06-08T17:08:09Z
+    num_participants : [2, 2]
+    meeting_length   : [90.1, 90.1]
+    avg_length       : 90.1
+    participants:  # participant id, num meetings attended
+      - ["1nyOVhzZQPV0XaIzUu63O5dvKJl1",  1]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  1]
+  - room_name        : Jamie and Svelti Video Playdate
+    num_meetings     : 2
+    first_meeting    : 2020-06-01T17:10:45Z
+    last_meeting     : 2020-06-19T17:56:27Z
+    num_participants : [3, 3]
+    meeting_length   : [92.4, 101.1]
+    avg_length       : 96.7
+    participants:  # participant id, num meetings attended
+      - ["1nyOVhzZQPV0XaIzUu63O5dvKJl1",  2]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  2]
+      - ["dYguhniTWoZNJtdJfgI2l1w6RcW2",  2]
+  - room_name        : Jonah and Eli Playdate
+    num_meetings     : 1
+    first_meeting    : 2020-06-05T16:57:08Z
+    last_meeting     : 2020-06-05T16:57:08Z
+    num_participants : [3, 3]
+    meeting_length   : [54.3, 54.3]
+    avg_length       : 54.3
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  1]
+      - ["bqsrWZI4xPcmp4lGKYIkZGzpEPC2",  1]
+      - ["gBxy9tlUOmfiVsyclDtWkKD3K0i1",  1]
+  - room_name        : MountainMoonBookGroup
+    num_meetings     : 3
+    first_meeting    : 2020-06-04T15:09:21Z
+    last_meeting     : 2020-06-11T14:56:36Z
+    num_participants : [4, 5]
+    meeting_length   : [115.0, 265.4]
+    avg_length       : 174.3
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  3]
+      - ["C3Vi7aFAahM1Mr3dmK7E5Vjbljr1",  1]
+      - ["IqJKzW7HTkPPlXoiOhbi1LPWf3k1",  3]
+      - ["OJHp3VatR3cbjRkyyMyB6mHtdQD3",  3]
+      - ["YzktMssEHET9AscUJawQZoIjXM12",  2]
+      - ["yvT29sPrwOQhrJxJ2HQDss1OQMz1",  2]
+  - room_name        : Sessions with JP and Erica
+    num_meetings     : 2
+    first_meeting    : 2020-05-29T18:08:26Z
+    last_meeting     : 2020-05-29T18:16:07Z
+    num_participants : [2, 2]
+    meeting_length   : [3.2, 7.0]
+    avg_length       : 5.1
+    participants:  # participant id, num meetings attended
+      - ["1nyOVhzZQPV0XaIzUu63O5dvKJl1",  2]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  2]
+  - room_name        : SocialMediaTeam
+    num_meetings     : 3
+    first_meeting    : 2020-05-28T15:59:06Z
+    last_meeting     : 2020-05-29T16:33:19Z
+    num_participants : [2, 2]
+    meeting_length   : [12.9, 77.4]
+    avg_length       : 35.2
+    participants:  # participant id, num meetings attended
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  3]
+      - ["J9kLI5q1zXVTbUu4YhiE514cM7I2",  3]
+  - room_name        : Student Sessions and Giggle Chats
+    num_meetings     : 3
+    first_meeting    : 2020-05-29T17:03:14Z
+    last_meeting     : 2020-06-12T18:01:45Z
+    num_participants : [2, 2]
+    meeting_length   : [50.8, 98.8]
+    avg_length       : 80.7
+    participants:  # participant id, num meetings attended
+      - ["1nyOVhzZQPV0XaIzUu63O5dvKJl1",  3]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  3]
+  - room_name        : Team Weekly Roundup
+    num_meetings     : 6
+    first_meeting    : 2020-05-29T19:59:18Z
+    last_meeting     : 2020-07-10T18:57:33Z
+    num_participants : [5, 7]
+    meeting_length   : [12.8, 167.0]
+    avg_length       : 97.8
+    participants:  # participant id, num meetings attended
+      - ["4N2CBaVb7HTutA8wGUaiJPHLGB12",  6]
+      - ["AH3719dwHTegn5q8qvWOdX7aSPx1",  6]
+      - ["SHRlgBjNoIescnYFs3EtGYil7aM2",  6]
+      - ["SzolDBIU0HbAH6fFcQfPXKKCt3y2",  5]
+      - ["UQObIaaTXIRVOhkcYiMNRiXUfwx2",  5]
+      - ["u35SNhUkY0UoIaGY8UBjSI8DVnH3",  6]
+      - ["UwNrq34DvOZ9PQxvnEjbsjsD45t2",  2]
+  - room_name        : Team Weekly Roundup, https://zoom.us/j/97838927087?pwd=Mm5nQTRPMWlNbFR6ZHV1bUxoRm1JQT09
+    num_meetings     : 1
+    first_meeting    : 2020-07-24T19:29:19Z
+    last_meeting     : 2020-07-24T19:29:19Z
+    num_participants : [3, 3]
+    meeting_length   : [8.4, 8.4]
+    avg_length       : 8.4
+    participants:  # participant id, num meetings attended
+      - ["4N2CBaVb7HTutA8wGUaiJPHLGB12",  1]
+      - ["SHRlgBjNoIescnYFs3EtGYil7aM2",  1]
+      - ["UwNrq34DvOZ9PQxvnEjbsjsD45t2",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : SocialMediaTeam-1
+    room_name        : SocialMediaTeam
+    meeting_start_ts : 2020-05-28T15:59:06Z
+    meeting_length   : 77.40463333333334
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - J9kLI5q1zXVTbUu4YhiE514cM7I2
+  - _id              : SocialMediaTeam-3
+    room_name        : SocialMediaTeam
+    meeting_start_ts : 2020-05-28T17:20:31Z
+    meeting_length   : 15.218316666666666
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - J9kLI5q1zXVTbUu4YhiE514cM7I2
+  - _id              : Giggle Chats with Flynn-1
+    room_name        : Giggle Chats with Flynn
+    meeting_start_ts : 2020-05-29T14:02:34Z
+    meeting_length   : 32.22723333333333
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - flXGdigfIsc90I2CitZtZB72WpG3
+  - _id              : Giggle Chats with Seamus and Sinead-1
+    room_name        : Giggle Chats with Seamus and Sinead
+    meeting_start_ts : 2020-05-29T15:02:23Z
+    meeting_length   : 86.4733
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - N0OzlawcrkQVh1HDbGF9WV8yhv03
+  - _id              : SocialMediaTeam-4
+    room_name        : SocialMediaTeam
+    meeting_start_ts : 2020-05-29T16:33:19Z
+    meeting_length   : 12.90145
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - J9kLI5q1zXVTbUu4YhiE514cM7I2
+  - _id              : Giggle Chats with Jonah-1
+    room_name        : Giggle Chats with Jonah
+    meeting_start_ts : 2020-05-29T17:00:40Z
+    meeting_length   : 58.461533333333335
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - gBxy9tlUOmfiVsyclDtWkKD3K0i1
+  - _id              : Student Sessions and Giggle Chats-3
+    room_name        : Student Sessions and Giggle Chats
+    meeting_start_ts : 2020-05-29T17:03:14Z
+    meeting_length   : 98.79731666666666
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Sessions with JP and Erica-1
+    room_name        : Sessions with JP and Erica
+    meeting_start_ts : 2020-05-29T18:08:26Z
+    meeting_length   : 3.2249666666666665
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Sessions with JP and Erica-2
+    room_name        : Sessions with JP and Erica
+    meeting_start_ts : 2020-05-29T18:16:07Z
+    meeting_length   : 7.0197
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Team Weekly Roundup-1
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-05-29T19:59:18Z
+    meeting_length   : 124.23353333333333
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - SzolDBIU0HbAH6fFcQfPXKKCt3y2
+      - UQObIaaTXIRVOhkcYiMNRiXUfwx2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Jamie and Svelti Video Playdate-2
+    room_name        : Jamie and Svelti Video Playdate
+    meeting_start_ts : 2020-06-01T17:10:45Z
+    meeting_length   : 101.0859
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - dYguhniTWoZNJtdJfgI2l1w6RcW2
+  - _id              : Giggle Chats with Jonah-2
+    room_name        : Giggle Chats with Jonah
+    meeting_start_ts : 2020-06-01T19:04:14Z
+    meeting_length   : 65.26435
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - gBxy9tlUOmfiVsyclDtWkKD3K0i1
+  - _id              : Jamie P Playdate w Evelyn-1
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-03T13:56:26Z
+    meeting_length   : 69.96025
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - pySkrySvFLWWJGARQr18kPdQHGf1
+  - _id              : MountainMoonBookGroup-1
+    room_name        : MountainMoonBookGroup
+    meeting_start_ts : 2020-06-04T15:09:21Z
+    meeting_length   : 265.37466666666666
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - C3Vi7aFAahM1Mr3dmK7E5Vjbljr1
+      - IqJKzW7HTkPPlXoiOhbi1LPWf3k1
+      - OJHp3VatR3cbjRkyyMyB6mHtdQD3
+      - YzktMssEHET9AscUJawQZoIjXM12
+  - _id              : Giggle Chats with Flynn-6
+    room_name        : Giggle Chats with Flynn
+    meeting_start_ts : 2020-06-05T14:00:41Z
+    meeting_length   : 13.699716666666667
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - flXGdigfIsc90I2CitZtZB72WpG3
+  - _id              : Jonah and Eli Playdate-1
+    room_name        : Jonah and Eli Playdate
+    meeting_start_ts : 2020-06-05T16:57:08Z
+    meeting_length   : 54.26473333333333
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - bqsrWZI4xPcmp4lGKYIkZGzpEPC2
+      - gBxy9tlUOmfiVsyclDtWkKD3K0i1
+  - _id              : Student Sessions and Giggle Chats-4
+    room_name        : Student Sessions and Giggle Chats
+    meeting_start_ts : 2020-06-05T17:59:17Z
+    meeting_length   : 92.57063333333333
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Team Weekly Roundup-2
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-06-05T20:01:00Z
+    meeting_length   : 166.95636666666667
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - SzolDBIU0HbAH6fFcQfPXKKCt3y2
+      - UQObIaaTXIRVOhkcYiMNRiXUfwx2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Jamie Teddy Meet Up-1
+    room_name        : Jamie Teddy Meet Up
+    meeting_start_ts : 2020-06-08T17:08:09Z
+    meeting_length   : 90.11708333333333
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : MountainMoonBookGroup-3
+    room_name        : MountainMoonBookGroup
+    meeting_start_ts : 2020-06-09T18:19:45Z
+    meeting_length   : 142.62968333333333
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - IqJKzW7HTkPPlXoiOhbi1LPWf3k1
+      - OJHp3VatR3cbjRkyyMyB6mHtdQD3
+      - YzktMssEHET9AscUJawQZoIjXM12
+      - yvT29sPrwOQhrJxJ2HQDss1OQMz1
+  - _id              : Jamie P Playdate w Evelyn-3
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-10T13:57:19Z
+    meeting_length   : 94.81593333333333
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - pySkrySvFLWWJGARQr18kPdQHGf1
+  - _id              : Erica Beth Riff Chat-1
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-06-10T20:16:20Z
+    meeting_length   : 99.28476666666667
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : MountainMoonBookGroup-5
+    room_name        : MountainMoonBookGroup
+    meeting_start_ts : 2020-06-11T14:56:36Z
+    meeting_length   : 115.00981666666667
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - IqJKzW7HTkPPlXoiOhbi1LPWf3k1
+      - OJHp3VatR3cbjRkyyMyB6mHtdQD3
+      - yvT29sPrwOQhrJxJ2HQDss1OQMz1
+  - _id              : Giggle Chats with Flynn-8
+    room_name        : Giggle Chats with Flynn
+    meeting_start_ts : 2020-06-12T14:01:01Z
+    meeting_length   : 62.465983333333334
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - flXGdigfIsc90I2CitZtZB72WpG3
+  - _id              : Student Sessions and Giggle Chats-5
+    room_name        : Student Sessions and Giggle Chats
+    meeting_start_ts : 2020-06-12T18:01:45Z
+    meeting_length   : 50.819
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Team Weekly Roundup-3
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-06-12T20:00:30Z
+    meeting_length   : 90.33736666666667
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - SzolDBIU0HbAH6fFcQfPXKKCt3y2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Jamie P Playdate w Evelyn-4
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-15T17:07:48Z
+    meeting_length   : 96.7321
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - pySkrySvFLWWJGARQr18kPdQHGf1
+  - _id              : Jamie and Svelti Video Playdate-3
+    room_name        : Jamie and Svelti Video Playdate
+    meeting_start_ts : 2020-06-19T17:56:27Z
+    meeting_length   : 92.40646666666666
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - dYguhniTWoZNJtdJfgI2l1w6RcW2
+  - _id              : Team Weekly Roundup-4
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-06-19T19:58:19Z
+    meeting_length   : 12.805216666666666
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - SzolDBIU0HbAH6fFcQfPXKKCt3y2
+      - UQObIaaTXIRVOhkcYiMNRiXUfwx2
+      - UwNrq34DvOZ9PQxvnEjbsjsD45t2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Jamie P Playdate w Evelyn-5
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-22T17:13:53Z
+    meeting_length   : 7.071
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Jamie P Playdate w Evelyn-8
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-22T17:22:35Z
+    meeting_length   : 90.99363333333334
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+  - _id              : Team Weekly Roundup-5
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-06-26T20:00:20Z
+    meeting_length   : 86.42851666666667
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - UQObIaaTXIRVOhkcYiMNRiXUfwx2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Jamie P Playdate w Evelyn-9
+    room_name        : Jamie P Playdate w Evelyn
+    meeting_start_ts : 2020-06-29T17:12:49Z
+    meeting_length   : 113.81966666666666
+    participants:
+      - 1nyOVhzZQPV0XaIzUu63O5dvKJl1
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - pySkrySvFLWWJGARQr18kPdQHGf1
+  - _id              : Erica Beth Riff Chat-2
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-07-01T19:29:27Z
+    meeting_length   : 70.80745
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Erica Beth Riff Chat-3
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-07-08T19:31:06Z
+    meeting_length   : 69.6029
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Team Weekly Roundup-6
+    room_name        : Team Weekly Roundup
+    meeting_start_ts : 2020-07-10T18:57:33Z
+    meeting_length   : 106.12448333333333
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - SzolDBIU0HbAH6fFcQfPXKKCt3y2
+      - UQObIaaTXIRVOhkcYiMNRiXUfwx2
+      - UwNrq34DvOZ9PQxvnEjbsjsD45t2
+      - u35SNhUkY0UoIaGY8UBjSI8DVnH3
+  - _id              : Erica Beth Riff Chat-4
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-07-24T18:32:52Z
+    meeting_length   : 59.1801
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Team Weekly Roundup, https://zoom.us/j/97838927087?pwd=Mm5nQTRPMWlNbFR6ZHV1bUxoRm1JQT09-1
+    room_name        : Team Weekly Roundup, https://zoom.us/j/97838927087?pwd=Mm5nQTRPMWlNbFR6ZHV1bUxoRm1JQT09
+    meeting_start_ts : 2020-07-24T19:29:19Z
+    meeting_length   : 8.42605
+    participants:
+      - 4N2CBaVb7HTutA8wGUaiJPHLGB12
+      - SHRlgBjNoIescnYFs3EtGYil7aM2
+      - UwNrq34DvOZ9PQxvnEjbsjsD45t2
+  - _id              : Erica Beth Riff Chat-5
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-08-05T19:33:46Z
+    meeting_length   : 57.95611666666667
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Erica Beth Riff Chat-9
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-08-14T12:06:43Z
+    meeting_length   : 56.44846666666667
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Erica Beth Riff Chat-10
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-09-02T19:31:28Z
+    meeting_length   : 64.51401666666666
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+  - _id              : Erica Beth Riff Chat-12
+    room_name        : Erica Beth Riff Chat
+    meeting_start_ts : 2020-09-25T13:01:08Z
+    meeting_length   : 12.122883333333334
+    participants:
+      - AH3719dwHTegn5q8qvWOdX7aSPx1
+      - G0DAHoX1U8hbz1IefV2Vq3TmOy72
+...

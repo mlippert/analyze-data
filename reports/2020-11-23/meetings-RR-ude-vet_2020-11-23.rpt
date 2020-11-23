@@ -1,0 +1,44 @@
+There were 59 meetings
+  first meeting on: Jun 08 2020
+  last meeting on:  Nov 20 2020
+
+Number of meetings grouped by number of participants:
+   1:  33
+   2:  20
+   3:   3
+   4:   3
+
+Number of meetings with more than 1 participant was 26
+The 26 meetings grouped by meeting length in minutes:
+       <    5:    5
+     5 -   10:    5
+    10 -   20:    6
+    20 -   40:    6
+    40 -   60:    2
+    60 -  120:    2
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (001-1) in room 001 (84.2 minutes)
+2020 Nov 20 09:19 — 10:44 with 3 participants
+
+Average length of a meeting was 21.7 minutes
+
+Total number of participants in these meetings was 34
+
+13 rooms used
+Count of the number of times a meeting room was used:
+000: 9
+001: 1
+002: 1
+003: 1
+041: 1
+042: 1
+043: 1
+044: 1
+MikeBeth: 3
+Szenariotest01: 1
+szenariotest01: 4
+test room: 1
+ude-vet: 1

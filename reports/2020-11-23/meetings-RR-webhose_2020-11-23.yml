@@ -1,0 +1,55 @@
+%YAML 1.2
+---
+site: webhose.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-09-22T07:26:58Z
+  last_meeting           : 2020-10-14T13:26:50Z
+  total_meetings         : 4
+  real_meetings          : 1
+  avg_meeting_length     : 21.6
+  total_num_participants : 2
+  num_reused_rooms       : 0
+  longest_meeting:
+    room               : Sid-Shai
+    start              : 2020-10-14T13:26:50Z
+    length             : 21.6
+    num_participants   : 2
+  count_by_participants:
+    - [1,   3]
+    - [2,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   0]
+    - [ 20,   0]
+    - [ 40,   1]
+    - [ 60,   0]
+    - [120,   0]
+    - [180,   0]
+    - [720,   0]
+
+rooms: # 1 rooms used
+  - room_name        : Sid-Shai
+    num_meetings     : 1
+    first_meeting    : 2020-10-14T13:26:50Z
+    last_meeting     : 2020-10-14T13:26:50Z
+    num_participants : [2, 2]
+    meeting_length   : [21.6, 21.6]
+    avg_length       : 21.6
+    participants:  # participant id, num meetings attended
+      - ["6uijKJcTMufxvGfquX1n0dSlJsA2",  1]
+      - ["hAGqeJ9HmUfd9h4xsaijg10kRR02",  1]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : Sid-Shai-2
+    room_name        : Sid-Shai
+    meeting_start_ts : 2020-10-14T13:26:50Z
+    meeting_length   : 21.560333333333332
+    participants:
+      - 6uijKJcTMufxvGfquX1n0dSlJsA2
+      - hAGqeJ9HmUfd9h4xsaijg10kRR02
+...

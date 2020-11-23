@@ -1,0 +1,334 @@
+%YAML 1.2
+---
+site: swedishdoulas.riffremote.com
+
+request_period:
+  start : # from the beginning of time
+  end   : # to the end of time
+
+meeting_stats:
+  first_meeting          : 2020-05-27T23:07:45Z
+  last_meeting           : 2020-08-10T19:59:42Z
+  total_meetings         : 63
+  real_meetings          : 36
+  avg_meeting_length     : 69.6
+  total_num_participants : 5
+  num_reused_rooms       : 1
+  longest_meeting:
+    room               : SwedishDoulas
+    start              : 2020-07-08T21:01:50Z
+    length             : 253.5
+    num_participants   : 4
+  count_by_participants:
+    - [1,  27]
+    - [2,  16]
+    - [3,  13]
+    - [4,   6]
+    - [5,   1]
+  count_by_meeting_length:  # bucket max length in minutes, count of meetings in bucket
+    - [  5,   0]
+    - [ 10,   0]
+    - [ 20,   2]
+    - [ 40,   9]
+    - [ 60,   8]
+    - [120,  14]
+    - [180,   1]
+    - [720,   2]
+
+rooms: # 1 rooms used
+  - room_name        : SwedishDoulas
+    num_meetings     : 36
+    first_meeting    : 2020-06-03T20:09:48Z
+    last_meeting     : 2020-08-03T19:30:52Z
+    num_participants : [2, 5]
+    meeting_length   : [10.4, 253.5]
+    avg_length       : 69.6
+    participants:  # participant id, num meetings attended
+      - ["2XhfX4Nw65YX8K9f8w9N5tCKcQD3", 22]
+      - ["O0QMFOLjkiYUW8uIvQdyHRyl2z32", 12]
+      - ["picvHTqHuiRgFGDDqQJkzOs96Ou2", 34]
+      - ["xXgfDffdbohtxTnlI6sDOhni2C03", 24]
+      - ["JKQ7DMVcsAW4Orob15tCcWtNyco2",  8]
+
+meetings:  # does not include meetings w/ only 1 participant
+  - _id              : SwedishDoulas-3
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-03T20:09:48Z
+    meeting_length   : 111.72993333333334
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-4
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-08T19:59:46Z
+    meeting_length   : 85.27948333333333
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-6
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-08T22:30:30Z
+    meeting_length   : 87.64733333333334
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-8
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-10T21:31:22Z
+    meeting_length   : 77.99626666666667
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-9
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-10T22:59:40Z
+    meeting_length   : 37.242416666666664
+    participants:
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-10
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-12T21:03:03Z
+    meeting_length   : 107.88206666666666
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-11
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-15T22:55:18Z
+    meeting_length   : 56.81565
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-12
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-17T20:00:15Z
+    meeting_length   : 60.361333333333334
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-17
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-22T19:30:38Z
+    meeting_length   : 173.86648333333332
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-18
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-24T20:00:54Z
+    meeting_length   : 45.59778333333333
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-19
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-24T21:00:06Z
+    meeting_length   : 57.3598
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-21
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-26T20:01:20Z
+    meeting_length   : 60.20203333333333
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-22
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-26T21:05:35Z
+    meeting_length   : 111.213
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-24
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-06-29T19:34:18Z
+    meeting_length   : 67.33691666666667
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-27
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-01T20:01:44Z
+    meeting_length   : 45.13035
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-29
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-01T23:04:32Z
+    meeting_length   : 39.7904
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-31
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-06T18:01:29Z
+    meeting_length   : 29.067016666666667
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-33
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-06T20:01:38Z
+    meeting_length   : 182.36286666666666
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-36
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-08T19:36:19Z
+    meeting_length   : 24.528883333333333
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-38
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-08T21:01:50Z
+    meeting_length   : 253.48266666666666
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-39
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-10T20:00:57Z
+    meeting_length   : 47.732033333333334
+    participants:
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-40
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-10T21:41:05Z
+    meeting_length   : 22.18025
+    participants:
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-41
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-13T19:34:42Z
+    meeting_length   : 25.659383333333334
+    participants:
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-43
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-13T21:00:25Z
+    meeting_length   : 99.91256666666666
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-44
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-15T19:58:45Z
+    meeting_length   : 41.9652
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - O0QMFOLjkiYUW8uIvQdyHRyl2z32
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-45
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-15T21:15:55Z
+    meeting_length   : 20.01803333333333
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-46
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-17T19:57:47Z
+    meeting_length   : 27.204533333333334
+    participants:
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-47
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-17T20:25:02Z
+    meeting_length   : 15.280116666666666
+    participants:
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-48
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-20T15:57:42Z
+    meeting_length   : 64.95198333333333
+    participants:
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-49
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-20T18:07:12Z
+    meeting_length   : 78.46555
+    participants:
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-50
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-20T19:31:21Z
+    meeting_length   : 51.13255
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-52
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-20T21:00:21Z
+    meeting_length   : 26.6661
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-54
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-22T19:00:24Z
+    meeting_length   : 91.56381666666667
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-55
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-24T15:56:26Z
+    meeting_length   : 10.372716666666667
+    participants:
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+  - _id              : SwedishDoulas-56
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-07-24T20:00:42Z
+    meeting_length   : 52.25065
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+  - _id              : SwedishDoulas-58
+    room_name        : SwedishDoulas
+    meeting_start_ts : 2020-08-03T19:30:52Z
+    meeting_length   : 117.00603333333333
+    participants:
+      - 2XhfX4Nw65YX8K9f8w9N5tCKcQD3
+      - JKQ7DMVcsAW4Orob15tCcWtNyco2
+      - picvHTqHuiRgFGDDqQJkzOs96Ou2
+      - xXgfDffdbohtxTnlI6sDOhni2C03
+...

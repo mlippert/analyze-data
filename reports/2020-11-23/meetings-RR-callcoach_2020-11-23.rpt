@@ -1,0 +1,31 @@
+There were 5 meetings
+  first meeting on: Jul 24 2020
+  last meeting on:  Jul 30 2020
+
+Number of meetings grouped by number of participants:
+   1:   3
+   2:   2
+
+Number of meetings with more than 1 participant was 2
+The 2 meetings grouped by meeting length in minutes:
+       <    5:    0
+     5 -   10:    0
+    10 -   20:    0
+    20 -   40:    1
+    40 -   60:    1
+    60 -  120:    0
+   120 -  180:    0
+   180 -  720:    0
+
+The longest meeting was:
+meeting (Cockle & How-1) in room Cockle & How (49.8 minutes)
+2020 Jul 30 10:01 — 10:51 with 2 participants
+
+Average length of a meeting was 37.3 minutes
+
+Total number of participants in these meetings was 3
+
+2 rooms used
+Count of the number of times a meeting room was used:
+Antony Cockle: 1
+Cockle & How: 1
