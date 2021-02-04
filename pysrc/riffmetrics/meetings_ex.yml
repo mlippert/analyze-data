@@ -4,7 +4,12 @@ meetings:
     _id: b8d5baee-89d2-442e-a836-fd07705b5746
     # domain where the meeting was run
     site_id: riffai.riffremote.com
-    meeting_name: MikeBeth Weekly
+    context: >-
+      the context for the meeting, supplied by the app that starts the meeting,
+      perhaps a riffedu team name or id, perhaps a riffremote site name/url.
+      It provides a way to group meetings.
+      This is new, I think it replaces the site_id
+    meeting_title: MikeBeth Weekly
     meeting_type: One-on-One
     room_name: aftreiz1ew
     # meeting start timestamp is when the meeting is created and the 1st person joins
