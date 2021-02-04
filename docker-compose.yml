@@ -11,6 +11,17 @@ services:
       - anl-riffdata-db-data:/data/db
       - anl-riffdata-db-configdb:/data/configdb
 
+  anl-mm-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: mostest
+      MYSQL_USER: mmuser
+      MYSQL_PASSWORD: mostest
+      MYSQL_DATABASE: mattermost_test
+    volumes:
+      - anl-mm-db-data:/var/lib/mysql
+
 volumes:
   anl-riffdata-db-data:
   anl-riffdata-db-configdb:
+  anl-mm-db-data:

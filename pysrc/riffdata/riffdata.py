@@ -52,7 +52,7 @@ class Riffdata:
     """
 
     # format strings for the objects returned by Riffdata methods
-    meeting_fmt = ('meeting ({_id}) in room {room}\n'
+    meeting_fmt = ('meeting ({_id}) "{title}" in room {room}\n'
                    '{startTime:%Y %b %d %H:%M} — {endTime:%H:%M} ({meetingLengthMin:.1f} minutes)\n'
                    '{participant_cnt} participants:'
                   )
@@ -68,7 +68,6 @@ class Riffdata:
         self.client = MongoClient(self._domain, self._port)
         self.db = self.client[self._db_name]
 
-
     def drop_db(self):
         """
         Drop the Riff Database.
@@ -80,7 +79,6 @@ class Riffdata:
 
         # I can't tell from the docs what the state of self.db will be after it is dropped
         # we may want to set it to None at this time -mjl
-
 
     def get_meetings(self, pre_query=None, post_query=None):
         """
@@ -109,11 +107,15 @@ class Riffdata:
                  - 'startTime': datetime - time the meeting started
                  - 'endTime': datetime - time the meeting ended
                  - 'room': str - name of the room used for the meeting
+                 - 'title': str - title of the meeting
                  - 'meetingLengthMin': float - calculated length of the meeting in minutes
                  - 'participants': list of participant ids (strs) who attended the meeting
         """
         meetings = []
         pipeline = [
+            {'$match': {'room': {'$exists': True}  # turns out there are some bogus meetings w/o a room, so exclude those
+                       }
+            },
             {'$addFields': {'meetingLengthMin': {'$divide': [{'$subtract': ['$endTime', '$startTime']}, 60000]}
                            }
             },
@@ -138,6 +140,7 @@ class Riffdata:
                           'meetingLengthMin': True,
                           'participants': True,
                           'room': True,
+                          'title': True,
                          }
             },
         ]
@@ -153,6 +156,10 @@ class Riffdata:
         meetings_cursor = self.db.meetings.aggregate(pipeline, allowDiskUse=True)
         # meetings_cursor = db.meetings.find(pre_query)
         for meeting in meetings_cursor:
+            # handle old meetings w/o a title field
+            if 'title' not in meeting:
+                meeting['title'] = meeting['room']
+
             meetings.append(meeting)
         return meetings
 
@@ -191,12 +198,8 @@ class Riffdata:
         """
         Get all of the participants from the riffdata mongodb participants collection.
         """
-        participants = []
         participants_cursor = self.db.participants.find(query)
-        for participant in participants_cursor:
-            participants.append(participant)
-            # pprint.pprint(participant)
-        return participants
+        return Riffdata.get_raw_documents(participants_cursor)
 
     def get_raw_participantevents(self, query=None):
         """
@@ -212,6 +215,13 @@ class Riffdata:
         """
         utterances_cursor = self.db.utterances.find(query)
         return Riffdata.get_raw_documents(utterances_cursor)
+
+    def get_raw_personalrooms(self, query=None):
+        """
+        Get all matching personalroom documents from the riffdata mongodb personalrooms collection.
+        """
+        personalrooms_cursor = self.db.personalrooms.find(query)
+        return Riffdata.get_raw_documents(personalrooms_cursor)
 
     def get_meetings_with_participant_utterances(self):
         """
@@ -238,7 +248,7 @@ class Riffdata:
                     - remove any meetings not copied
         """
         post_qry = {
-            'participants.2': {'$exists': True}, # More than 2 participants
+            'participants.2': {'$exists': True},  # More than 2 participants
             'participants': participant_id,
         }
         meetings = self.get_meetings(post_query=post_qry)
@@ -281,6 +291,47 @@ class Riffdata:
         result = new_db.participantevents.insert_many(participantevents)
         result = new_db.meetingevents.insert_many(meetingevents)
         result = new_db.utterances.insert_many(raw_utterances)
+
+    def update_meetings_schema(self):
+        """
+        Update the meetings documents to match the latest (2.0.0-dev.8) schema
+        changes.
+        - Add title field w/ the personalroom title OR the room if no title field exists
+        - Remove meetingUrl
+        - Rename descriptions to meetingTypes and description to meetingType in the
+          contained documents
+        """
+        meetings = self.get_raw_meetings()
+        personalrooms = self.get_raw_personalrooms()
+        prMap = {pr['_id']: pr for pr in personalrooms}
+
+        updated_cnt = 0
+        for meeting in meetings:
+            updated = False
+            if 'meetingUrl' in meeting:
+                del meeting['meetingUrl']
+                updated = True
+
+            if 'descriptions' in meeting:
+                meetingTypes = [{'meetingType': d['description'], 'participant': d['participant']}
+                                for d in meeting['descriptions']]
+                meeting['meetingTypes'] = meetingTypes
+                del meeting['descriptions']
+                updated = True
+
+            if 'title' not in meeting:
+                title = meeting['room']
+                # when personal rooms are being used, the room is the personalroom id
+                if title in prMap:
+                    title = prMap[title]['title']
+                meeting['title'] = title
+                updated = True
+
+            if updated:
+                result = self.db.meetings.replace_one({'_id': meeting['_id']}, meeting)
+                updated_cnt += 1
+
+        print(f'update_meetings_schema replaced {updated_cnt} meeting documents')
 
     @staticmethod
     def get_raw_documents(cursor):
@@ -413,6 +464,10 @@ def do_extract_participant(participantId, new_db_name):
 def do_drop_db():
     riffdata = Riffdata()
     riffdata.drop_db()
+
+def do_schema_update_meetings():
+    riffdata = Riffdata()
+    riffdata.update_meetings_schema()
 
 
 def _test():
