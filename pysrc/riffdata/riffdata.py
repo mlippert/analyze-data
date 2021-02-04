@@ -52,7 +52,7 @@ class Riffdata:
     """
 
     # format strings for the objects returned by Riffdata methods
-    meeting_fmt = ('meeting ({_id}) in room {room}\n'
+    meeting_fmt = ('meeting ({_id}) "{title}" in room {room}\n'
                    '{startTime:%Y %b %d %H:%M} — {endTime:%H:%M} ({meetingLengthMin:.1f} minutes)\n'
                    '{participant_cnt} participants:'
                   )
@@ -107,11 +107,15 @@ class Riffdata:
                  - 'startTime': datetime - time the meeting started
                  - 'endTime': datetime - time the meeting ended
                  - 'room': str - name of the room used for the meeting
+                 - 'title': str - title of the meeting
                  - 'meetingLengthMin': float - calculated length of the meeting in minutes
                  - 'participants': list of participant ids (strs) who attended the meeting
         """
         meetings = []
         pipeline = [
+            {'$match': {'room': {'$exists': True}  # turns out there are some bogus meetings w/o a room, so exclude those
+                       }
+            },
             {'$addFields': {'meetingLengthMin': {'$divide': [{'$subtract': ['$endTime', '$startTime']}, 60000]}
                            }
             },
@@ -136,6 +140,7 @@ class Riffdata:
                           'meetingLengthMin': True,
                           'participants': True,
                           'room': True,
+                          'title': True,
                          }
             },
         ]
@@ -151,6 +156,10 @@ class Riffdata:
         meetings_cursor = self.db.meetings.aggregate(pipeline, allowDiskUse=True)
         # meetings_cursor = db.meetings.find(pre_query)
         for meeting in meetings_cursor:
+            # handle old meetings w/o a title field
+            if 'title' not in meeting:
+                meeting['title'] = meeting['room']
+
             meetings.append(meeting)
         return meetings
 

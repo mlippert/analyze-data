@@ -155,6 +155,7 @@ class MeetingsData:
 
         self.meetings = [{'_id':              meeting['_id'],
                           'room_name':        meeting['room'],
+                          'title':            meeting['title'],
                           'meeting_start_ts': meeting['startTime'],
                           'meeting_length':   meeting['meetingLengthMin'],
                           'participants':     meeting['participants'].copy(),
@@ -178,6 +179,7 @@ class MeetingsData:
         longest_meeting = max(self.meetings, key=lambda m: m['meeting_length'])
         self.meeting_stats['longest_meeting'] = {'_id':              longest_meeting['_id'],
                                                  'room':             longest_meeting['room_name'],
+                                                 'title':            longest_meeting['title'],
                                                  'start':            longest_meeting['meeting_start_ts'],
                                                  'length':           longest_meeting['meeting_length'],
                                                  'num_participants': len(longest_meeting['participants']),
@@ -309,7 +311,7 @@ def write_room_details(meeting_data: MeetingsData,
     if detail_level is RoomDetailLevel.ALL_MEETINGS:
         def write_meeting(f, m):
             end = m['meeting_start_ts'] + timedelta(minutes=m['meeting_length'])
-            f.write('meeting ({_id}) in room {room_name} ({meeting_length:.1f} minutes)\n'
+            f.write('meeting "{title}" ({_id}) in room {room_name} ({meeting_length:.1f} minutes)\n'
                     '{meeting_start_ts:%Y %b %d %H:%M} — {end:%H:%M}\n'
                     '{num_participants} participants:\n'
                     .format(**m, end=end, num_participants=len(m['participants'])))
@@ -409,6 +411,7 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     longest_meeting = meeting_stats['longest_meeting']
     f.write('  longest_meeting:\n')
     f.write('    {:<19}: {}\n'.format('room', longest_meeting['room']))
+    f.write('    {:<19}: {}\n'.format('title', longest_meeting['title']))
     f.write('    {:<19}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('start', longest_meeting['start']))
     f.write('    {:<19}: {:.1f}\n'.format('length', longest_meeting['length']))
     f.write('    {:<19}: {}\n'.format('num_participants', longest_meeting['num_participants']))
@@ -450,6 +453,7 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     for meeting in meeting_data.meetings:
         f.write('  - {:<17}: {}\n'.format('_id', meeting['_id']))
         f.write('    {:<17}: {}\n'.format('room_name', meeting['room_name']))
+        f.write('    {:<17}: {}\n'.format('meeting_title', meeting['title']))
         f.write('    {:<17}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('meeting_start_ts', meeting['meeting_start_ts']))
         f.write('    {:<17}: {}\n'.format('meeting_length', meeting['meeting_length']))
 
@@ -505,7 +509,7 @@ def write_human_meeting_report(meeting_data: MeetingsData,
 
     longest_meeting = meeting_stats['longest_meeting']
     f.write('The longest meeting was:\n'
-            'meeting ({_id}) in room {room} ({length:.1f} minutes)\n'
+            'meeting "{title}" ({_id}) in room {room} ({length:.1f} minutes)\n'
             '{start:%Y %b %d %H:%M} — {end:%H:%M} with '
             '{num_participants} participants\n\n'
             .format(**longest_meeting,
