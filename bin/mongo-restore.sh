@@ -69,7 +69,7 @@ Help()
     echo "Syntax: $0 [-h] [-D] [-f <from database>] [-t <to database>] [-d <archive directory>] [-c <container name/id>] <mongodump archive file>"
     echo "options:"
     echo "f     The database name in the archive to be restored. Defaults to '$DB_NAME_DEFAULT'"
-    echo "t     The database name to be restored to. Defaults to '$DB_NAME_DEFAULT'"
+    echo "t     The database name to be restored to. Defaults to database name from the archive (-f value)"
     echo "D     Drop target collections before restoring them. Collections not being restored will not be dropped."
     echo "d     The directory where the specified archive is located. Defaults to '$ARCHIVE_PATH_DEFAULT'"
     echo "c     The container name/id which is running the mongo db to restore to."
@@ -85,7 +85,7 @@ Help()
 # Get the options
 MONGO_CONTAINER=$(docker ps --filter="$MONGO_CNTR_FILTER" --filter="status=running" --format={{.Names}})
 DB_NAME_FROM=$DB_NAME_DEFAULT
-DB_NAME_TO=$DB_NAME_DEFAULT
+DB_NAME_TO=
 ARCHIVE_PATH=$ARCHIVE_PATH_DEFAULT
 DROP_OPT=
 
@@ -120,6 +120,11 @@ done
 # Remove the getopts processed options
 shift $((OPTIND - 1))
 
+# If a to database name was not specified, use the from database name
+if [ -z "$DB_NAME_TO" ]; then
+    DB_NAME_TO=$DB_NAME_FROM
+fi
+
 # Test validity of and set required arguments
 ARCHIVE_NAME="$1"
 
@@ -144,13 +149,14 @@ echo "The backup archive will be restored using the following:"
 echo "  ${BOLD}Mongo container name${RESET}: $MONGO_CONTAINER"
 echo "  ${BOLD}Archive file path${RESET}: $ARCHIVE_PATH"
 echo "  ${BOLD}Archive file name${RESET}: $ARCHIVE_NAME"
+echo "  ${BOLD}Restore database${RESET} $DB_NAME_FROM ${BOLD}to database${RESET} $DB_NAME_TO"
 read -rsp $'Press any key to continue or Ctrl-C to abort\n' -n1 key
 
 echo
 echo "copy the archive to the mongo container"
 docker cp ${ARCHIVE_PATH}/${ARCHIVE_NAME} ${MONGO_CONTAINER}:/data/
 echo "restore the mongo archive"
-docker exec -t ${MONGO_CONTAINER} mongorestore --nsFrom="${DB_NAME_FROM}.*" --nsTo="${DB_NAME_TO}.*" $DROP_OPT --gzip --archive=/data/${ARCHIVE_NAME}
+docker exec -t ${MONGO_CONTAINER} mongorestore --nsInclude="${DB_NAME_FROM}.*" --nsFrom="${DB_NAME_FROM}.*" --nsTo="${DB_NAME_TO}.*" $DROP_OPT --gzip --archive=/data/${ARCHIVE_NAME}
 
 echo "remove the archive from the mongo container"
 docker exec -t ${MONGO_CONTAINER} rm /data/${ARCHIVE_NAME}
