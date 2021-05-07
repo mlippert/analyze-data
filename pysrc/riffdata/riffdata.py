@@ -141,6 +141,7 @@ class Riffdata:
                           'participants': True,
                           'room': True,
                           'title': True,
+                          'context': True,
                          }
             },
         ]

@@ -156,6 +156,7 @@ class MeetingsData:
         self.meetings = [{'_id':              meeting['_id'],
                           'room_name':        meeting['room'],
                           'title':            meeting['title'],
+                          'context':          meeting.get('context', 'No Context'),
                           'meeting_start_ts': meeting['startTime'],
                           'meeting_length':   meeting['meetingLengthMin'],
                           'participants':     meeting['participants'].copy(),
@@ -180,6 +181,7 @@ class MeetingsData:
         self.meeting_stats['longest_meeting'] = {'_id':              longest_meeting['_id'],
                                                  'room':             longest_meeting['room_name'],
                                                  'title':            longest_meeting['title'],
+                                                 'context':          longest_meeting['context'],
                                                  'start':            longest_meeting['meeting_start_ts'],
                                                  'length':           longest_meeting['meeting_length'],
                                                  'num_participants': len(longest_meeting['participants']),
@@ -454,6 +456,7 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
         f.write('  - {:<17}: {}\n'.format('_id', meeting['_id']))
         f.write('    {:<17}: {}\n'.format('room_name', meeting['room_name']))
         f.write('    {:<17}: {}\n'.format('meeting_title', meeting['title']))
+        f.write('    {:<17}: {}\n'.format('meeting_context', meeting['context']))
         f.write('    {:<17}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('meeting_start_ts', meeting['meeting_start_ts']))
         f.write('    {:<17}: {}\n'.format('meeting_length', meeting['meeting_length']))
 
