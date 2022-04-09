@@ -121,6 +121,7 @@ def yaml_str(s: str) -> str:
     """
     special_yaml_chars = ':-{}[]!#|>&%@'
     sq = "'"
+    esc_sq = "''"
 
     if not contains_any(s, special_yaml_chars):
         return s
@@ -128,13 +129,7 @@ def yaml_str(s: str) -> str:
     if sq not in s:
         esc_squotes = s
     else:
-        esc_squotes_list = []
-        for c in s:
-            if c == sq:
-                esc_squotes_list.append(sq)
-            esc_squotes_list.append(c)
-
-        esc_squotes = ''.join(esc_squotes_list)
+        esc_squotes = ''.join([c if c != sq else esc_sq for c in s])
 
     return f"'{esc_squotes}'"
 
