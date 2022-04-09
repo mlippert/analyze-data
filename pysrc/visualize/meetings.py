@@ -101,6 +101,44 @@ def write_buckets(buckets: Iterable[Sequence[Any]], *, f=sys.stdout) -> None:
         prev_b = b
 
 
+def contains_any(s: str, chars: str) -> bool:
+    """
+    There are various ways to implement this
+    see https://www.oreilly.com/library/view/python-cookbook/0596001673/ch03s07.html
+
+    - return 1 in [c in s for c in chars]
+
+    - from operator import or_, contains
+      return reduce(or_, map(contains, len(chars)*[str], chars))
+    """
+    return 1 in [c in s for c in chars]
+
+
+def yaml_str(s: str) -> str:
+    """
+    If the given string contains any special yaml characters return it with surrounding
+    single quotes, and escaped embedded single quotes.
+    """
+    special_yaml_chars = ':-{}[]!#|>&%@'
+    sq = "'"
+
+    if not contains_any(s, special_yaml_chars):
+        return s
+
+    if sq not in s:
+        esc_squotes = s
+    else:
+        esc_squotes_list = []
+        for c in s:
+            if c == sq:
+                esc_squotes_list.append(sq)
+            esc_squotes_list.append(c)
+
+        esc_squotes = ''.join(esc_squotes_list)
+
+    return f"'{esc_squotes}'"
+
+
 class MeetingsData:
     """
     Information about a set of meetings read from a Riffdata database
@@ -413,7 +451,7 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     longest_meeting = meeting_stats['longest_meeting']
     f.write('  longest_meeting:\n')
     f.write('    {:<19}: {}\n'.format('room', longest_meeting['room']))
-    f.write('    {:<19}: {}\n'.format('title', longest_meeting['title']))
+    f.write('    {:<19}: {}\n'.format('title', yaml_str(longest_meeting['title'])))
     f.write('    {:<19}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('start', longest_meeting['start']))
     f.write('    {:<19}: {:.1f}\n'.format('length', longest_meeting['length']))
     f.write('    {:<19}: {}\n'.format('num_participants', longest_meeting['num_participants']))
@@ -455,7 +493,7 @@ def write_yaml_meeting_report(meeting_data: MeetingsData, *, f=sys.stdout) -> No
     for meeting in meeting_data.meetings:
         f.write('  - {:<17}: {}\n'.format('_id', meeting['_id']))
         f.write('    {:<17}: {}\n'.format('room_name', meeting['room_name']))
-        f.write('    {:<17}: {}\n'.format('meeting_title', meeting['title']))
+        f.write('    {:<17}: {}\n'.format('meeting_title', yaml_str(meeting['title'])))
         f.write('    {:<17}: {}\n'.format('meeting_context', meeting['context']))
         f.write('    {:<17}: {:%Y-%m-%dT%H:%M:%SZ}\n'.format('meeting_start_ts', meeting['meeting_start_ts']))
         f.write('    {:<17}: {}\n'.format('meeting_length', meeting['meeting_length']))
