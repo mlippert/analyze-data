@@ -58,7 +58,7 @@ clean-lintlog :
 ## if you want the help sorted rather than in the order of occurrence, pipe the grep to sort and pipe that to awk
 help :
 	@echo ""                                                                   ; \
-	echo "Useful targets in this pysrc Makefile:"                     ; \
+	echo "Useful targets in this pysrc Makefile:"                              ; \
 	(grep -E '^[a-zA-Z_-]+ ?:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = " ?:.*?## "}; {printf "\033[36m%-20s\033[0m : %s\n", $$1, $$2}') ; \
 	echo ""                                                                    ; \
 	echo "If VIRTUAL_ENV needs to be set for a target, run '. activate' first" ; \
